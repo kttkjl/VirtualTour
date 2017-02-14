@@ -1,0 +1,118 @@
+<!doctype = html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="masterreset.css">
+	<link rel="stylesheet" type="text/css" href="registration.css">
+</head>
+
+<body>
+	<div id="wrapper">
+	<div class="header">
+		<div id="headbanner">
+			<a href ="index.html"><img src="./images/banner.png" alt="Return to Home"></a>
+		</div>
+		<div id="schoolname">
+			<h1> HARUNA </h1>
+		</div>
+	</div>
+	
+	<div class="content">
+		<!---left column in reg page--->
+		<div class="leftcol">
+			<div class="sitelogo">
+				<img src="./images/logo.png" alt="site logo"></div>
+			<br>
+			<div class="servicedesc">
+				<h2>Brief Service Description</h2><br>
+				<p>Id mei illum corpora singulis, dolores torquatos interpretaris cum ei. Nam no erat scripta consulatu, pro ignota consectetuer ad. Amet illum maiorum sea ex, duo assum eruditi ex. Omnesque vituperata reformidans at vel, porro solet principes ut qui.</p>
+				<p>Id mei illum corpora singulis, dolores torquatos interpretaris cum ei. Nam no erat scripta consulatu, pro ignota consectetuer ad. Amet illum maiorum sea ex, duo assum eruditi ex. Omnesque vituperata reformidans at vel, porro solet principes ut qui.</p>
+				</div>
+		</div>
+		
+		<!---right column in reg page--->
+		<div class="rightcol">
+			<div class="regform">
+				<!---fill in tde action please--->
+				<!---remember to input functions too --->
+				<form action="" class="registration">
+					<table>
+					<tr>
+						<th></th> <!---for making 4 columns--->
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
+					<tr>
+						<td colspan=4>
+							<label for="username" class="required">Username</label>
+							<input type="text" id="username" name="username" required>
+						</td>
+					</tr>
+					<tr>
+						<td colspan=3>
+							<label for="email" class="required">E-mail</label>
+							<input type="text" id="email" name="email" required>
+						</td>
+						<td>
+							<input type="button" id="emailcheck" name="emailcheck" value="Check">
+						</td>
+					</tr>
+					<tr>
+						<td colspan=3>
+							<label for="loginid" class="required">Login ID</label>
+							<input type="text" id="loginid" name="loginid" required>
+						</td>
+						<td>
+							<input type="button" id="logidcheck" name="logidcheck" value="Check">
+						</td>
+					</tr>
+					<tr>
+						<td colspan=4>
+							<label for="password" class="required">Password</label>
+							<input type="password" id="password" name="password" required>
+						<td/>
+					</tr>
+					<tr>
+						<td colspan=3>
+							<label for="cpassword">Confirm Password</label>
+							<input type="password" id="cpassword" name="cpassword" required>
+						</td>
+						<td>
+							<input type="button" id="passcheck" name="passcheck" value="Check" onclick="function name here">
+						</td>
+					</tr>
+					</table>
+					<div class="disclaimtext">
+						<h2> Disclaimer Header </h2>
+						<p> Disclaimer text etc....Id mei illum corpora singulis, dolores torquatos interpretaris cum ei. Nam no erat scripta consulatu, pro ignota consectetuer ad. Amet illum maiorum sea ex, duo assum eruditi ex. Omnesque vituperata reformidans at vel, porro solet principes ut qui. 
+						</p>
+						<br>
+						<h2> TOS and shit </h2>
+						<p> Disclaimer text etc....Id mei illum corpora singulis, dolores torquatos interpretaris cum ei. Nam no erat scripta consulatu, pro ignota consectetuer ad. Amet illum maiorum sea ex, duo assum eruditi ex. Omnesque vituperata reformidans at vel, porro solet principes ut qui. 
+						</p>
+					</div>	
+					<br>
+					<label for="consent" class="required">Do you agree to the TOS?</label>
+					<table>
+						<th>
+						<input type="radio" id ="consent" name="consent" value="Yes" required>Yes
+						</th>
+						<th>
+						<input type="radio" id ="consent" name="consent" value="No" required>No
+						</th>
+					</table>
+					<input type="submit">
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<div id="footer">
+		<p> Sitemap and Disclaimers </p>
+	</div>
+</body>
+</html>
