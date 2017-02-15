@@ -47,6 +47,7 @@ header{
 #navbar ul{
 	display: inline-block;
 	width: 100%;
+	text-align: center;
 }
 #navbar ul li{
 	display: inline;
@@ -56,6 +57,12 @@ header{
 	margin-left: 1%;
 	padding: 1%;
 }
+/*added shit here*/
+#navbar a{
+	color: white;
+}
+
+/*end added shit*/
 #maincontent{
 	display: inline-block;
 	width: 100%;
@@ -137,6 +144,8 @@ header{
 	width: 800px;
 	margin: auto;
 }
+
+/*why the hell*/
 .dropDown{
 	visibility: hidden;
 	z-index: 1;
