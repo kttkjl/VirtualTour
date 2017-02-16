@@ -1,6 +1,5 @@
-header, nav, main, aside, footer {
-	display: block;
-}
+
+
 
 main {
 	font-family: Verdana, arial, sans-serif;
@@ -8,24 +7,25 @@ main {
 =	}
 
 .page_title {
-	padding-top: 20px;
+	padding-top: 30px;
 	font-weight: normal;
+	padding-left: 4%;
 }
 
 .glossary_desc{
 	font-size: .95em;
 	padding-top: 15px;
+	padding-left: 4%;
 }
 
 .glossary_table {
-	padding-top: 15px;
+	padding-top: 40px;
+	margin: auto;
+	width: auto;
 }
 
 tr:nth-of-type(odd) {
 	background-color: #AFBAD9;
-}
-
-#glossary_list {
 }
 
 .glossary_title {
