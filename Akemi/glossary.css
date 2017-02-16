@@ -1,25 +1,6 @@
-
-
 header, nav, main, aside, footer {
 	display: block;
 }
-
-html, body{
-	background-color:#005;
-	height:100%;
-	width:100%;
-}
-
-.Wrapper{
-	background-color:white;
-	height:auto;
-	margin:auto;
-	width:800px;
-	padding-left:5%;
-	overflow-y:auto;
-
-}
-
 
 main {
 	font-family: Verdana, arial, sans-serif;
@@ -33,7 +14,13 @@ main {
 
 .glossary_desc{
 	font-size: .95em;
+	padding-top: 15px;
 }
+
+.glossary_table {
+	padding-top: 15px;
+}
+
 tr:nth-of-type(odd) {
 	background-color: #AFBAD9;
 }
