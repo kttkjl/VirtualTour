@@ -12,7 +12,7 @@ html, body{
 }
 .Wrapper{
 	background-color:white;
-	height:auto;
+	height: 100%;
 	overflow-y:auto;
 }
 .Wrapper, .Footer_Area{
@@ -22,15 +22,24 @@ html, body{
 .Head_Area{
 	height:20%;
 }
+#Banner{
+	height: 50%
+}
 #Banner div.BannerPadding{
-	padding: 1em 0em;
-	font-size:32pt;
+	height: 100%;
+	font-size: 32pt;
+}
+.BannerPadding header{
+	padding-top: 2%;
 }
 .BannerPadding span{
 	padding-left:1em;
 }
 ul{
 	border-top:4px solid white;
+}
+#Navigation{
+	height: 50%;
 }
 .original_navigation{
 	width:100%;
@@ -136,10 +145,16 @@ li:hover a.level1{
 .QuadrantSub a.level3{
 	padding: 0 1em;
 }
-
+.Body_Area{
+	display: block;
+	height: 70%;
+	background-color: pink;
+}
 /*footer things*/
 footer{
 	background-color:#354779;
+	position: absolute;
+	width: 96%;
 	bottom:0;
 	padding: 2%;
 }
