@@ -151,13 +151,13 @@ li:hover a.level1{
 }
 .Body_Area{
 	display: block;
-	height: 70%;
+	height: 100%;
 	background-color: pink;
 }
 /*footer things*/
 footer{
 	background-color:#354779;
-	position: absolute;
+	position: relative;
 	width: 96%;
 	bottom:0;
 	padding: 2%;
@@ -194,7 +194,7 @@ table.table_col td{
 	font-size: .75em;
 }
 
-table.table_col a, a:visited{
+table.table_col a, table_col a:visited{
 	color: white;
 	width: 100%;
 	text-align:center;

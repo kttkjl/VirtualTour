@@ -11,9 +11,10 @@ html, body {
 }
 #pullpagebannerdiscalimer{
 	text-align:center;
+
 }
 
-#wrapper {
+#Wrapper {
 	min-height:100%;
 	position:relative;
 }
@@ -22,7 +23,7 @@ html, body {
 	position: absolute;
 	width: 100%;
 	bottom: 0;
-	background-color:#7888B5;
+	background-color: #7888B5;
 	text-align:center;
 	padding: 50px 0 50px 0;
 	color: white;

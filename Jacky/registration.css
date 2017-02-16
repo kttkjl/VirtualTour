@@ -1,25 +1,17 @@
-html, body {
-	/*darkblue*/
-	background-color: #0D1A3E;
-	height: 100%;
-	font-family: calibri;
-}
-
 /*wraps everything*/
 #wrapper {
 	position:relative;
+	height: auto;
 }
 
 /*header and left+right column wrapper*/
 .content {
 	margin: auto;
 	width:90%;
-	height: 100%;
-	background-color: #E6EDFF;
+	height: auto;
+	/*background-color: #E6EDFF;*/
 	text-align:center;
 	overflow: auto; /*no more footer floating*/
-	padding-bottom: 100px;
-
 }
 
 /*header shenanigans*/
