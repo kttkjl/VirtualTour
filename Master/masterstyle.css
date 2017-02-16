@@ -21,9 +21,10 @@ html, body{
 }
 .Head_Area{
 	height:20%;
+	position: relative;
 }
 #Banner{
-	height: 50%
+	height: 50%;
 }
 #Banner div.BannerPadding{
 	height: 100%;
@@ -39,7 +40,10 @@ ul{
 	border-top:4px solid white;
 }
 #Navigation{
-	height: 50%;
+	position: absolute;
+	bottom:0;
+	width: 100%;
+	background-color:black;
 }
 .original_navigation{
 	width:100%;
