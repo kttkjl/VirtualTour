@@ -1,0 +1,44 @@
+header, nav, main, aside, footer {
+	display: block;
+}
+
+main {
+	font-family: Verdana, arial, sans-serif;
+	margin: 20px;
+=	}
+
+.page_title {
+	padding-top: 20px;
+	font-weight: normal;
+}
+
+.glossary_desc{
+	font-size: .95em;
+	padding-top: 15px;
+}
+
+.glossary_table {
+	padding-top: 15px;
+}
+
+tr:nth-of-type(odd) {
+	background-color: #AFBAD9;
+}
+
+#glossary_list {
+}
+
+.glossary_title {
+	padding-top: 10px;
+	font-weight: bold;
+	float: left;
+	font-size: .80em;
+	width: 30%;
+}
+
+.list_desc {
+	font-size: small;
+	padding: 10px 10px;
+	float: right;
+	width: 60%;
+	}

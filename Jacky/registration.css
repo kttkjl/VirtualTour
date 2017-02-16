@@ -8,7 +8,6 @@ html, body {
 /*wraps everything*/
 #wrapper {
 	position:relative;
-
 }
 
 /*header and left+right column wrapper*/
@@ -101,15 +100,47 @@ html, body {
 }
 
 /*footer things*/
-#footer {
-	position: relative;
-	width: 100%;
-	bottom: 0;
-	background-color:#7888B5;
-	text-align:center;
+footer{
+	background-color:#354779;
+	bottom:0;
+	padding: 2%;
+}
+
+.footer_wrapper{
 	color: white;
 }
 
-#footer a{
-	color:white;
+.footer_table{
+	text-align:center;
+	width:100%;
 }
+
+table.table_outer{
+	width: 100%;
+	color: white;
+}
+
+table.table_outer th{
+	width: 19%;
+}
+
+table.table_col{
+	color: white;
+	width: 100%;
+	border-width: 0 1px 0 1px;
+	border-style: solid;
+}
+
+table.table_col td{
+	color: white;
+	text-align:center;
+	font-size: .75em;
+}
+
+table.table_col a, a:visited{
+	color: white;
+	width: 100%;
+	text-align:center;
+	text-decoration: none;
+}
+
