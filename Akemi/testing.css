@@ -1,24 +1,33 @@
-header, nav, main, footer {
+html, header, nav, main, footer {
 	display: block;
 	}
 
 nav, header {
-	font-family: sans-serif, Candola, Colibri;
+	font-family: sans-serif, Verdana, arial;
+}
+
+body {
+	width: 100%;
 }
 
 .Wrapper{
 	height: 100%;
-	overflow-y:auto;
+	width: 100%;
 }
 
 html {
 	margin:0;
+	padding: 0;
+	width: 100%;
 }
 
 #Name {
 	float:left;
-	padding-right: 41%;
 	padding-left: 3%;
+}
+
+.Navigation {
+	width: 100%;
 }
 	
 nav { 
@@ -39,15 +48,19 @@ nav ul {
 	width:100%;
 	margin-left: auto;
 	margin-right: auto;
+	white-space: nowrap;
+
 }
 
 nav li {
+		white-space: nowrap;
 		display: inline-block;
 		margin-left: auto;
 		margin-right: auto;
 		padding-right: 4%;
 		padding-top: 30px;
 		font-size: .94em;
+		float:right;
 }
 
 header{
