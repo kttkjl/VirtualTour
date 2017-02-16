@@ -1,0 +1,57 @@
+
+
+header, nav, main, aside, footer {
+	display: block;
+}
+
+html, body{
+	background-color:#005;
+	height:100%;
+	width:100%;
+}
+
+.Wrapper{
+	background-color:white;
+	height:auto;
+	margin:auto;
+	width:800px;
+	padding-left:5%;
+	overflow-y:auto;
+
+}
+
+
+main {
+	font-family: Verdana, arial, sans-serif;
+	margin: 20px;
+=	}
+
+.page_title {
+	padding-top: 20px;
+	font-weight: normal;
+}
+
+.glossary_desc{
+	font-size: .95em;
+}
+tr:nth-of-type(odd) {
+	background-color: #AFBAD9;
+}
+
+#glossary_list {
+}
+
+.glossary_title {
+	padding-top: 10px;
+	font-weight: bold;
+	float: left;
+	font-size: .80em;
+	width: 30%;
+}
+
+.list_desc {
+	font-size: small;
+	padding: 10px 10px;
+	float: right;
+	width: 60%;
+	}
