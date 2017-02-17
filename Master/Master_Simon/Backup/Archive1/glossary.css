@@ -21,10 +21,10 @@ main {
 	width: auto;
 }
 
-.glossary_table tr:nth-of-type(odd) {
+tr:nth-of-type(odd) {
 	background-color: #AFBAD9;
 }
-.glossary_table tr:nth-of-type(even) {
+tr:nth-of-type(even) {
 	background-color: white;
 }
 
