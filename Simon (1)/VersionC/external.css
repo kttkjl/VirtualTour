@@ -1,0 +1,113 @@
+*:NOT(img){
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #354779;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+header{
+	width: 100%;
+}
+footer{
+	
+}
+#banner{
+	display: block;
+	width: 800px;
+	height: 100px;
+	margin: auto;
+	background-color: #e6e6fa;
+}
+#banner h1{
+	text-align: center;
+	padding: 30px;
+	font-family: Georgia
+}
+#navbarContainer{
+	width: 800px;
+	height: 100.8px;
+}
+#account{
+	width: 150px;
+	height: 100%;
+	float: right;
+}
+#mainContent{
+	width: 800px;
+	height: 100%;
+	background-color: #e6e6fa;
+}
+.wrapper{
+	height: 100%;
+	width: 800px;
+	margin: auto;
+}
+.navbar{
+	display: inline-block;
+	width: 800px;
+	background-color: pink;
+}
+.navbar ul li{
+	display: block;
+	float: left;
+	width: 150px;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: black;
+	color: white;
+	border: 1px solid gray;
+	font-weight: bold;
+}
+.lists{
+	background-color: black;
+	width: 800px;
+	margin: auto;
+}
+.lists li:hover{
+	background-color: #333333;
+}
+.lists li:hover .dropList{
+	visibility: visible;
+	opacity: 1;
+}
+.dropList{
+	transition: opacity 1s ease;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 200.8px;
+}
+.dropList li{
+	clear: both;
+	text-align: center;
+	width: 150px;
+}
+.dropList li:hover{
+	background-color: #333333;
+}
+.horiDropList{
+	transition: opacity 1s ease;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 0px;
+	left: 151.6px;
+	display: inline;
+}
+.dropList li:hover .horiDropList{
+	visibility: visible;
+	opacity: 1;
+}
+.relativePosition{
+	position: relative;
+}

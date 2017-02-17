@@ -3,7 +3,7 @@ html, header, nav, main, footer {
 	}
 
 nav, header {
-	font-family: sans-serif, Verdana, arial;
+	font-family: Calibri, Verdana, arial;
 }
 
 body {
@@ -68,7 +68,7 @@ ul.nav li.homethng{
 }
 
 #Banner{
-	background-image: url(panorama.jpg);
+	background-image: url(MasterB/panorama.jpg);
 	background-size: cover;
 	height: 200px;
 	width:100%;
@@ -76,7 +76,7 @@ ul.nav li.homethng{
 
 
 body {
-	background-image: url(background7.jpg);
+	background-image: url(MasterB/background7.jpg);
 	padding:0;
 	margin: 0;
 }

@@ -40,6 +40,10 @@ div.contentPane div.innerContainer div.buildingsTable{
 	background-color:#DDD;
 	overflow-Y:auto;
 }
+
+div.buildingsTable {
+}
+
 div.buildingsTable table{
 	margin:auto;
 	text-align:center;
