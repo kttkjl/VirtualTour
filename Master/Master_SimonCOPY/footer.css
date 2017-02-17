@@ -1,0 +1,65 @@
+/*footer things*/
+footer{
+	background-color:#354779;
+	position: relative;
+	width: 96%;
+	bottom:0;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 1%;
+	font-style: sans-serif, Verdana, Arial;
+	text-align:center;
+}
+
+.footer_wrapper{
+	color: white;
+}
+
+.footer_table{
+	text-align:center;
+	width:100%;
+}
+
+h3 {
+		font-style: Verdana, Arial, sans-serif;
+		font-weight: normal;
+}
+
+table.table_outer{
+	width: 100%;
+	color: white;
+}
+
+table.table_outer th{
+	width: 19%;
+}
+
+table.table_col{
+	color: white;
+	width: 100%;
+	border-width: 0 1px 0 1px;
+	border-style: solid;
+}
+
+table.table_col td{
+	color: white;
+	text-align:center;
+	font-size: .75em;
+}
+
+table.table_col a, table_col a:visited{
+	color: white;
+	width: 100%;
+	text-align:center;
+	text-decoration: none;
+}
+
+.footer_copy {
+	margin-top: .5%;
+	margin-bottom: .5%;
+}
+
+.footer_media {	
+	margin-bottom: 0;
+	margin-top: .5%;
+}
