@@ -33,13 +33,7 @@ footer{
 	font-family: Georgia
 }
 #navbarContainer{
-	width: 800px;
-	height: 100.8px;
-}
-#account{
-	width: 150px;
-	height: 100%;
-	float: right;
+	width: 100%;
 }
 #mainContent{
 	width: 800px;
@@ -57,26 +51,23 @@ footer{
 	margin: auto;
 }
 .navbar{
-	display: inline-block;
-	width: 800px;
+	display: block;
 	background-color: pink;
 }
 .navbar ul li{
 	display: block;
-	float: left;
 	width: 150px;
 	text-align: center;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 35px;
+	padding-bottom: 35px;
 	background-color: black;
 	color: white;
 	border: 1px solid gray;
 	font-weight: bold;
 }
 .lists{
+	float: left;
 	background-color: black;
-	width: 800px;
-	margin: auto;
 }
 .lists li:hover{
 	background-color: #333333;
@@ -95,7 +86,6 @@ footer{
 .dropList li{
 	clear: both;
 	text-align: center;
-	width: 150px;
 }
 .dropList li:hover{
 	background-color: #333333;
@@ -106,7 +96,7 @@ footer{
 	visibility: hidden;
 	position: absolute;
 	top: 0px;
-	left: 151.6px;
+	left: 150px;
 	display: inline;
 }
 .dropList li:hover .horiDropList{

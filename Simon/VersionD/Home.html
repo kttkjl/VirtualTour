@@ -4,21 +4,35 @@
 		<meta charset="utf-8">
 		<title>Virtual Campus Tour</title>
 		<link rel="stylesheet" href="external.css">
+		<script type="text/Javascript" language="Javascript">
+			function show(id){
+				document.getElementById(id).style.visibility = "visible";
+				document.getElementById(id).style.opacity = "1";
+				document.getElementById(id).style.transition = "opacity 1s";
+			}
+			function hide(id){
+				document.getElementById(id).style.visibility = "hidden";
+				document.getElementById(id).style.opacity = "0";
+			}
+		</script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header>
 				<div id="headerContainer">
 					<div id="banner">
+						<div id="menu">
+							<img class="menuIcon" src="menu.png" alt="Icon made by Madebyoliver from www.flaticon.com" onMouseOver="show('navbarContainer')">
+						</div>
 						<h1>Home: Virtual Campus Tour</h1>
 					</div>
 				</div>
 			</header>
-			<div id="navbarContainer">
+			<div id="navbarContainer" onMouseOut="hide('navbarContainer')">
 				<div class="navbar">
-					<ul class="lists">
-						<li>HOME</li>
-						<li>BUILDINGS						
+					<ul class="lists" onMouseOver="show('navbarContainer')">
+						<li class="relativePosition">HOME</li>
+						<li class="relativePosition">BUILDINGS						
 							<ul class="dropList">
 								<li class="relativePosition">SW
 									<ul class="horiDropList">
@@ -54,20 +68,22 @@
 								</li>
 							</ul>
 						</li>
-						<li>GLOSSARY</li>
-						<li>CONTACT</li>
-						<li id="account">ACCOUNT
+						<li class="relativePosition">GLOSSARY</li>
+						<li class="relativePosition">CONTACT</li>
+						<li class="relativePosition">ACCOUNT
 							<ul class="dropList">
-								<li>SETTING</li>
-								<li>LOGIN</li>
-								<li>SIGN UP</li>
+								<li class="relativePosition">SETTING</li>
+								<li class="relativePosition">LOGIN</li>
+								<li class="relativePosition">SIGN UP</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div id="mainContent">
-				
+				<div id="picture">
+					<!--<img src="campuspicture2.jpg" alt="Campus Picture">-->
+				</div>
 			</div>
 			<footer>
 				<div id="footerWrapper">
