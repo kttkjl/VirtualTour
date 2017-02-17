@@ -1,0 +1,44 @@
+main {
+	font-family: Verdana, arial, sans-serif;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.page_title {
+	padding-top: 30px;
+	font-weight: normal;
+	padding-left: 4%;
+}
+
+.glossary_desc{
+	font-size: .95em;
+	padding-left: 4%;
+}
+
+.glossary_table {
+	padding-top: 20px;
+	margin: auto;
+	width: auto;
+}
+
+tr:nth-of-type(odd) {
+	background-color: #AFBAD9;
+}
+tr:nth-of-type(even) {
+	background-color: white;
+}
+
+.glossary_title {
+	padding-top: 10px;
+	font-weight: bold;
+	float: left;
+	font-size: .80em;
+	width: 30%;
+}
+
+.list_desc {
+	font-size: small;
+	padding: 10px 10px;
+	float: right;
+	width: 60%;
+}

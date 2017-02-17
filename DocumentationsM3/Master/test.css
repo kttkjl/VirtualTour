@@ -1,0 +1,29 @@
+#commentSystem{
+	max-width:800px;
+	height:70%;
+	margin:auto;
+	padding-top:0.9em;
+}
+.commentContainer{
+	width:100%;
+	min-height:10%;
+	height:100%;
+}
+.innerCommentContainer{
+	position:relative;
+	text-align:center;	
+	border: 5px solid green;
+	height:40%;
+	overflow-y:auto;
+	background-color:white;
+}
+.buttons{
+	bottom:50%;
+}
+.backgroundContainer>input{
+	padding-left:1em;
+	border:1px solid black;
+	float:left;
+	width:49%;
+	height:5em;
+}

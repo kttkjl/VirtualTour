@@ -1,0 +1,188 @@
+*:NOT(img){
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	font-family: Calibri, Arial, sans-serif;
+	background-color: #354779;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+header{
+	width: 100%;
+}
+#banner{
+	display: block;
+	width: 100%;
+	height: 100px;
+	margin: auto;
+	background-color: black;
+}
+#banner h1{
+	text-align: center;
+	padding: 30px;
+	font-family: Georgia;
+	color:white;
+}
+#menu{
+	background-color: black;
+	width: 110px;
+	height: 100px;
+	position: absolute;
+	border: 1px solid gray;
+}
+#navbarContainer{
+	position: absolute;
+	height: calc(100% - 100px);
+	visibility: hidden;
+	opacity: 0;
+	z-index: 2;
+}
+#mainContent{
+	width: 100%;
+	height: calc(100% - 100px);
+	background-color: #e6e6fa;
+}
+#homeContent{
+	min-height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-image: url("campuspicture2.jpg");
+	background-color: black;
+}
+#homeContent img:not([src*="building.png"]){
+	width: 100%;
+}
+#homeDescription{
+	margin-left: 111.6px;
+	background-color: black;
+	height: calc(100% - 100px);
+	width: calc(100%-100px);
+	opacity: 0.7;
+	visibility: hidden;
+	position: absolute;	
+	z-index: 2;
+}
+#homeDescription h2{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+	color: white;
+	font-family: Cambria;
+}
+#homeDescription p{
+	padding-left: 5%;
+	padding-right: 5%;
+	color: white;
+}
+#footerWrapper{
+	display: block;
+	width: 100%;
+	background-color: #ccccff;
+}
+.wrapper{
+	height: 150%;
+	width: 100%;
+	margin: auto;
+}
+.menuIcon{
+	padding-left: 21%;
+	padding-top: 15%;
+}
+.navbar{
+	display: block;
+	background-color: black;
+	height: 100%;
+	float: left;
+}
+.navbar ul li{
+	display: block;
+	width: 110px;
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	background-color: black;
+	color: white;
+	border: 1px solid gray;
+	font-weight: bold;
+}
+.navbar a, .navbar a:visited{
+	text-decoration: none;
+	color: white;
+}
+.lists{
+	float: left;
+	background-color: black;
+}
+.lists li:hover{
+	background-color: #00007f;
+}
+.lists li:hover .dropList{
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+}
+.dropList{
+	transition: opacity 1s ease;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 111.6px;
+}
+.dropList li{
+	clear: both;
+	text-align: center;
+}
+.dropList li:hover{
+	background-color: #00007f;
+}
+.horiDropList{
+	transition: opacity 1s ease;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: -0.1px;
+	left: 110px;
+	display: inline;
+}
+.dropList li:hover .horiDropList{
+	visibility: visible;
+	opacity: 1;
+}
+.relativePosition{
+	position: relative;
+}
+.mainContents{
+	height:50%;
+}
+.contents{
+	display:block;
+	position:relative;
+	bottom:calc(100% - 100px);
+	width: 100%;
+	height:100%;
+	min-height:calc(100% - 100px);
+	opacity: 0.8;
+	background-color: white;
+}
+.footerTable{
+	margin: auto;
+	font-size: small;
+}
+.footerTable td{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.footerTable td:nth-of-type(1){
+	border-left: 1px dashed black;
+}
+.footerTable td:nth-of-type(3n){
+	border-right: 1px dashed black;
+}	
