@@ -25,6 +25,7 @@ div.buildingImages, div.top, div.bottom{
 div.galleryBox{
 	width:50%;
 	float:left;
+	height: 100%;
 }
 div.top>div.divBorders{
 	width:97%;
@@ -43,6 +44,7 @@ div.top{
 div.bottomLeft, div.bottomRight{
 	float:left;
 	width:50%;
+	height: 100%;
 }
 .descriptionArea{
 	max-height:100%;
