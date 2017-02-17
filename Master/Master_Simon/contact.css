@@ -1,6 +1,7 @@
 /* sets width 	for the form */
 #contact_us input{
 	width:100%;
+	border: 1px solid black;
 }
 
 /* left and bottom aligns the prompts. */
@@ -31,4 +32,5 @@
 /* inserts a text area for audience to type feedback */
 #contact_us textarea{
 	width:99.5%;
+	border: 1px solid black;
 }
