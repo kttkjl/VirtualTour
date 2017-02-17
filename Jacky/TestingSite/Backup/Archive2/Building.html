@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Virtual Campus Tour</title>
+		<link rel="stylesheet" href="externalBuilding.css"/>
+		<link rel="stylesheet" href="footer.css"/>
+		<link rel="stylesheet" href="contentPane.css"/>
+		<script type="text/Javascript" language="Javascript">
+			function show(id){
+				document.getElementById(id).style.visibility = "visible";
+				document.getElementById(id).style.opacity = "1";
+				document.getElementById(id).style.transition = "opacity 1s";
+			}
+			function hide(id){
+				document.getElementById(id).style.visibility = "hidden";
+				document.getElementById(id).style.opacity = "0";
+			}
+			function showMini(id){
+				document.getElementById(id).style.visibility = "visible";
+				document.getElementById(id).style.opacity = "0.7";
+				document.getElementById(id).style.transition = "opacity 1s";
+			}
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div id="headerContainer">
+					<div id="banner">
+						<div id="menu">
+							<img class="menuIcon" src="menu.png" alt="Icon made by Madebyoliver from www.flaticon.com" onMouseOver="show('navbarContainer')">
+						</div>
+						<h1>Home: Virtual Campus Tour</h1>
+					</div>
+				</div>
+			</header>
+			<div id="navbarContainer" onMouseOut="hide('navbarContainer')">
+				<div class="navbar">
+					<ul class="lists" onMouseOver="show('navbarContainer')">
+						<li class="relativePosition" onMouseOver="showMini('homeDescription')" onMouseOut="hide('homeDescription')"><a href="./Home.html">HOME</a></li>
+						<li class="relativePosition"><a href="#">BUILDINGS</a>						
+							<ul class="dropList">
+								<li class="relativePosition">SW
+									<ul class="horiDropList">
+										<li class="relativePosition"><a href="SW1Building.html">SW1</a></li>
+										<li class="relativePosition">SW5</li>
+										<li class="relativePosition">SW9</li>
+										<li class="relativePosition">SW12</li>
+									</ul>
+								</li>
+								<li class="relativePosition">SE
+									<ul class="horiDropList">
+										<li class="relativePosition">SE1</li>
+										<li class="relativePosition">SE5</li>
+										<li class="relativePosition">SE9</li>
+										<li class="relativePosition">SE12</li>
+									</ul>
+								</li>
+								<li class="relativePosition">NE
+									<ul class="horiDropList">
+										<li class="relativePosition">NE1</li>
+										<li class="relativePosition">NE5</li>
+										<li class="relativePosition">NE9</li>
+										<li class="relativePosition">NE12</li>
+									</ul>
+								</li>
+								<li class="relativePosition">NW
+									<ul class="horiDropList">
+										<li class="relativePosition">NW1</li>
+										<li class="relativePosition">NW5</li>
+										<li class="relativePosition">NW9</li>
+										<li class="relativePosition">NW12</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="relativePosition"><a href="./Glossary.html">GLOSSARY</a></li>
+						<li class="relativePosition">CONTACT</li>
+						<li class="relativePosition">ACCOUNT
+							<ul class="dropList">
+								<li class="relativePosition">SETTING</li>
+								<li class="relativePosition">LOGIN</li>
+								<li class="relativePosition">SIGN UP</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="mainContent">
+				<div id="homeContent">
+					<div id="homeDescription" onMouseOver="showMini('homeDescription'); show('navbarContainer')" onMouseOut="hide('homeDescription'); hide('navbarContainer')">
+						<h2>Welcome to Virtual Campus Tour</h2>
+						<p>Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option. Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option. Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option. Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option. Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option.</p>
+					</div>
+					<div class="contents">
+						<div class="contentPane">
+	<div class="innerContainer">
+		<div class="marginMaker">
+			<h1>NorthWest (NW)</h1><br/>
+			<img src="building.png" alt="building picture"/>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="buildingsTable">
+			<table>
+				<tr><td colspan="8">Buildings in this sector:</td></tr>
+				<tr>
+					<td colspan="2"><a href="javascript:void(0);">NW 1</a></td>
+					<td colspan="2"><a href="javascript:void(0);">NW 3</a></td>
+					<td colspan="2"><a href="javascript:void(0);">NW 5</a></td>
+					<td colspan="2"><a href="javascript:void(0);">NW 6</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="contentPane">
+	<div class="innerContainer">
+		<div class="marginMaker">
+			<h1>NorthEast (NE)</h1><br/>
+			<img src="building.png" alt="building picture"/>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="buildingsTable">
+			<table>
+				<tr><td colspan="8">Buildings in this sector:</td></tr>
+				<tr>
+					<td><a href="javascript:void(0);">NE 1</a></td>
+					<td><a href="javascript:void(0);">NE 2</a></td>
+					<td><a href="javascript:void(0);">NE 3</a></td>
+					<td><a href="javascript:void(0);">NE 4</a></td>
+					<td><a href="javascript:void(0);">NE 5</a></td>
+					<td><a href="javascript:void(0);">NE 6</a></td>
+					<td><a href="javascript:void(0);">NE 7</a></td>
+					<td><a href="javascript:void(0);">NE 8</a></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:void(0);">NE 9</a></td>
+					<td><a href="javascript:void(0);">NE 10</a></td>
+					<td><a href="javascript:void(0);">NE 12</a></td>
+					<td><a href="javascript:void(0);">NE 16</a></td>
+					<td><a href="javascript:void(0);">NE 18</a></td>
+					<td><a href="javascript:void(0);">NE 20</a></td>
+					<td><a href="javascript:void(0);">NE 21</a></td>
+					<td><a href="javascript:void(0);">NE 22</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><a href="javascript:void(0);">NE 23</a></td>
+					<td colspan="2"><a href="javascript:void(0);">NE 24</a></td>
+					<td colspan="2"><a href="javascript:void(0);">NE 25</a></td>
+					<td colspan="2"><a href="javascript:void(0);">NE 28</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="contentPane">
+	<div class="innerContainer">
+		<div class="marginMaker">
+			<h1>SouthWest (SW)</h1><br/>
+			<img src="building.png" alt="building picture"/>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="buildingsTable">
+			<table>
+				<tr><td colspan="8">Buildings in this sector:</td></tr>
+				<tr>
+					<td><a href="javascript:void(0);"></a></td>
+					<td><a href="javascript:void(0);">SW 1</a></td>
+					<td><a href="javascript:void(0);">SW 2</a></td>
+					<td><a href="javascript:void(0);">SW 3</a></td>
+					<td><a href="javascript:void(0);">SW 5</a></td>
+					<td><a href="javascript:void(0);">SW 8</a></td>
+					<td><a href="javascript:void(0);">SW 9</a></td>
+					<td><a href="javascript:void(0);"></a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="contentPane">
+	<div class="innerContainer">
+		<div class="marginMaker">
+			<h1>SouthEast (SE)</h1><br/>
+			<img src="building.png" alt="building picture"/>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="buildingsTable">
+			<table>
+				<tr><td colspan="8">Buildings in this sector:</td></tr>
+				<tr>
+					<td><a href="javascript:void(0);">SE 1</a></td>
+					<td><a href="javascript:void(0);">SE 2</a></td>
+					<td><a href="javascript:void(0);">SE 4</a></td>
+					<td><a href="javascript:void(0);">SE 6</a></td>
+					<td><a href="javascript:void(0);">SE 8</a></td>
+					<td><a href="javascript:void(0);">SE 9</a></td>
+					<td><a href="javascript:void(0);">SE 10</a></td>
+					<td><a href="javascript:void(0);">SE 12</a></td>
+				</tr>
+				<tr>
+					<td><a href="javascript:void(0);">SE 14</a></td>
+					<td><a href="javascript:void(0);">SE 16</a></td>
+					<td><a href="javascript:void(0);">SE 19</a></td>
+					<td><a href="javascript:void(0);">SE 30</a></td>
+					<td><a href="javascript:void(0);">SE 40</a></td>
+					<td><a href="javascript:void(0);">SE 41</a></td>
+					<td><a href="javascript:void(0);">SE 42</a></td>
+					<td><a href="javascript:void(0);">SE 50</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+				<div class="footer_wrapper">
+				<div class="footer_table">
+					<table class="table_outer">
+						<tr> 
+							<th> NE
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+							<th> NW
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+							<th> SE
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+							<th> SW
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+							<th> Others
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+						</tr>
+					</table>
+					<p class="footer_copy"> COPYRIGHT AND CONTACT US. || 2017</p>
+					<h3 class="footer_media"> Facebook twitter</h3>
+				</div>
+			</div>
+
+			</footer>
+	</body>
+</html>
