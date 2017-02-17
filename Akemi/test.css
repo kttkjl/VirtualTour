@@ -1,0 +1,18 @@
+#commentSystem{
+	max-width:800px;
+	height:auto;
+	margin:auto;
+}
+.commentContainer{
+	width:100%;
+	min-height:10%;
+	max-height:40%;
+}
+.innerCommentContainer{
+	text-align:center;	
+	border: 5px solid green;
+	min-height:10%;
+	max-height:40%;
+	overflow-y:auto;
+	background-color:white;
+}
