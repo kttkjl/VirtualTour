@@ -1,37 +1,25 @@
-header, nav, main, aside, footer {
-	display: block;
+#contact_us input{
+	width:100%;
+}
+#contact_us td{
+	vertical-align:bottom;
+	text-align:left;
+}
+#contact_us th{
+	width: 25%;
+}
+#contact_us table{
+	margin: 5% 0 5% 0; /*Paddin for table*/
+	margin: auto;
+	width: 100%;
+	text-align:left;
 }
 
-main {
-	font-family: Verdana, arial, sans-serif;
-	margin: 20px;
+.required::after{
+	content: "*";
+	color: red;
 }
 
-.page_title {
-	padding-top: 20px;
-	font-weight: normal;
-}
-
-.contact_desc{
-	font-size: .95em;
-	padding-top: 15px;
-}
-
-.contact_prompt {
-	padding-top: 10px;
-	font-weight: bold;
-	float: left;
-	font-size: .80em;
-	width: 30%;
-}
-
-.contact_answer {
-	font-size: small;
-	padding: 10px 10px;
-	float: right;
-	width: 60%;
-	}
-
-.contact_table {
-	padding-top: 15px;
+#contact_us textarea{
+	width:99.5%;
 }

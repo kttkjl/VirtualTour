@@ -2,46 +2,56 @@
 	<html lang="en">
 		<head>
 			<meta charset="utf-8"/>
-			<link rel="stylesheet" href="masterreset.css"/>
-			<link rel="stylesheet" href="../Master/masterstyle.css"/>
+			<link rel="stylesheet" href="masterreset.css">
+			<link rel="stylesheet" href="">
 			<link rel="stylesheet" href="contact.css">
 			<title>Contact Us</title>
 		</head>
 		<body>
-				<div class="Body_Area">
-				<main>
-				<h2 class="page_title"> Contact Us </h2>
-				<p class="contact_desc"> This is the contact us page. You can reach us here. (more to come)</p>
-					<form id="contact_us">
-						<table class="contact_table">
+			<div class="Body_Area">
+			<h2> Contact Us </h2>
+			<p> This is the contact us page. You can reach us here. (more to come)</p>
+				
+				<form action="http://webdevbasics.net/scripts/demo.php" id="contact_us">
+					<table class="contact_table">
 						<tr>
-							<th class="contact_prompt">Your Username: </th>
-							<th class="contact_answer"> Name here </th>
+							<th></th> <!---for making 4 columns-->
+							<th></th>
+							<th></th>
+							<th></th>
 						</tr>
-						<tr>
-							<td class="contact_prompt">Your Username: </td>
-							<td class="contact_answer"> Name here </td>
-						</tr>
-						<tr>
-							<td class="contact_prompt">E-mail: </td>
-							<td class="contact_answer">E-mail here</td>
-						</tr>
-						<tr>
-							<td class="contact_prompt">Subject:</td>
-							<td class="contact_answer">Subject here</td>
-						</tr>
-						<tr>
-							<td class="contact_prompt">Message:</td>
-							<td class="contact_answer">Message here</td>
-						</tr>
-						<tr>
-							<td cass="contact_submit">Submit button </td>
-						</tr>
-						</table>
-					</form>	
-				</main>
-				</div>
-			</div>
+					<tr>
+						<td colspan=4>							
+							<label for="username" class="required">Username</label>
+							<input type="text" id="username" name="username" required>
+						</td>
+					</tr>
+					<tr>
+						<td colspan=4>							
+							<label for="email" class="required">E-mail</label>
+							<input type="text" id="email" name="email" required>
+						</td>
+					</tr>
+					<tr>
+						<td colspan=4>							
+							<label for="subject" class="required">Subject</label>
+							<input type="text" id="subject" name="subject" required>
+						</td>
+					</tr>
+					<tr>
+						<td colspan=4>	
+						<label for="textarea">Comment Input:</label>
+						<textarea name="textarea" rows="10" form="contact_us" placeholder="Enter Comments" required></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td>
+						<td colspan=2>
+							<input id="submit" type="submit">
+						</td>	
+					</tr>
+					</table>
+				</form>	
 			</div>
 		</body>
 	</html>
