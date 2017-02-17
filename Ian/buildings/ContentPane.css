@@ -4,6 +4,7 @@ html, body{
 	margin:0;
 }
 div.contentPane{
+	min-width:400px;
 	width:50%;
 	height:50%;
 	overflow-x:hidden;
