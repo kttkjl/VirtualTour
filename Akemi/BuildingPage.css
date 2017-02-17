@@ -1,4 +1,4 @@
-/**sets margin, border, padding at 0 unless otherwise noted */
+/*sets margin, border, padding at 0 unless otherwise noted */
 html, body{
 	margin:0;
 	border:0;
@@ -16,7 +16,7 @@ html, body{
 div.mapImage{
 		width:100%;
 	}
-	
+}
 /* sets overflow, and size of building images  */
 div.buildingImages, div.top, div.bottom{
 	width:100%;
@@ -27,13 +27,14 @@ div.buildingImages, div.top, div.bottom{
 /* floats image to left and sets width */
 .mapImage{
 	width:50%;
-	height:100%;
+	height:210px;
 	float:left;
 }
 
 /* floats gallery to left and sets width */
 div.galleryBox{
 	width:50%;
+	height:100%;
 	float:left;
 }
 

@@ -115,6 +115,7 @@ main li {
 #box_main {
 	width: 75%;
 	margin: auto;
+	min-height:100%;
 	height: auto;
 	background-color: #E2E3E7;
 	margin-bottom: 80px;

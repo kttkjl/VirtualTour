@@ -1,4 +1,4 @@
-/**sets margin, border, padding at 0 unless otherwise noted */
+/*sets margin, border, padding at 0 unless otherwise noted */
 html, body{
 	margin:0;
 	border:0;
@@ -12,11 +12,12 @@ html, body{
 		display:none !important;
 	}
 
+
 /* sets width of the map image. */
 div.mapImage{
 		width:100%;
 	}
-	
+}	
 /* sets overflow, and size of building images  */
 div.buildingImages, div.top, div.bottom{
 	width:100%;
