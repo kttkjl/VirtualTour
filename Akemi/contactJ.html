@@ -2,8 +2,9 @@
 	<html lang="en">
 		<head>
 			<meta charset="utf-8"/>
-			<link rel="stylesheet" href="testing.css">
-			<link rel="stylesheet" href="home.css">
+			<link rel="stylesheet" type="text/css" href="masterreset.css">
+			<link rel="stylesheet" href="../Master/MasterB/testing.css">
+			<link rel="stylesheet" href="contactJ.css">
 			<title>Layout B</title>
 		</head>
 			<body>
@@ -36,7 +37,51 @@
 			</div>
 			<main>
 			<div id="box_main">
-			
+			<div class="Body_Area">
+			<h2> Contact Us </h2>
+			<p> This is the contact us page. You can reach us here. (more to come)</p>
+				
+				<form action="http://webdevbasics.net/scripts/demo.php" id="contact_us">
+					<table class="contact_table">
+						<tr>
+							<th></th> <!---for making 4 columns-->
+							<th></th>
+							<th></th>
+							<th></th>
+						</tr>
+					<tr>
+						<td colspan=4>							
+							<label for="username" class="required">Username</label>
+							<input type="text" id="username" name="username" required>
+						</td>
+					</tr>
+					<tr>
+						<td colspan=4>							
+							<label for="email" class="required">E-mail</label>
+							<input type="text" id="email" name="email" required>
+						</td>
+					</tr>
+					<tr>
+						<td colspan=4>							
+							<label for="subject" class="required">Subject</label>
+							<input type="text" id="subject" name="subject" required>
+						</td>
+					</tr>
+					<tr>
+						<td colspan=4>	
+						<label for="textarea">Comment Input:</label>
+						<textarea name="textarea" rows="10" form="contact_us" placeholder="Enter Comments" required></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td>
+						<td colspan=2>
+							<input id="submit" type="submit">
+						</td>	
+					</tr>
+					</table>
+				</form>	
+			</div>
 			</div>
 		</main>
 		<footer>
