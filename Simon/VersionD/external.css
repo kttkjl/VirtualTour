@@ -55,6 +55,7 @@ footer{
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
+	
 	background-size: cover;
 	background-image: url("campuspicture2.jpg");
 	background-color: black;
