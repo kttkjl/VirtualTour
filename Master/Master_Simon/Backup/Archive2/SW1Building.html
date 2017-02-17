@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="externalBuilding.css">
 		<link rel="stylesheet" href="footer.css">
 		<link rel="stylesheet" href="BuildingPage.css">
-		<link rel="stylesheet" href="test.css">
+		<link rel="stylesheet" href="externalForm.css">
 		<script type="text/Javascript" language="Javascript">
 			function show(id){
 				document.getElementById(id).style.visibility = "visible";
@@ -96,18 +96,18 @@
 					</div>
 					<div class="contents">
 						<div class="buildingImages">
-							<div class="mapImage">
-								<div class="divBorders">
-									<img src="building.png" alt="map image"/>
-								</div>
-							</div>
-							<div class="galleryImages galleryBox">
-								<div class="galleryImages top">
-									<div class="divBorders galleryImages">
-										<img class="galleryImages" src="building.png" alt="gallery image description"/>
-									</div>
-								</div>
-								<div class="galleryImages bottom">
+		<div class="mapImage">
+			<div class="divBorders">
+				<img src="building.png" alt="map image"/>
+			</div>
+		</div>
+		<div class="galleryImages galleryBox">
+			<div class="galleryImages top">
+				<div class="divBorders galleryImages">
+					<img class="galleryImages" src="building.png" alt="gallery image description"/>
+				</div>
+			</div>
+			<div class="galleryImages bottom">
 				<div class="divBorderOuter galleryImages">
 					<div class="galleryImages bottomLeft">
 						<div class="divBorders galleryImages">
@@ -137,11 +137,24 @@ Quicquid porro animo cernimus, id omne oritur a sensibus; Sed ad haec, nisi mole
 			</p>
 		</div>
 	</div>
+	<!--form goes here-->
+			<div class="submitWrapper">
+			<div id="submittedBox">
+				<p>A<br>A<br>A<br>A<br>A</p>
+			</div>
+		</div>
+		<div class="formWrapper">
+			<form id="commentsForm" action="http://webdevbasics.net/scripts/demo.php">
+				<textarea class="textSection" name="commentArea" rows="4" cols="50" form="commentsForm" placeholder="Enter Comments"></textarea>
+				<input class="submitButton" type="submit" name="Submit"/>
+			</form>
+		</div>
 					</div>
-
 				</div>
 			</div>
-			<footer>
+			
+		</div>
+		<footer>
 				<div class="footer_wrapper">
 				<div class="footer_table">
 					<table class="table_outer">
@@ -239,6 +252,5 @@ Quicquid porro animo cernimus, id omne oritur a sensibus; Sed ad haec, nisi mole
 			</div>
 
 			</footer>
-		</div>
 	</body>
 </html>
