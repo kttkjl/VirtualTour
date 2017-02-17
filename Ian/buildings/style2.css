@@ -21,6 +21,7 @@ html, body{
 }
 .Head_Area{
 	height:20%;
+	padding-bottom:2em;
 }
 #Banner div.BannerPadding{
 	padding: 1em 0em;
@@ -136,21 +137,8 @@ li:hover a.level1{
 .QuadrantSub a.level3{
 	padding: 0 1em;
 }
-.Footer_Area{
-	background-color:#2162FF;
-	color:white;
-	height:20%;
-	text-align:center;
-}
-.innerFooter{
-	text-align:inherit;
-	border-top:5px solid black;
-}
-.innerFooter table{
-	margin:auto;
-}
-.innerFooter table tr td{
-	padding:0 0.6em;
+.Body_Area{
+	height:100%;
 }
 .topline{
 	background-color:rgba(0,0,0,0.3);
