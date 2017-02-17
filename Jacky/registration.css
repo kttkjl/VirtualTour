@@ -21,6 +21,8 @@
 	overflow:hidden;
 	background-color:#354779;
 }
+
+/* sets size,position and color for the schoolname */
 #schoolname {
 	color: white;
 	font-size: 50px;
@@ -28,9 +30,13 @@
 	margin: 50px;
 	position: absolute;
 }
+
+/* specifies positioin of banner. */
 #headbanner{
-	float: right;
+	float: right;	
 }
+
+/* configures height of the banner. */
 #headbanner img{
 	height: 100%;
 }
@@ -42,16 +48,22 @@
 	vertical-align: top;
 	padding-top: 5%;
 }
+
+/* configures the size of the logo. */
 .sitelogo img{
 	width: 50%;
 	overflow: hidden;
 }
+
+/*confugures the text position and size. */
 .servicedesc p{
 	text-align: justify;
 	width: 75%;
 	margin: auto;
 	font-size: 0.75em;
 }
+
+/*size for the heading. */
 .servicedesc h2{
 	font-size: 1.5em;
 }
@@ -62,19 +74,29 @@
 	display: inline-block;
 	vertical-align: top;
 }
+
+/** configures the size of the input spaces. */
 .registration input{
 	width:100%;
 }
+
+/**configures position of the table - prompt */
 .registration td{
 	vertical-align:bottom;
 	text-align:left;
 }
+
+/* sets up columns */
 .registration th{
 	width: 25%;
 }
+
+/*Paddin for table*/
 .registration table{
-	margin: 5% 0 5% 0; /*Paddin for table*/
+	margin: 5% 0 5% 0; 
 }
+
+/* sets position for the form */
 .regform{
 	margin: auto;
 	width: 90%;
@@ -82,10 +104,13 @@
 	font-size:0.75em;
 }
 
+/* configures properties for the disclaimer header */
 .disclaimtext h2{
 	font-size: 1.25em;
 	font-weight:bold;
 }
+
+/* configures required red star */
 .required::after{
 	content: "*";
 	color: red;
@@ -98,24 +123,29 @@ footer{
 	padding: 2%;
 }
 
+/* sets the font color to white */
 .footer_wrapper{
 	color: white;
 }
 
+/* configures position of the table */
 .footer_table{
 	text-align:center;
 	width:100%;
 }
 
+/* enforces font color and overall width */
 table.table_outer{
 	width: 100%;
 	color: white;
 }
 
+/* more width stuff */
 table.table_outer th{
 	width: 19%;
 }
 
+/* sets column border and color */
 table.table_col{
 	color: white;
 	width: 100%;
@@ -123,12 +153,14 @@ table.table_col{
 	border-style: solid;
 }
 
+/* sets up the links */
 table.table_col td{
 	color: white;
 	text-align:center;
 	font-size: .75em;
 }
 
+/* visited links configuration */
 table.table_col a, a:visited{
 	color: white;
 	width: 100%;
