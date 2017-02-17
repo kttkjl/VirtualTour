@@ -1,3 +1,5 @@
+/* Sets everything to have 0 borders, margin, padding. Font size normal and inherits from parent. Everything has this css by default unless otherwise stated. */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
