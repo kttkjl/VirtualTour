@@ -36,7 +36,7 @@ div.top>div.divBorders{
 	margin:auto;
 	height:98%;
 	position:relative;
-	top:2%;
+	top:1%;
 }
 div.top{
 	clear:right;
@@ -52,9 +52,11 @@ div.bottomLeft, div.bottomRight{
 }
 .descriptionArea div.divBorders{
 	min-height:30%;
+	margin:0;
 	height:auto;
-	width:99%;
+	width:100%;
 	overflow-y:auto;
+	padding-bottom:2em;
 }
 .descriptionArea>div.divBorders>*{
 	max-width:96%;

@@ -25,12 +25,13 @@ footer{
 	width: 100%;
 	height: 100px;
 	margin: auto;
-	background-color: #e6e6fa;
+	background-color: black;
 }
 #banner h1{
 	text-align: center;
 	padding: 30px;
-	font-family: Georgia
+	font-family: Georgia;
+	color:white;
 }
 #menu{
 	background-color: black;

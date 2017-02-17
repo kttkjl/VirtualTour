@@ -8,6 +8,7 @@ footer{
 	padding-left: 2%;
 	padding-bottom: 1%;
 	font-style: sans-serif, Verdana, Arial;
+	text-align:center;
 }
 
 .footer_wrapper{
@@ -59,7 +60,6 @@ table.table_col a, table_col a:visited{
 }
 
 .footer_media {	
-	text-align: right;
 	margin-bottom: 0;
 	margin-top: .5%;
 }
