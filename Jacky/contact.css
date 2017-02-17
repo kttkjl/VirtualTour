@@ -1,25 +1,34 @@
+/* sets width 	for the form */
 #contact_us input{
 	width:100%;
 }
+
+/* left and bottom aligns the prompts. */
 #contact_us td{
 	vertical-align:bottom;
 	text-align:left;
 }
+
+/* used to make 4 columns */
 #contact_us th{
 	width: 25%;
 }
+
+/*Paddin for table*/
 #contact_us table{
-	margin: 5% 0 5% 0; /*Paddin for table*/
+	margin: 5% 0 5% 0; 
 	margin: auto;
 	width: 100%;
 	text-align:left;
 }
 
+/* sets parameters for the required fields */
 .required::after{
 	content: "*";
 	color: red;
 }
 
+/* inserts a text area for audience to type feedback */
 #contact_us textarea{
 	width:99.5%;
 }
