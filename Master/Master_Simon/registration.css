@@ -78,6 +78,7 @@
 /** configures the size of the input spaces. */
 .registration input{
 	width:100%;
+	border: 1px solid black;
 }
 
 /**configures position of the table - prompt */
