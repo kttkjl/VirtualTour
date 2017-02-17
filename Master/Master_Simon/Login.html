@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Virtual Campus Tour</title>
-		<link rel="stylesheet" href="external.css">
+		<link rel="stylesheet" href="externalBuilding.css">
+		<link rel="stylesheet" type="text/css" href="login2.css">
 		<link rel="stylesheet" href="footer.css">
 		<script type="text/Javascript" language="Javascript">
 			function show(id){
@@ -30,14 +31,14 @@
 						<div id="menu">
 							<img class="menuIcon" src="menu.png" alt="Icon made by Madebyoliver from www.flaticon.com" onMouseOver="show('navbarContainer')">
 						</div>
-						<h1>Home: Virtual Campus Tour</h1>
+						<h1>Login: Virtual Campus Tour</h1>
 					</div>
 				</div>
 			</header>
 			<div id="navbarContainer" onMouseOut="hide('navbarContainer')">
 				<div class="navbar">
 					<ul class="lists" onMouseOver="show('navbarContainer')">
-						<li class="relativePosition" onMouseOver="showMini('homeDescription')" onMouseOut="hide('homeDescription')"><a href="#">HOME</a></li>
+						<li class="relativePosition" onMouseOver="showMini('homeDescription')" onMouseOut="hide('homeDescription')"><a href="./Home.html">HOME</a></li>
 						<li class="relativePosition"><a href="./Building.html">BUILDINGS</a>						
 							<ul class="dropList">
 								<li class="relativePosition">SW
@@ -75,7 +76,7 @@
 							</ul>
 						</li>
 						<li class="relativePosition"><a href="./Glossary.html">GLOSSARY</a></li>
-						<li class="relativePosition"><a href="./Contact.html">CONTACT</a></li>
+						<li class="relativePosition"><a href="#">CONTACT</a></li>
 						<li class="relativePosition">ACCOUNT
 							<ul class="dropList">
  
@@ -93,8 +94,44 @@
 						<p>Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option. Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option. Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option. Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option. Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option.</p>
 					</div>
 					<div class="contents">
-						
+					<div class="content">				
+					<div id="userimage">
+						<!--- yo parse dis -->
+						<img src="./images/profile.png" alt="You">
 					</div>
+				<br>
+				<div id="loginform">
+					<form>
+						<div class = "username">
+							<label class="required">Username</label>
+								<input name="username">
+						</div>
+						<div class = "password">
+							<label class="required">Password</label>
+								<input name="password">
+						</div>
+						
+						<button name="login" value="login" type="submit">Login</button>
+					</form>
+				</div>
+				
+						<div>
+							<a href= "./forgot.html">Forgot Password?</a>
+						</div>
+				
+						<div>
+							<a href= "./registration.html">Register Now</a>
+						</div>
+				
+				<br>
+				
+						<div class = "disclaimer">
+							<h3>DISCLAIMER</h3>
+							<p id="disclaimtext">Ubique veritus probatus ut nec. Eum ex meis detraxit honestatis. Vivendum deserunt delicata no mei. His persius menandri an, at sea inani apeirian necessitatibus. Habeo ubique pro te, has dicant docendi moderatius ei.
+							</p>
+						</div>
+				</div>
+				</div>
 				</div>
 			</div>
 			<footer>
@@ -193,6 +230,7 @@
 					<h3 class="footer_media"> Facebook twitter</h3>
 				</div>
 			</div>
+
 			</footer>
 		</div>
 	</body>
