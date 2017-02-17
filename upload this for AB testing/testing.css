@@ -3,8 +3,8 @@ html, header, nav, main, footer {
 	}
 
 nav, header {
-	font-family: sans-serif, Verdana, arial;
-}
+	font-family: Calibri, Verdana, sans-serif;
+	}
 
 body {
 	width: 100%;
@@ -82,7 +82,7 @@ body {
 }
 
 .user_main {
-	font-family: sans-serif, Candola, Colibri;
+	font-family: Calibri, Verdana, sans-serif;
 	display: inline-block;
 	width: 100%;
 	background-color: #354779;
@@ -143,8 +143,8 @@ footer{
 }
 
 h3 {
-		font-style: Verdana, Arial, sans-serif;
-		font-weight: normal;
+	font-family: Calibri, Verdana, sans-serif;
+	font-weight: normal;
 }
 
 table.table_outer{
