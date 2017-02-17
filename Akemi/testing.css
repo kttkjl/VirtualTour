@@ -35,8 +35,7 @@ html {
 nav { 
 	width: 90%;
 	height: 60px;
-	background-color: #0D1A3E;
-	color: white	;
+	color: white;
 
 }
 
@@ -75,7 +74,7 @@ ul.nav li.homethng{
 
 
 body {
-	background-color:#0D1A3E;
+	background-image: url(background7.jpg);
 	padding:0;
 	margin: 0;
 }
