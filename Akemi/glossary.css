@@ -3,7 +3,8 @@
 
 main {
 	font-family: Verdana, arial, sans-serif;
-	margin: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
 =	}
 
 .page_title {
@@ -14,12 +15,11 @@ main {
 
 .glossary_desc{
 	font-size: .95em;
-	padding-top: 15px;
 	padding-left: 4%;
 }
 
 .glossary_table {
-	padding-top: 40px;
+	padding-top: 20px;
 	margin: auto;
 	width: auto;
 }
