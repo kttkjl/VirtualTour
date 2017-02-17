@@ -14,6 +14,11 @@
 				document.getElementById(id).style.visibility = "hidden";
 				document.getElementById(id).style.opacity = "0";
 			}
+			function showMini(id){
+				document.getElementById(id).style.visibility = "visible";
+				document.getElementById(id).style.opacity = "0.7";
+				document.getElementById(id).style.transition = "opacity 1s";
+			}
 		</script>
 	</head>
 	<body>
@@ -31,8 +36,8 @@
 			<div id="navbarContainer" onMouseOut="hide('navbarContainer')">
 				<div class="navbar">
 					<ul class="lists" onMouseOver="show('navbarContainer')">
-						<li class="relativePosition">HOME</li>
-						<li class="relativePosition">BUILDINGS						
+						<li class="relativePosition" onMouseOver="showMini('homeDescription')" onMouseOut="hide('homeDescription')"><a href="#">HOME</a></li>
+						<li class="relativePosition"><a href="./Building.html">BUILDINGS</a>						
 							<ul class="dropList">
 								<li class="relativePosition">SW
 									<ul class="horiDropList">
@@ -81,8 +86,14 @@
 				</div>
 			</div>
 			<div id="mainContent">
-				<div id="picture">
-					<!--<img src="campuspicture2.jpg" alt="Campus Picture">-->
+				<div id="homeContent">
+					<div id="homeDescription" onMouseOver="showMini('homeDescription'); show('navbarContainer')" onMouseOut="hide('homeDescription'); hide('navbarContainer')">
+						<h2>Welcome to Virtual Campus Tour</h2>
+						<p>Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option. Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option. Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option. Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option. Lorem ipsum dolor sit amet, duis placerat dissentiet mei ea, sit ea aliquip graecis signiferumque, cu tincidunt reprimique pri. Ex impetus tincidunt nam, ius eu scripta debitis, usu et alia vidisse intellegat. Rebum aperiri ne pro, eu debet mediocritatem nam. Duo cu assum lobortis, duo causae persius reformidans in, vis ei meis audiam. Duo suas pericula similique id. Per ut singulis forensibus intellegam, et est sumo adolescens, cum cu ridens option.</p>
+					</div>
+					<div class="contents">
+						
+					</div>
 				</div>
 			</div>
 			<footer>
