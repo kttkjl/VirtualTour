@@ -1,0 +1,101 @@
+/*sets margin, border, padding at 0 unless otherwise noted */
+html, body{
+	margin:0;
+	border:0;
+	padding:0;
+}
+
+/* sets size of media with emphasis that it is important. */
+@media only screen and (max-width: 416px) {
+	div.galleryImages{
+		width:0 !important;
+		display:none !important;
+	}
+
+/* sets width of the map image. */
+div.mapImage{
+		width:100%;
+	}
+}
+/* sets overflow, and size of building images  */
+div.buildingImages, div.top, div.bottom{
+	width:100%;
+	height:50%;
+	overflow:hidden;
+}
+
+/* floats image to left and sets width */
+.mapImage{
+	width:50%;
+	height:210px;
+	float:left;
+}
+
+/* floats gallery to left and sets width */
+div.galleryBox{
+	width:50%;
+	height:100%;
+	float:left;
+}
+
+/* sets width for top and divborder classes */
+div.top>div.divBorders{
+	width:97%;
+	top:2%;
+}
+
+/* configures the border outer class. */
+.divBorderOuter{
+	width:98%;
+	margin:auto;
+	height:98%;
+	position:relative;
+	top:2%;
+}
+
+/* clears the float. */
+div.top{
+	clear:right;
+}
+
+/* floats bottomLeft andbottomRight dvs to the left. */
+div.bottomLeft, div.bottomRight{
+	float:left;
+	width:50%;
+}
+
+/* sets size of the description area. */
+.descriptionArea{
+	max-height:100%;
+	min-height:50%;
+}
+
+/* sets size and overflow of the description area. */
+.descriptionArea div.divBorders{
+	min-height:30%;
+	height:auto;
+	width:99%;
+	overflow-y:auto;
+}
+
+/* sets width and position of the description area. */
+.descriptionArea>div.divBorders>*{
+	max-width:96%;
+	margin: 0 auto;
+	padding-top:1em;
+}
+
+/* configures the padding next to description area (left). */
+.descriptionArea>div.divBorders>p{
+	padding-left:2em;
+}
+
+/* configures the divBorders class to have relative position and color. */
+.divBorders{
+	width:98%;
+	margin:auto;
+	height:98%;
+	position:relative;
+	top:1%;
+	background-color:rgba(0,0,189,0.3);
+}
