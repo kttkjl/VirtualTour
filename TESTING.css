@@ -1,0 +1,76 @@
+*:not(img) {
+	border : 0;
+	padding : 0;
+	margin : 0;
+	box-sizing: border-box;
+}
+
+/* Sets the blue bg image, general font color and style. */
+body {
+	background-color: #1E1E62;
+	background-image: url(Master/MasterB/background7.jpg);
+	color: white;
+	font-family: calibri, Verdana, Arial;
+}
+
+/* CSS for navigation bar content. */
+nav {
+	height: 4.3em;
+}
+
+nav h1 {
+	font-weight: normal;
+	font-size: 1.8em;
+	float: left;
+	padding: 0.8em 0.5em 0 0.9em;
+}
+
+nav ul {
+	list-style-type: none;
+	font-size: 1.1em;
+}
+
+nav li {
+	float: right;
+	padding: 2em 4em 0 0;}
+
+/* Customizes the banner image. */
+img {
+	width: 100%;
+	overflow-x: hidden;
+}
+	
+/* CSS for the "Second" nav bar, class userControl */
+.userControl {
+	background-color: #283D72;
+	height: 2em;
+}
+	
+.userControl h2 {
+	font-weight: normal;
+	font-size: 0.85em;
+	float: left;
+	padding: 0.7em 0 0.2em 2em;
+}
+
+.userControl ul {
+	list-style-type: none;
+}
+
+.userControl li {
+	float: right;
+	font-size: 0.85em;
+	padding: 0.7em 1.5em 0.2em 0em;
+}
+
+/*CSS for mainContent - width, height, padding, etc. */
+
+#mainContent {
+	background-color: #EFF0F1;
+	color: black;
+	width: 80%;
+	margin: 5em auto 5em auto;
+	height: auto;
+	padding: 3em 3em 3em 3em;
+	
+}
