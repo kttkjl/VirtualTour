@@ -8,7 +8,7 @@
 /* Sets the blue bg image, general font color and style. */
 body {
 	background-color: #1E1E62;
-	background-image: url(Master/MasterB/background7.jpg);
+	background-image: url(background7.jpg);
 	color: white;
 	font-family: Candara, Calibri, sans-serif;
 }
