@@ -8,7 +8,7 @@
 /* Sets the blue bg image, general font color and style. */
 body {
 	background-color: #1E1E62;
-	background-image: url(background7.jpg);
+	background-image: url(../images/background7.jpg);
 	color: white;
 	font-family: Candara, Calibri, sans-serif;
 }
@@ -132,4 +132,53 @@ img {
 	height: auto;
 	padding: 3em 3em 3em 3em;
 	
+}
+
+.actualContent {
+	height: 900px;
+}
+
+/*CSS for the footer.*/
+footer{
+	background-color:#283555;
+	bottom:0;
+	padding: 2%;
+}
+
+.footer_wrapper{
+	color: white;
+}
+
+.footer_table{
+	text-align:center;
+	width:100%;
+}
+
+table.table_outer{
+	width: 100%;
+	color: white;
+}
+
+table.table_outer th{
+	width: 19%;
+}
+
+table.table_col{
+	color: white;
+	width: 100%;
+	border-width: 0 1px 0 1px;
+	border-style: solid;
+}
+
+table.table_col td{
+	color: white;
+	text-align:center;
+	font-size: .75em;
+}
+
+table.table_col a, a:visited{
+	color: white;
+	width: 100%;
+	text-align:center;
+	text-decoration: none;
 }
