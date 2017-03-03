@@ -44,10 +44,16 @@ li a:link {
 	color: white;
 }
 
+nav a:visited {
+	text-decoration: none;
+	color: white;
+}
+
 nav a:hover {
 	text-decoration:none;
 	color: #E97A25;
 }
+
 
 /* Drop down button */
 .dropbtn {
