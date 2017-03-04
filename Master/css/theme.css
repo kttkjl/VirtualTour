@@ -2,6 +2,9 @@
 	border : 0;
 	padding : 0;
 	margin : 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 	box-sizing: border-box;
 }
 
@@ -94,8 +97,9 @@ nav a:hover {
 	}
 
 /* Customizes the banner image. */
-img {
-	width: 100%;
+#bannerBG {
+	width: auto;
+	height: 100%;
 	overflow-x: hidden;
 }
 	
@@ -133,9 +137,9 @@ img {
 	padding: 3em 3em 3em 3em;
 	
 }
-
+/*this is inside mainContent*/
 .actualContent {
-	height: 900px;
+	height: auto;
 }
 
 /*CSS for the footer.*/
