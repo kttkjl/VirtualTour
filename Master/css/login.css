@@ -1,0 +1,67 @@
+
+
+/* sets size of user image relatively. */
+#userimage img{
+	width: 50%;
+	height: auto;
+}
+
+/* aligns main content in the middle */
+#pullpagebannerdiscalimer{
+	text-align:center;
+}
+
+/* sets content to relative */
+#Wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+/* Sets the placement and colors of the input boxes */
+.content {
+	padding: 5% 0 5% 0;
+	margin: auto;
+	width:60%;
+	height: 100%;
+	background-color: #EFF0F1;
+}
+
+/* sets header size and color. */
+.header{
+	height: 150px;
+	width: 100%;
+	overflow:hidden;
+	background-color:#354779;
+}
+
+/* sets margins for disclaimer. */
+.disclaimer{
+	margin: 0 5% 0 5%;
+}
+
+/* sets school name positon and color. */
+#schoolname {
+	color: black;
+	font-size: 50px;
+	float: left;
+	margin: 50px;
+	position: absolute;
+}
+
+/* floats banner to right. */
+#headbanner{
+	float: right;
+}
+
+/* sets banner height. */
+#headbanner img{
+	height: 100%;
+}
+
+/* configures required symbol and color. */
+.required::after{
+	content: "*";
+	color: red;
+}
+
+
