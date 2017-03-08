@@ -1,0 +1,17 @@
+http://paletton.com/#uid=13N0u0kk8my3y++c8zssob-F900
+
+light blue:
+#7888B5
+120, 136, 181
+
+almost white:
+#E6EDFF
+230, 237, 255
+
+very dark blue:
+#0D1A3E
+13, 26, 62
+
+normal navy blue:
+#354779
+53, 71, 121
