@@ -100,7 +100,13 @@ nav a:hover {
 #bannerBG {
 	width: auto;
 	height: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
+}
+
+#bannerPic {
+	width: auto;
+	height: 300px;
+	overflow: hidden;
 }
 	
 /* CSS for the "Second" nav bar, class userControl */
