@@ -1,6 +1,9 @@
 /* Media query on changing collapse parameter on default bootstrap settings*/
-
-@media (max-width: 480px) {
+/*global settings*/
+body{
+    background-color: #0D1A3E;
+}
+/*@media (max-width: 200px) {
     .navbar-header {
         float: none;
     }
@@ -35,17 +38,27 @@
     .collapse.in{
         display:block !important;
     }
-}
+}*/
 /*slight navbar fixes*/
-nav .btn:focus, nav .btn:active {
+nav .btn:focus, nav .btn:active, nav .btn{
    outline: none !important;
 }
-/*banner options*/
+#startbutton{
+    color:white;
+    background-color: grey;
+    border:none;
+    text-decoration: none;
+    font-size: 1em;
+}
+#searchfield{
+    
+}
+/*Banner shenanigans*/
 #schoolBanner{
 	height: 500px;
 	overflow: hidden;
 	background-color: black;
-	margin-top: 50px;
+	margin-top: auto;
 	z-index: 0;
 }
 #schoolBanner img{
@@ -65,7 +78,38 @@ nav .btn:focus, nav .btn:active {
 }
 
 /*login info bar*/
-#loginfowrap{
+#loginfowrap, #loginfowrap p{
 	background-color: blue;
 	color: white;
+    margin:0;
+}
+
+/*Content CSS*/
+.affix {
+      top: 0px;
+}
+#maincontentactual{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.sidequicknav{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 18px;
+    height: 99px;
+    border-style: solid;
+    border-color: black;
+    border:1px;
+    z-index: 500;
+}
+
+/*footer shit*/
+.footer, #footer2{
+    text-align: center;
+    background-color: #354779;
+    color: white;
+    font-size:0.75em;
+}
+.footer a, .footer a:visited{
+    color: white;
 }

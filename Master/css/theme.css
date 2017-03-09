@@ -16,6 +16,10 @@ body {
 	font-family: Candara, Calibri, sans-serif;
 }
 
+h1 a {
+	text-decoration: none;
+}
+
 /* CSS for navigation bar content. */
 nav {
 	height: 4.3em;
