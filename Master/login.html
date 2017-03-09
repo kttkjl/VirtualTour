@@ -6,219 +6,260 @@
 			<link rel="stylesheet" href="css/login.css">
 			<title>Layout B</title>
 		</head>
-			<body>
-				<nav>
-					<h1><a href="index.html">Virtual Tour</a></h1>
-					<ul>
-						<li><a href="account.html">My Account</a></li>
-						<li><a href="contactus.html">Contact Us</a></li>
-						<li><a href="glossary.html">Glossary</a></li>
-						<li class="dropdown"><a href="allbuild.html" class="dropbtn">Buildings</a>
-						<div class="dropdown-content"> <!--Div for the part that actually drops down. -->
-							<a href="eachbuild.html">Link 1 </a>
-							<a href="eachbuild.html">Link 2 </a>
-							<a href="eachbuild.html">Link 3 </a>
-							<a href="eachbuild.html">Link 4 </a>
-							<a href="eachbuild.html">Link 5 </a>
-						</div> <!-- End of Div "dropdown-content"-->
-						</li>
-						<li><a href="index.html">Home</a></li>
-					</ul>
-				</nav>
+		<body>
+			<nav>
+				<h1><a href="index.html">Virtual Tour</a></h1>
+				<ul>
+					<li><a href="account.html">My Account</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="glossary.html">Glossary</a></li>
+					<li class="dropdown"><a href="allbuild.html" class="dropbtn">Buildings</a>
+					<div class="dropdown-content"> <!--Div for the part that actually drops down. -->
+						<a href="eachbuild.html">Link 1 </a>
+						<a href="eachbuild.html">Link 2 </a>
+						<a href="eachbuild.html">Link 3 </a>
+						<a href="eachbuild.html">Link 4 </a>
+						<a href="eachbuild.html">Link 5 </a>
+					</div> <!-- End of Div "dropdown-content"-->
+					</li>
+					<li><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
 		<main>
 			<div id ="bannerPic"> <!--Div for the banner image.-->
-			<img src="images/panorama1.jpg" alt="British Columbia" width="1752" height="300" id="bannerBG">
+				<img src="images/panorama1.jpg" alt="British Columbia" width="1752" height="300" id="bannerBG">
 			</div> <!-- end of bannerPic div-->
 			<div class="userControl"> <!-- Div for the second nav bar (the one with user controls -->
-			<h2>Logged in as : Group A</h2>
-			<ul>
-				<li> <a href="account.html">User controls</a></li>
-				<li> <a href="login.html">Sign in</a></li>
-				<li> <a href="registration.html">Register</a></li>
-			</ul>
+				<h2>Logged in as : Group A</h2>
+				<ul>
+					<li> <a href="account.html">User controls</a></li>
+					<li> <a href="login.html">Sign in</a></li>
+					<li> <a href="registration.html">Register</a></li>
+				</ul>
 			</div> <!--End of userControl -->
 		<div id="mainContent">  <!-- Insert your part of the website here. -->
 			<div class="Body_Area">
 				<div class="content">				
 					<div id="userimage">
 						<!--- yo parse dis -->
-						<img src="./images/profile.png" alt="You">
+						<img src="images/profile.png" alt="You">
 					</div>
-				<br>
-				<div id="loginform">
-					<form>
-						<div class = "username">
-							<label class="required">Username</label>
-								<input name="username">
-						</div>
-						<div class = "password">
-							<label class="required">Password</label>
-								<input name="password">
-						</div>
-						
-						<button name="login" value="login" type="submit">Login</button>
-					</form>
-				</div>
-				
-						<div>
-							<a href= "./forgot.html">Forgot Password?</a>
-						</div>
-				
-						<div>
-							<a href= "./registration.html">Register Now</a>
-						</div>
-				
-				<br>
-				
-						<div class = "disclaimer">
-							<h3>DISCLAIMER</h3>
-							<p id="disclaimtext">Ubique veritus probatus ut nec. Eum ex meis detraxit honestatis. Vivendum deserunt delicata no mei. His persius menandri an, at sea inani apeirian necessitatibus. Habeo ubique pro te, has dicant docendi moderatius ei.
-							</p>
-						</div>
-				</div>
-				</div>
+					<br>
+					<div>
+						<form id="loginform" onsubmit="loginvalidation()">
+							<div>
+								<label class="required" for="username">Username</label>
+								<input name="username" id="username" oninput="userValid()">
+							</div>
+							<p id="usernameErrorField">Please input username</p>
+							<div>
+								<label class="required" for="password">Password</label>
+								<input name="password" id="password" oninput="passwordValid()">
+							</div>
+							<p id="passErrorField">Please input password</p>
+							<button name="login" value="login" type="submit">Login</button>
+						</form>
+					</div>
+					<div>
+						<a href= "/forgot.html">Forgot Password?</a>
+					</div>
+			
+					<div>
+						<a href= "/registration.html">Register Now</a>
+					</div>
+					<br>
+					<div class = "disclaimer">
+						<h3>DISCLAIMER</h3>
+						<p id="disclaimtext">Ubique veritus probatus ut nec. Eum ex meis detraxit honestatis. Vivendum deserunt delicata no mei. His persius menandri an, at sea inani apeirian necessitatibus. Habeo ubique pro te, has dicant docendi moderatius ei.
+						</p>
+					</div>
+				</div> <!--end of content-->
+			</div> <!--end of bodyarea-->
 		</div>  <!--End of mainContent-->
 		</main>
 		<footer>
-		<div class="footer_wrapper">
-			<div class="footer_table">
-				<table class="table_outer">
-					<tr> 
-						<th> NE
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-						<th> NW
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-						<th> SE
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-						<th> SW
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-						<th> Others
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-					</tr>
-				</table>
-				<p class="footer_copy"> COPYRIGHT AND CONTACT US. || 2017</p>
-				<h2 class="footer_media"> FB twitter </h2>
+			<div class="footer_wrapper">
+				<div class="footer_table">
+					<table class="table_outer">
+						<tr> 
+							<th> NE
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+							<th> NW
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+							<th> SE
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+							<th> SW
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+							<th> Others
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+						</tr>
+					</table>
+					<p class="footer_copy"> COPYRIGHT AND CONTACT US. || 2017</p>
+					<h2 class="footer_media"> FB twitter </h2>
+				</div>
 			</div>
-		</div>
-	</footer>
-	</html>
+		</footer>
+<!--Script section-->
+<script type="text/javascript">
+	//Full page validation - also implement login checks server side
+	function loginvalidation() {
+		if (userValid()&&passwordValid()){
+			return true;
+		} else {
+			alert("form invalid");
+			return false;
+		}
+	}	
+	//returns true if username is valid
+	function userValid(){
+		var username = document.getElementById("username").value,
+			//a-z, 0-9 includes - _ and . 6-10 characters total, after first match, no more
+			validChars = new RegExp(/[a-z0-9]{6,10}(?!.{1,})/),
+			l = username.length;
+		//document.getElementById("usernameErrorField").innerHTML = "you wrote:" + l + username;	
+		if (l < 6 || l > 10) {
+			document.getElementById("usernameErrorField").innerHTML = "Please enter valid username";
+			return false;
+			//another else if if username taken
+		} else if (validChars.test(username)){
+			document.getElementById("usernameErrorField").innerHTML = "Username valid";
+			return true;
+		} else {
+			document.getElementById("usernameErrorField").innerHTML = "Username invalid";
+			return false;
+		}
+	}
+	//password checkbutton, true if length less than 10 and password===cpass
+	function passwordValid() {
+		var pass = document.getElementById("password").value;
+		if (pass.length > 10) {
+			document.getElementById("passErrorField").innerHTML = "Password longer than 10";
+			return false;
+		} else {
+			document.getElementById("passErrorField").innerHTML = "Password OK.";
+			return true;
+		}
+	}
+</script>
+	</body>
+</html>
