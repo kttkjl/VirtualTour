@@ -9,11 +9,11 @@ html, body{
 }
 div.contentPane{
 	min-width:400px;
-	width:50%;
+	width:48%;
 	height:500px;
 	overflow-x:hidden;
 	overflow-y:auto;
-	float: left;
+	display: inline-block;
 }
 div.contentPane div.innerContainer{
 	height:100%;
