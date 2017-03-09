@@ -1,3 +1,6 @@
+.actualContent {
+	text-align: center;
+}
 html, body{
 	border:0;
 	padding:0;
@@ -5,11 +8,11 @@ html, body{
 }
 div.contentPane{
 	min-width:400px;
-	width:50%;
+	width:48%;
 	height:50%;
 	overflow-x:hidden;
 	overflow-y:auto;
-	float:left;
+	display: inline-block;
 }
 div.contentPane div.innerContainer{
 	height:100%;
