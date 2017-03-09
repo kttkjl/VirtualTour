@@ -11,13 +11,9 @@
 /* Sets the blue bg image, general font color and style. */
 body {
 	background-color: #1E1E62;
-	background-image: url(../images/background7.jpg);
+	background-image: url(../images/background3.jpg);
 	color: white;
 	font-family: Candara, Calibri, sans-serif;
-}
-
-h1 a {
-	text-decoration: none;
 }
 
 /* CSS for navigation bar content. */
@@ -41,6 +37,23 @@ nav ul {
 nav li {
 	float: right;
 	padding: 2em 4em 0 0;}
+
+h1 a {
+	text-decoration: none;
+}
+
+h1 a:link {
+	text-decoration: none;
+	color: white;
+}
+
+h1 a:visited {
+	color: white;
+}
+
+h1 a:hover {
+	color:#E97A25;
+}
 
 li a {
 	text-decoration: none;
@@ -80,7 +93,8 @@ nav a:hover {
 	display: none;
 	position: absolute;
 	background-color: #162343;
-	width: 100%;
+	min-width: 700px;
+	top: 100%;
 }
 
 /* Links in the dropdown */
