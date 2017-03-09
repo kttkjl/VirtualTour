@@ -36,8 +36,7 @@ nav ul {
 
 nav li {
 	float: right;
-	left: 50%;
-	padding: 1em 1.5em 0.65em 1.5em;
+	padding: 1em 1.5em 0.43em 1.5em;
 	margin: 1em 0.5em 0 0.5em;
 }
 h1 a {
@@ -76,7 +75,6 @@ nav a:hover {
 	color: #E97A25;
 }
 
-
 /* Drop down button */
 .dropbtn {
 	color: white;
@@ -92,7 +90,7 @@ nav a:hover {
 }
 
 /* - */
-li a:hover, .dropdown:hover .dropbtn {
+nav li:hover, .dropdown:hover .dropbtn {
     background-color: #263458;
 }
 
@@ -100,39 +98,30 @@ li a:hover, .dropdown:hover .dropbtn {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: #263458;
+	background-color: rgba(38, 52, 88, 0.8);
 	min-width: 1000px;
 	left: -500px;
 	top: 101%;
 	min-height: 400px;
 	z-index: 9;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 /* Links in the dropdown */
 .dropdown-content a{
 	color: white;
-	padding: 0.8em 0.4em;
+	padding: 0.4em 0.4em;
 	text-decoration: none;
 	display: block;
 	}
 
 .dropdown-content a:hover {
 	color: #E97A25;
-	background-color: #3D4B70;
+	background-color: rgba(61, 75, 112, 0.7);
 }
 
 .dropdown:hover .dropdown-content {
 	display: block;
 	}
-
-/* Customizes what happens to the link area when hovered over an option. */
-.onhover {
-	width: auto;
-	height: auto;
-	padding: 10px, 15px;
-	background-color: red;
-}
 
 /* Customizes the banner image. */
 #bannerBG {

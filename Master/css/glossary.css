@@ -14,6 +14,10 @@ main {
 	font-size: 2.3em;
 }
 
+#gloss li {
+	background-color: #263458;
+}
+
 /* Width of the div box that contains the table */
 .glossary_box {
 	margin: auto;
