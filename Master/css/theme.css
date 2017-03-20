@@ -12,7 +12,7 @@
 body {
 	background-color: #1E1E62;
 	background-image: url(../images/background3.jpg);
-	color: white;
+	color: #DCDDDE;
 	font-family: Candara, Calibri, sans-serif;
 }
 
@@ -22,6 +22,7 @@ nav {
 	background-color: #162343;
 	position: fixed;
 	width: 100%;
+	z-index: 20;
 }
 
 nav h1 {
@@ -47,11 +48,11 @@ h1 a {
 
 h1 a:link {
 	text-decoration: none;
-	color: white;
+	color: DCDDDE;
 }
 
 h1 a:visited {
-	color: white;
+	color: DCDDDE;
 }
 
 h1 a:hover {
@@ -64,12 +65,12 @@ li a {
 
 li a:link {
 	text-decoration: none;
-	color: white;
+	color: #DCDDDE;
 }
 
 nav a:visited {
 	text-decoration: none;
-	color: white;
+	color: #DCDDDE;
 }
 
 nav a:hover {
@@ -79,7 +80,7 @@ nav a:hover {
 
 /* Drop down button */
 .dropbtn {
-	color: white;
+	color: #DCDDDE;
 	padding: 0.1em;
 	font-size: 1em;
 	display: inline-block;
@@ -101,10 +102,10 @@ nav li:hover, .dropdown:hover .dropbtn {
 	display: none;
 	position: absolute;
 	background-color: rgba(38, 52, 88, 0.8);
-	min-width: 1000px;
-	left: -500px;
+	min-width: 800px;
+	left: -340px;
 	top: 101%;
-	min-height: 400px;
+	min-height: 335px;
 	z-index: 9;
 }
 
@@ -164,7 +165,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 /*CSS for mainContent - width, height, padding, etc. */
 
 #mainContent {
-	background-color: #EFF0F1;
+	background-color: #DCDDDE;
 	color: black;
 	width: 80%;
 	margin: 5em auto 5em auto;
