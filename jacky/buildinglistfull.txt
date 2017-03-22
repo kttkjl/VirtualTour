@@ -19,15 +19,25 @@ NE25
 NE28
 
 SE1
+	Electrical training center
 SE2
+	Pub, Bookstore, Student Association, Executive offices, Meeting rooms. Has a cafeteria and a wider selection of food than anywhere else on campus. Connected to SE6
+	Triple O Tuesdays sell burgers for 3.69 each, meals here are usually the best thing you're going to get on campus.
 SE4
+	Classroom and offices
 SE6
+	IBM Building, BCIT School of Business and offices, classrooms and meeting rooms. Has a lecture hall, houses a Starbucks connecting SE2 and SE6 - which also has a nice comfy lounge.
 SE8
+	Boiler house
 SE9
 SE10
+	Broadcast Centre, Broadcast and Media Communications programs
 SE12
+	Learning and Teaching Centre, ITS and health and computing classrooms and labs. Mostly computer labs on the 3rd floor, some exclusive classrooms for upper-year students in Computer Science programs. 4th floor houses classrooms and related equipment for the BCIT Nursing program. 2nd floor(ground) houses Tim hortons, a salad bar, a poutinery and the Sub. The second best food hub on campus.	Connected to the library (SE14)
 SE14
+	Library, meeting rooms, EhPod for all your studying needs, meeting rooms. Get your library card here.
 SE16
+	Gym, Student Athletic Center, Medical services, Counselling. Weight room, outside basketball + tennis court(s), running track.
 ----
 SE19
 SE30
@@ -37,13 +47,26 @@ SE42
 SE50
 
 SW1
+	Should be main page -whatever we show anyway as this got the most shit
+	Student Information and Enrolment Services, Program Advising, Registrar"s Office and various student service departments. Houses a lot of classrooms for various subjects, meeting rooms abundant.
+
 SW2
+	Office for mostly Math instructors, connects to SW3
 SW3
+	Classroom + Offices (Construction, Manufacturing, Computing, Health)
+	Mostly computer labs, for school use whenever the classroom is not in use, houses many Chemistry labs and houses the expensive Chromatography equipments on the top floor. Some classrooms on the northern side of the building 
 SW5
+	Two theatres for teaching, various uses, has a medium lounge and chairs for students to meet, eat lunch, etc.
 SW8
+	Not a thing
 SW9
+	Mechanical Technologies and Biotechnology building, has a few lecture halls, 5 classrooms and a small lounge. Mostly heavy equipment used by MTech, 2nd floor is exclusively Biotechnology.
 
 NW1
+	Dunno
 NW3
+	Painting/Glazing
 NW5
+	R2000
 NW6
+	Machine Shop, Machinist programs
