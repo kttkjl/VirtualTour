@@ -31,7 +31,7 @@ function userValid(){
 
 //if email isn't BCIT domain or gmail
 function emailValid() {
-	var domain = new RegExp(/^[A-z0-9.]{1,}@(?=(my.bcit.ca$|bcit.ca$|google.com$))/i); //checks email for single occurrence of @ and valid domain containing only valid characters.
+	var domain = new RegExp(/^[A-z0-9.]{1,}@(?=(my.bcit.ca$|bcit.ca$|gmail.com$))/i); //checks email for single occurrence of @ and valid domain containing only valid characters.
 	var email = document.getElementById("email").value;
 	if (domain.test(email))
 	{
