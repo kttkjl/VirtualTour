@@ -102,10 +102,10 @@ nav li:hover, .dropdown:hover .dropbtn {
 	display: none;
 	position: absolute;
 	background-color: rgba(38, 52, 88, 0.8);
-	min-width: 300px;
-	left: 0px;
+	min-width: 800px;
+	left: -300px;
 	top: 101%;
-	min-height: ;
+	min-height: 333px;
 	z-index: 9;
 }
 
