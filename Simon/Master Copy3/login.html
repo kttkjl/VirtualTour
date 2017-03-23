@@ -50,12 +50,12 @@
 						<form id="loginform" onsubmit="return loginvalidation()">
 							<div>
 								<label class="required" for="username">Username</label>
-								<input name="username" id="username" oninput="userValid()">
+								<input type="text" name="username" id="username" oninput="userValid()">
 							</div>
 							<p id="usernameErrorField">Please input username</p>
 							<div>
 								<label class="required" for="password">Password</label>
-								<input name="password" id="password" oninput="passwordValid()">
+								<input type="password" name="password" id="password" oninput="passwordValid()">
 							</div>
 							<p id="passErrorField">Please input password</p>
 							<button name="login" value="login" type="submit">Login</button>
