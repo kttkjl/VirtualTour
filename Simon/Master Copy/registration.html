@@ -101,7 +101,7 @@
 								</tr>
 								<tr>
 									<td colspan=4>
-										<label for="password" class="required">Password (10 characters long)</label>
+										<label for="password" class="required">Password (10 or less characters long)</label>
 										<input type="password" id="password" name="password" required>
 									<td/>
 								</tr>
@@ -129,14 +129,13 @@
 								</div>	
 								<br>
 								<label for="consent" class="required">Do you agree to the TOS?</label>
-								<table>
-									<th>
-									<input type="radio" id ="consentYes" name="consent" value="Yes" required>Yes
-									</th>
-									<th>
-									<input type="radio" id ="consentNo" name="consent" value="No" required>No
-									</th>
-								</table>
+								<div>
+									<div class="flex1"><input type="radio" id ="consentYes" name="consent" value="Yes" required><br><label for="consentYes">Yes</label></div>
+									
+									<div class="flex1"><input type="radio" id ="consentNo" name="consent" value="No" required><br><label for="consentNo">No</label></div>
+
+									<div class="flex2"><p id="agreeErrorField"></p></div>
+								</div>
 								<input type="submit" value="Register now">
 							</form>
 						</div>
@@ -148,7 +147,7 @@
 				<script type="text/Javascript">
 				//returns true if whole form is ready
 				function validateForm() {
-					if (userValid()&&emailValid()&&loginValid()&&passwordValid()){
+					if (userValid()&&emailValid()&&loginValid()&&passwordValid()&&agreeValid()){
 						return true;
 					} else {
 						alert("form invalid");
@@ -160,7 +159,7 @@
 				function userValid(){
 					var username = document.getElementById("username").value,
 						//a-z, 0-9 includes - _ and . 6-10 characters total, after first match, no more
-						validChars = new RegExp(/[a-z0-9]{6,10}(?!.{1,})/),
+						validChars = new RegExp(/^[a-z0-9]{6,10}(?!.{1,})$/),
 						l = username.length;
 					//document.getElementById("usernameErrorField").innerHTML = "you wrote:" + l + username;	
 					if (l < 6 || l > 10) {
@@ -178,13 +177,13 @@
 
 				//if email isn't BCIT domain or gmail
 				function emailValid() {
-					var allowedpattern = new RegExp(/[A-z0-9.]{1,}(?=@)/i);	//before the @
+					var allowedpattern = new RegExp(/^[A-z0-9.]{1,}(?=@)/i);	//before the @
 					var domain1 = new RegExp(/@my.bcit.ca(?!.{1,})/);
 					var domain2 = new RegExp(/@bcit.ca(?!.{1,})/);
 					var domain3 = new RegExp(/@gmail.com(?!.{1,})/);
 					var email = document.getElementById("email").value;
-					if (allowedpattern.test(email)&&domain1.test(email)
-						||domain2.test(email)||domain3.test(email))
+					if (allowedpattern.test(email)&&(domain1.test(email)
+						||domain2.test(email)||domain3.test(email)))
 					{
 						/*if (email exists in database) {
 							document.getElementById("email").value = "Email already exists"
@@ -202,7 +201,7 @@
 				function loginValid() {
 					var loginname= document.getElementById("loginid").value,
 						//a-z, A-Z, 0-9 :: 6-10 characters total, after first match, no more
-						validChars = new RegExp(/[a-zA-Z0-9]{6,10}(?!.{1,})/),
+						validChars = new RegExp(/^[a-zA-Z0-9]{6,10}(?!.{1,})$/),
 						l = loginname.length;
 					if (l < 6 || l > 10) {
 						document.getElementById("loginErrorField").innerHTML = "Please enter valid loginID";
@@ -228,8 +227,17 @@
 						document.getElementById("cpassErrorField").innerHTML = "Password OK.";
 						return true;
 					} else {
-						document.getElementById("cpassErrorField").innerHTML = "Password does not match.";
+						document.getElementById("cpassErrorField").innerHTML = "Passwords do not match.";
 						return false;
+					}
+				}
+
+				function agreeValid() {
+					if (!consentYes.checked){
+						document.getElementById("agreeErrorField").innerHTML = "Please agree to TOS";
+						return false;
+					} else {
+						document.getElementById("agreeErrorField").innerHTML = "";
 					}
 				}
 

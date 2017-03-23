@@ -1,0 +1,13 @@
+Error logs
+
+Username validation - regEx needed ^ sign for beginning of string to make sure nothing could be put in front to inject code
+
+Radiobutton for TOS agreement - added validation method in JS.
+
+Wording corrections - password(s) do not match
+
+Email validation - same error with Username, special characters could be put in front, and if statement correction
+
+Contact us - nothing
+
+Login - password showing, password ok shouldn't be displayed
