@@ -54,7 +54,7 @@ function loginValid() {
 		validChars = new RegExp(/^[a-zA-Z0-9]{6,10}(?!.{1,})$/),
 		l = loginname.length;
 	if (l < 6 || l > 10) {
-		document.getElementById("loginErrorField").innerHTML = "Please enter valid loginID";
+		document.getElementById("loginErrorField").innerHTML = "Please enter valid login ID";
 		return false;
 		//another if for if loginID already exists
 	} else if (validChars.test(loginname)){
