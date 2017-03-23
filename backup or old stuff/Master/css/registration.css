@@ -1,0 +1,94 @@
+/*wraps everything*/
+#wrapper {
+	position:relative;
+
+}
+
+/*header and left+right column wrapper*/
+.content {
+	margin: auto;
+	width:90%;
+	height: 100%;
+	background-color: #EFF0F1;
+	text-align:center;
+	overflow: auto; /*no more footer floating*/
+	padding-bottom: 100px;
+}
+
+/*header shenanigans*/
+.header{
+	height: 150px;
+	width: 100%;
+	overflow:hidden;
+	background-color:#354779;
+}
+#schoolname {
+	color: white;
+	font-size: 50px;
+	float: left;
+	margin: 50px;
+	position: absolute;
+}
+#headbanner {
+	height: 150px;
+}
+#headbanner img{
+	height: 100%;
+	float: right;
+}
+
+/*LEFT COLUMN STUFF*/
+.leftcol{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 5%;
+}
+.sitelogo img{
+	width: 50%;
+	overflow: hidden;
+}
+.servicedesc p{
+	text-align: justify;
+	width: 75%;
+	margin: auto;
+	font-size: 0.75em;
+}
+.servicedesc h2{
+	font-size: 1.5em;
+}
+
+/*RIGHT COLUMN*/
+.rightcol{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+.registration input{
+	width:100%;
+}
+.registration td{
+	vertical-align:bottom;
+	text-align:left;
+}
+.registration th{
+	width: 25%;
+}
+.registration table{
+	margin: 5% 0 5% 0; /*Paddin for table*/
+}
+.regform{
+	margin: auto;
+	width: 90%;
+	text-align:left;
+	font-size:0.75em;
+}
+
+.disclaimtext h2{
+	font-size: 1.25em;
+	font-weight:bold;
+}
+.required::after{
+	content: "*";
+	color: red;
+}
