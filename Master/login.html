@@ -4,7 +4,8 @@
 			<meta charset="utf-8"/>
 			<link rel="stylesheet" href="css/theme.css">
 			<link rel="stylesheet" href="css/login.css">
-			<title>Layout B</title>
+			<script src="css/login.js"></script>
+			<title>Login</title>
 		</head>
 		<body>
 			<nav>
@@ -46,20 +47,23 @@
 					</div>
 					<br>
 					<div>
-						<form id="loginform" onsubmit="loginvalidation()">
+						<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" id="loginform" onsubmit="return loginvalidation()">
 							<div>
 								<label class="required" for="username">Username</label>
-								<input name="username" id="username" oninput="userValid()">
+								<input name="username" id="username" oninput="userValid()" required>
 							</div>
-							<p id="usernameErrorField">Please input username</p>
+							<p id="usernameErrorField"></p>
+							<br>
 							<div>
 								<label class="required" for="password">Password</label>
-								<input name="password" id="password" oninput="passwordValid()">
+								<input type="password" name="password" id="password" oninput="passwordValid()" required>
 							</div>
-							<p id="passErrorField">Please input password</p>
+							<p id="passErrorField"></p>
+							<br>
 							<button name="login" value="login" type="submit">Login</button>
 						</form>
 					</div>
+					<br>
 					<div>
 						<a href= "/forgot.html">Forgot Password?</a>
 					</div>
@@ -220,46 +224,5 @@
 			</div>
 		</footer>
 <!--Script section-->
-<script type="text/javascript">
-	//Full page validation - also implement login checks server side
-	function loginvalidation() {
-		if (userValid()&&passwordValid()){
-			return true;
-		} else {
-			alert("form invalid");
-			return false;
-		}
-	}	
-	//returns true if username is valid
-	function userValid(){
-		var username = document.getElementById("username").value,
-			//a-z, 0-9 includes - _ and . 6-10 characters total, after first match, no more
-			validChars = new RegExp(/[a-z0-9]{6,10}(?!.{1,})/),
-			l = username.length;
-		//document.getElementById("usernameErrorField").innerHTML = "you wrote:" + l + username;	
-		if (l < 6 || l > 10) {
-			document.getElementById("usernameErrorField").innerHTML = "Please enter valid username";
-			return false;
-			//another else if if username taken
-		} else if (validChars.test(username)){
-			document.getElementById("usernameErrorField").innerHTML = "Username valid";
-			return true;
-		} else {
-			document.getElementById("usernameErrorField").innerHTML = "Username invalid";
-			return false;
-		}
-	}
-	//password checkbutton, true if length less than 10 and password===cpass
-	function passwordValid() {
-		var pass = document.getElementById("password").value;
-		if (pass.length > 10) {
-			document.getElementById("passErrorField").innerHTML = "Password longer than 10";
-			return false;
-		} else {
-			document.getElementById("passErrorField").innerHTML = "Password OK.";
-			return true;
-		}
-	}
-</script>
 	</body>
 </html>
