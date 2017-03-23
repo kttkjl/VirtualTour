@@ -4,8 +4,10 @@
 			<meta charset="utf-8"/>
 			<link rel="stylesheet" href="css/theme.css">
 			<link rel="stylesheet" href="css/contact.css">
-			<script type="text/javascript" language="javascript" src="css/contact.js"></script>
+			<script type="text/javascript" src="css/contact.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="css/mapWidget.js"></script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEI3ykIDITnjeg0qCAAzYBQzWALRffmGM&callback=initMap"></script>
 			<title>Layout B</title>
 		</head>
 			<body>
@@ -87,22 +89,7 @@
 				</form>
 				</div>
 				<div id="rightColumn">
-					<div id="map" style="width: 326.85px; height: 300px;"></div>
-					<script>
-						function initMap() {
-							var uluru = {lat: 49.2484593, lng: -123.0034012};
-							var map = new google.maps.Map(document.getElementById('map'), {
-								zoom: 15,
-								center: uluru
-							});
-							var marker = new google.maps.Marker({
-								position: uluru,
-								map: map
-							});
-						}
-					</script>
-					<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEI3ykIDITnjeg0qCAAzYBQzWALRffmGM&callback=initMap">
-					</script>
+					<div id="map" onload="iniMap()"></div>
 				</div>
 			</div>
 			</div>
