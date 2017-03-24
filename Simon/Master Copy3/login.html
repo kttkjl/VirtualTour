@@ -47,17 +47,19 @@
 					</div>
 					<br>
 					<div>
-						<form id="loginform" onsubmit="return loginvalidation()">
+						<form id="loginform" onsubmit="return loginvalidation()" action="http://webdevfoundations.net/scripts/formdemo.asp">
 							<div>
 								<label class="required" for="username">Username</label>
 								<input type="text" name="username" id="username" oninput="userValid()">
-							</div>
-							<p id="usernameErrorField">Please input username</p>
+							</div> 
+							<p id="usernameErrorField"></p>
+							<br>
 							<div>
 								<label class="required" for="password">Password</label>
 								<input type="password" name="password" id="password" oninput="passwordValid()">
 							</div>
-							<p id="passErrorField">Please input password</p>
+							<p id="passErrorField"></p>
+							<br>
 							<button name="login" value="login" type="submit">Login</button>
 						</form>
 					</div>
