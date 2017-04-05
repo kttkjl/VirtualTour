@@ -13,14 +13,10 @@ function contact_EmailValidate(id){
 	var contactEmailSpecial2 = new RegExp(/@gmail.com$/);
 	var contactEmailValue = document.getElementById(id).value;
 	if(contactEmailValue == ""){
-		document.getElementById(id).placeholder = "Please enter a valid email";
+		document.getElementById(id).placeholder = "Please enter a valid email (BCIT email or Gmail)";
 		return false;
-	} else if (!contactEmailSpecial1.test(contactEmailValue)){
-		document.getElementById(id).placeholder = "Please enter a valid email";
-		document.getElementById(id).value = "";
-		return false;
-	} else if (!contactEmailSpecial2.test(contactEmailValue)){
-		document.getElementById(id).placeholder = "Please enter a valid email";
+	} else if (!(contactEmailSpecial1.test(contactEmailValue) || contactEmailSpecial2.test(contactEmailValue))){
+		document.getElementById(id).placeholder = "Please enter a valid email (BCIT email or Gmail)";
 		document.getElementById(id).value = "";
 		return false;
 	} else {

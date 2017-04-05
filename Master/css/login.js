@@ -1,38 +1,40 @@
+/*Full page validation - also implement login checks server side*/
 function loginvalidation() {
-	if (userValid()&&passwordValid()){
+	if (emailValid() && passwordValid()){
 		return true;
 	} else {
-		alert("form invalid");
+		alert("Form input invalid");
 		return false;
 	}
 }	
-//returns true if username is valid
-function userValid(){
-	var username = document.getElementById("username").value,
-		//a-z, 0-9 includes - _ and . 6-10 characters total, after first match, no more
-		validChars = new RegExp(/^[a-z0-9]{6,10}(?!.{1,})$/),
-		l = username.length;
-	//document.getElementById("usernameErrorField").innerHTML = "you wrote:" + l + username;	
-	if (l < 6 || l > 10) {
-		document.getElementById("usernameErrorField").innerHTML = "Please enter valid username";
-		return false;
-		//another else if if username taken
-	} else if (validChars.test(username)){
-		document.getElementById("usernameErrorField").innerHTML = "Username valid";
+/*Returns true if email is valid*/
+function emailValid() {
+	var domain = new RegExp(/^[A-z0-9.]{1,}@(?=(my.bcit.ca$|bcit.ca$|gmail.com$))/i); //checks email for single occurrence of @ and valid domain containing only valid characters.
+	var email = document.getElementById("email").value;
+	if (domain.test(email))
+	{
+		/*if (email exists in database) {
+			document.getElementById("email").value = "Email already exists"
+		} else {whatever value to let form submit}*/
+		document.getElementById("emailErrorField").innerHTML = "Email valid"
 		return true;
-	} else {
-		document.getElementById("usernameErrorField").innerHTML = "Username invalid";
+	}
+	else
+	{
+		document.getElementById("emailErrorField").innerHTML = "Email invalid."
 		return false;
 	}
 }
-//password checkbutton, true if length less than 10 and password===cpass
+/*Password checkbutton, true if length less than 10 and password===cpass*/
 function passwordValid() {
 	var pass = document.getElementById("password").value;
 	if (pass.length > 10) {
-		document.getElementById("passErrorField").innerHTML = "";
+		document.getElementById("passErrorField").innerHTML = "Password longer than 10";
 		return false;
+	} else if (pass.length <= 0){
+		document.getElementById("passErrorField").innerHTML = "No password entered";
 	} else {
-		document.getElementById("passErrorField").innerHTML = "";
+		document.getElementById("passErrorField").innerHTML = "Password OK.";
 		return true;
 	}
 }

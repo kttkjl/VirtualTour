@@ -59,7 +59,7 @@
 						<div class="regform">
 							<!---fill in tde action please-->
 							<!---remember to input functions too -->
-							<form name="registration" method ="post" action="http://webdevfoundations.net/scripts/formdemo.asp" id="registration" class="registration" onsubmit="return validateForm()">
+							<form name="registration" method ="post" action="userReg.php" id="registration" class="registration" onsubmit="return validateForm()">
 								<table>
 								<tr>
 									<th></th> <!---for making 4 columns-->
@@ -88,21 +88,10 @@
 								<tr>
 									<td colspan=4 id="emailErrorField"></td>
 								</tr>
-								<tr>
-									<td colspan=3>
-										<label for="loginid" class="required">Login ID (6-10 Characters, letters and numbers only)</label>
-										<input type="text" id="loginid" name="loginid" required>
-									</td>
-									<td>
-										<input type="button" id="logidcheck" name="logidcheck" value="Check" onclick="loginValid()">
-									</td>
-								</tr>
-								<tr>
-									<td colspan=4 id="loginErrorField"></td>
-								</tr>
+
 								<tr>
 									<td colspan=4>
-										<label for="password" class="required">Password (10 or less characters long)</label>
+										<label for="password" class="required">Password (10 characters or less)</label>
 										<input type="password" id="password" name="password" required>
 									<td/>
 								</tr>
@@ -137,7 +126,7 @@
 
 									<div class="flex2"><p id="agreeErrorField"></p></div>
 								</div>
-								<input type="submit" value="Register now">
+								<input type="submit" name="register-btn" value="Register now">
 							</form>
 						</div>
 					</div>

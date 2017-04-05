@@ -1,14 +1,28 @@
+var ERROR_DISPLAY = "Errors in fields: ",
+	ERROR_FIELD = [];
 
 //returns true if whole form is ready
 function validateForm() {
-	if (userValid()&&emailValid()&&loginValid()&&passwordValid()&&agreeValid()){
+	ERROR_FIELD = [];
+	if (!userValid()){
+		ERROR_FIELD.push("Username");
+	}
+	if (!emailValid()){
+		ERROR_FIELD.push("Email");
+	}
+	if (!passwordValid()){
+		ERROR_FIELD.push("Password");
+	}
+	if (!agreeValid()){
+		ERROR_FIELD.push("TOS Agreement");
+	}
+	if(userValid() && emailValid() && passwordValid() && agreeValid()){
 		return true;
 	} else {
-		alert("form invalid");
+		alert(ERROR_DISPLAY + ERROR_FIELD);
 		return false;
 	}
 }
-
 //returns true if username is valid
 function userValid(){
 	var username = document.getElementById("username").value,
@@ -16,28 +30,27 @@ function userValid(){
 		validChars = new RegExp(/^[a-z0-9]{6,10}(?!.{1,})$/),
 		l = username.length;
 	//document.getElementById("usernameErrorField").innerHTML = "you wrote:" + l + username;	
-	if (l < 6 || l > 10) {
-		document.getElementById("usernameErrorField").innerHTML = "Please enter valid username";
+	if (l < 6 ) {
+		document.getElementById("usernameErrorField").innerHTML = "Username less than 6 chars";
 		return false;
 		//another else if if username taken
-	} else if (validChars.test(username)){
+	} else if (l > 10){
+		document.getElementById("usernameErrorField").innerHTML = "Username more than 10 chars";
+		return false;
+	} else if (!validChars.test(username)){
+		document.getElementById("usernameErrorField").innerHTML = "Username contains illegal characters";
+		return false;
+	} else {
 		document.getElementById("usernameErrorField").innerHTML = "Username valid";
 		return true;
-	} else {
-		document.getElementById("usernameErrorField").innerHTML = "Username invalid";
-		return false;
 	}
 }
 
 //if email isn't BCIT domain or gmail
 function emailValid() {
-	var allowedpattern = new RegExp(/^[A-z0-9.]{1,}(?=@)/i);	//before the @
-	var domain1 = new RegExp(/@my.bcit.ca(?!.{1,})/);
-	var domain2 = new RegExp(/@bcit.ca(?!.{1,})/);
-	var domain3 = new RegExp(/@gmail.com(?!.{1,})/);
+	var domain = new RegExp(/^[A-z0-9.]{1,}@(?=(my.bcit.ca$|bcit.ca$|gmail.com$))/i); //checks email for single occurrence of @ and valid domain containing only valid characters.
 	var email = document.getElementById("email").value;
-	if (allowedpattern.test(email)&&(domain1.test(email)
-		||domain2.test(email)||domain3.test(email)))
+	if (domain.test(email))
 	{
 		/*if (email exists in database) {
 			document.getElementById("email").value = "Email already exists"
@@ -47,36 +60,20 @@ function emailValid() {
 	}
 	else
 	{
-		document.getElementById("emailErrorField").innerHTML = "Email invalid."
+		document.getElementById("emailErrorField").innerHTML = "Email not accepted"
 		return false;
 	}
-}
-
-function loginValid() {
-	var loginname= document.getElementById("loginid").value,
-		//a-z, A-Z, 0-9 :: 6-10 characters total, after first match, no more
-		validChars = new RegExp(/^[a-zA-Z0-9]{6,10}(?!.{1,})$/),
-		l = loginname.length;
-	if (l < 6 || l > 10) {
-		document.getElementById("loginErrorField").innerHTML = "Please enter valid loginID";
-		return false;
-		//another if for if loginID already exists
-	} else if (validChars.test(loginname)){
-		document.getElementById("loginErrorField").innerHTML = "Login name valid";
-		return true;
-	} else {
-		document.getElementById("loginErrorField").innerHTML = "Login name invalid";
-		return false;
-	}			
 }
 
 //password checkbutton, true if length less than 10 and password===cpass
 function passwordValid() {
 	var pass = document.getElementById("password").value,
 		confirmpass = document.getElementById("cpassword").value;
-	if (pass.length > 10 && pass.length <= 0) {
+	if (pass.length > 10) {
 		document.getElementById("cpassErrorField").innerHTML = "Password longer than 10";
 		return false;
+	} else if (!(pass.length > 0 && pass.length <= 10)){
+		document.getElementById("cpassErrorField").innerHTML = "Please Enter a password";
 	} else if (pass === confirmpass) {
 		document.getElementById("cpassErrorField").innerHTML = "Password OK.";
 		return true;
@@ -88,7 +85,7 @@ function passwordValid() {
 
 function agreeValid() {
 	if (!consentYes.checked){
-		document.getElementById("agreeErrorField").innerHTML = "Please agree to TOS";
+		document.getElementById("agreeErrorField").innerHTML = '<span style="color:red">Please agree to TOS</span>';
 		return false;
 	} else {
 		document.getElementById("agreeErrorField").innerHTML = "";
