@@ -4,8 +4,8 @@
 			<meta charset="utf-8"/>
 			<link rel="stylesheet" href="css/theme.css">
 			<link rel="stylesheet" href="css/login.css">
-			<script src="css/login.js"></script>
-			<title>Login</title>
+			<script type="text/javascript" src="css/login.js"></script>
+			<title>Layout B</title>
 		</head>
 		<body>
 			<nav>
@@ -47,23 +47,22 @@
 					</div>
 					<br>
 					<div>
-						<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp" id="loginform" onsubmit="return loginvalidation()">
+						<form id="loginform" onsubmit="return loginvalidation()" action="userLogin.php">
 							<div>
-								<label class="required" for="username">Username</label>
-								<input name="username" id="username" oninput="userValid()" required>
-							</div>
-							<p id="usernameErrorField"></p>
+								<label class="required" for="UserOrEmail">Username/E-mail</label>
+								<input type="text" name="UserOrEmail" id="email" oninput="emailValid()">
+							</div> 
+							<p id="emailErrorField"></p>
 							<br>
 							<div>
 								<label class="required" for="password">Password</label>
-								<input type="password" name="password" id="password" oninput="passwordValid()" required>
+								<input type="password" name="password" id="password" oninput="passwordValid()">
 							</div>
 							<p id="passErrorField"></p>
 							<br>
 							<button name="login" value="login" type="submit">Login</button>
 						</form>
 					</div>
-					<br>
 					<div>
 						<a href= "/forgot.html">Forgot Password?</a>
 					</div>
@@ -223,6 +222,5 @@
 				</div>
 			</div>
 		</footer>
-<!--Script section-->
 	</body>
 </html>

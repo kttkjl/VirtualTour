@@ -113,3 +113,6 @@
 .registration>div>div.flex1 input, .registration>div>div.flex2 input {
 	width:initial;
 }
+#usernameErrorField, #emailErrorField, #passwordErrorField{
+	color: red;
+}
