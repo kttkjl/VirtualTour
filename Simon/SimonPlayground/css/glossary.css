@@ -1,0 +1,65 @@
+
+/* Set the main font as well as get rid of any margins on the side. --> */
+main {
+	font-family: Candara, Verdana, sans-serif;
+    margin-right: 0px;
+    margin-left: 0px;
+=	}
+
+/* A class specifying the title of each page,  in this case for the glossary. Indented. */
+.page_title {
+	padding-top: 30px;
+	font-weight: normal;
+	padding-left: 4%;
+	font-size: 2.3em;
+}
+
+#gloss li {
+	background-color: #263458;
+}
+
+/* Width of the div box that contains the table */
+.glossary_box {
+	margin: auto;
+	padding-top: 20px;
+	width: 100%;
+}
+
+/* When a description is made, it will replace the text here */
+.glossary_desc{
+	font-size: .95em;
+	padding-left: 4%;
+	padding-top: 1%;
+}
+
+/* class for the table.*/
+.glossary_table {
+	width: 90%;
+	margin: auto;
+}
+
+/* Makes it so every odd table row has a blue background.*/
+main tr:nth-of-type(odd) {
+	background-color: #909EC0;
+}
+
+main tr:nth-of-type(even) {
+	background-color: #BFC8DE;
+}
+
+/* The name of every definition in the table. */
+.glossary_title {
+	padding-top: 10px;
+	font-weight: bold;
+	float: left;
+	font-size: 1em;
+	width: 30%;
+}
+
+/* The definition of each term. */
+.list_desc {
+	font-size: 1em;
+	padding: 10px 10px;
+	float: right;
+	width: 60%;
+	}
