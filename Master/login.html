@@ -47,12 +47,12 @@
 					</div>
 					<br>
 					<div>
-						<form id="loginform" onsubmit="return loginvalidation()" action="userLogin.php">
+						<form id="loginform" method="post" onsubmit="return loginvalidation()" action="userLogin.php">
 							<div>
 								<label class="required" for="UserOrEmail">Username/E-mail</label>
-								<input type="text" name="UserOrEmail" id="email" oninput="emailValid()">
+								<input type="text" name="UserOrEmail" id="UserOrEmail" oninput="userOrEmailValid()">
 							</div> 
-							<p id="emailErrorField"></p>
+							<p id="UserOrEmailErrorField"></p>
 							<br>
 							<div>
 								<label class="required" for="password">Password</label>

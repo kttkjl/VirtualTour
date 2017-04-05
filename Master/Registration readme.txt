@@ -1,17 +1,3 @@
-SIMON
-See website uploaded:
-https://comp-1536-lab-1.000webhostapp.com/comp1536Project/Master/registration.html
-
-To access the database:
-http://www.phpmyadmin.co/
-server: sql3.freemysqlhosting.net
-username: sql3167116
-password: PRUvzPi6Qr
-
-This is for the registration page. I'm not sure why uploading to bcit's server restricts my access to external MySQL database.
-Try it out and see the database update!
---------------------------------------------------------------------------------------------------------------------------------
-JACKY
 See this guy 
 http://www.codingcage.com/2015/04/php-login-and-registration-script-with.html
 

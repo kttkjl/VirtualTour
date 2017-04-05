@@ -15,7 +15,7 @@
 	color:orange;
 }
 /*input fields for login*/
-#email, #password {
+#UserOrEmail, #password {
 	width:50%;
 }
 

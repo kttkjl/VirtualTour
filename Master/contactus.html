@@ -4,7 +4,10 @@
 			<meta charset="utf-8"/>
 			<link rel="stylesheet" href="css/theme.css">
 			<link rel="stylesheet" href="css/contact.css">
-			<script type="text/javascript" language="javascript" src="css/contact.js"></script>
+			<script type="text/javascript" src="css/contact.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="css/mapWidget.js"></script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEI3ykIDITnjeg0qCAAzYBQzWALRffmGM&callback=initMap"></script>
 			<title>Layout B</title>
 		</head>
 			<body>
@@ -42,7 +45,8 @@
 			<div class="Body_Area">
 			<h2> Contact Us </h2>
 			<p> This is the contact us page. You can reach us here. (more to come)</p>
-				
+			<div class="secondBody">
+				<div id="leftColumn">
 				<form action="http://webdevbasics.net/scripts/demo.php" id="contact_us" onsubmit="return contact_Validate()">
 					<table class="contact_table">
 						<tr>
@@ -82,7 +86,12 @@
 						</td>	
 					</tr>
 					</table>
-				</form>	
+				</form>
+				</div>
+				<div id="rightColumn">
+					<div id="map" onload="iniMap()"></div>
+				</div>
+			</div>
 			</div>
 		</div>  <!--End of mainContent-->
 		</main>

@@ -1,6 +1,6 @@
 <?php
 
-require_once('PDO_conn');
+require_once('PDO_conn.php');
 
 class USER
 {	
@@ -30,9 +30,9 @@ class USER
 		catch(PDOException $e)
 		{
 			echo $e->getMessage();
-		}				
+		}
 	}
-	
+
 	//Returns true or false if username/email is in DB, then check password
 	public function doLogin($uname,$umail,$upass)
 	{

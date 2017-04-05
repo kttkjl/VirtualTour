@@ -3,7 +3,7 @@
 require_once('PDO_conn.php');
 
 if($user->is_loggedin()!=""){
-	$user->redirect('index.html');
+	$user->redirect('index.html')
 }
 //renamed
 if(isset($_POST['register-btn']))
@@ -35,7 +35,7 @@ if(isset($_POST['register-btn']))
 			} else {
 				if ($user->register($FormUsername, $FormEmail, $FormPassword)) 
 				{
-					$user->redirect('login.html');
+					$user->redirect('sign-up.php?joined');
 				}
 			}
 		}
