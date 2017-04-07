@@ -6,6 +6,8 @@ class USER
 {	
 
 	private $conn;
+	private $myId;
+	private $loggedIn;
 	
 	public function __construct($DB_conn)
 	{
@@ -40,7 +42,7 @@ class USER
 		{
 			//Fetches everything on users table
 			$stmt = $this->conn->prepare(
-				"SELECT id, username, user_email, user_pass 
+				"SELECT username, user_email, user_pass 
 				FROM users 
 				WHERE username=:uname OR user_email=:umail"
 				);
@@ -59,12 +61,16 @@ class USER
 				if(password_verify($upass, $userRow['user_pass']))
 				{
 					//sets the $_SESSION array at 'user_session' as id grabbed from DB table users
-					$_SESSION['user_session'] = $userRow['id'];
+					$this->myId = $userRow['id'];
+					//$_SESSION['user_session'] = $userRow['id'];
+					$_SESSION['user_session'] = "in";
+					$this->loggedIn = true;
 					return true;
 					//Assigns the session number as the user_id (when user registered onto DB)
 				}
 				else
 				{
+					$this->loggedIn = false;
 					return false;
 				}
 			}
@@ -78,9 +84,24 @@ class USER
 	public function is_loggedin()
 	{
 		//isset() just determines if a var isn't null - 'user_session' is key, check if NULL
-		if(isset($_SESSION['user_session']))
+		/*if(isset($_SESSION['user_session']))
 		{
 			return true;
+		}*/
+		/*if($this->loggedIn) {
+			if($_SESSION['user_session'] == $this->myId)
+			{
+				return true;
+			} else {
+				return false;
+			}
+		} else {
+			return false;
+		}*/
+		if(empty($_SESSION['user_session'])){
+			return false;
+		} else {
+			return($_SESSION['user_session'] == "in");
 		}
 	}
 	
@@ -92,8 +113,10 @@ class USER
 	
 	public function doLogout()
 	{
-		session_destroy();
+		//$_SESSION['user_session'] = "";
+		$loggedIn = false;
 		unset($_SESSION['user_session']);
+		session_write_close();
 		return true;
 	}
 } //end of user class

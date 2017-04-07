@@ -4,8 +4,8 @@
 //define ('__ROOT__', dirname(dirname(__FILE__)));
 require_once('PDO_conn.php');
 
-if($user->is_loggedin()!=""){
-	$user->redirect('index.html');
+if($user->is_loggedin()){
+	$user->redirect('glossary.php');
 }
 
 //if name='login' on login.html is set (not NULL)
