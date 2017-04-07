@@ -1,0 +1,39 @@
+
+
+/* Sets the placement and colors of the input boxes */
+.content {
+	padding: 5% 0 5% 0;
+	margin: auto;
+	width:100%;
+	height: 100%;
+	background-color: #EFF0F1;
+	text-align:center;
+	font-size: 0.90em;
+}
+/*page specific anchor colors*/
+.content a, .content a:visited{
+	color:orange;
+}
+/*input fields for login*/
+#UserOrEmail, #password {
+	width:50%;
+}
+
+/* sets size of user image relatively. */
+#userimage img{
+	width: 50%;
+	height: auto;
+}
+
+/* sets margins for disclaimer. */
+.disclaimer{
+	margin: 0 5% 0 5%;
+}
+
+/* configures required symbol and color. */
+.required::after{
+	content: "*";
+	color: red;
+}
+
+
