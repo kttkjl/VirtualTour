@@ -30,6 +30,16 @@ nav {
 	background-color: #922B21;
 }
 
+.signOut {
+	visibility: hidden;
+	width: 0;
+}
+
+.signIn {
+	visibility: hidden;
+	width: 0;
+}
+
 nav h1 {
 	font-weight: normal;
 	font-size: 1.8em;
