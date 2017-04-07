@@ -1,0 +1,296 @@
+<?php
+require_once('PDO_conn.php');
+
+/*if($user->is_loggedin()){
+	$haveSignedIn = true;
+} else {
+	$haveSignedIn = false;
+}*/
+$haveSignedIn = $user->is_loggedin();
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/registration.css">
+		<script src="css/registration.js"></script>
+		<title>Registration</title>
+	</head>
+	<body> <!--beginning of body-->
+		<nav>
+					<h1><a href="index.html">Virtual Tour</a></h1>
+					<ul>
+						<div id="acc"><li><a href="account.html">My Account</a></li></div>
+						<div id="conus"><li><a href="contactus.html">Contact Us</a></li></div>
+						<div id="gloss"><li><a href="glossary.html">Glossary</a></li></div>
+						<div id="abuild"><li class="dropdown"><a href="allbuild.html" class="dropbtn">Buildings</a>
+						<div class="dropdown-content"> <!--Div for the part that actually drops down. -->
+							<a href="eachbuild.html">Link 1 </a>
+							<a href="eachbuild.html">Link 2 </a>
+							<a href="eachbuild.html">Link 3 </a>
+							<a href="eachbuild.html">Link 4 </a>
+							<a href="eachbuild.html">Link 5 </a>
+						</div> <!-- End of Div "dropdown-content"-->
+						</li></div>
+						<div id="hom"><li><a href="index.html">Home</a></li></div>
+					</ul>
+				</nav>
+		<main>
+			<div id ="bannerPic"> <!--Div for the banner image.-->
+			<img src="images/panorama1.jpg" alt="British Columbia" width="1752" height="300" id="bannerBG">
+			</div> <!-- end of bannerPic div-->
+			<div class="userControl"> <!-- Div for the second nav bar (the one with user controls -->
+			<h2>Logged in as : Group A</h2>
+			<ul>
+				<li> <a href="account.html">User controls</a></li>
+				<li> <a href="login.html">Sign in</a></li>
+				<li> <a href="registration.html">Register</a></li>
+			</ul>
+			</div> <!--End of userControl -->
+			<div id="mainContent">  <!-- Insert your part of the website here. -->
+			<div class="actualContent"> <!--Helps contain individual members' page -->
+				<div id="wrapper">
+				<div class="content">
+					<!---left column in reg page-->
+					<div class="leftcol">
+						<div class="sitelogo">
+							<img src="./images/logo.png" alt="site logo"></div>
+						<br>
+						<div class="servicedesc">
+							<h2>Brief Service Description</h2><br>
+							<p>Id mei illum corpora singulis, dolores torquatos interpretaris cum ei. Nam no erat scripta consulatu, pro ignota consectetuer ad. Amet illum maiorum sea ex, duo assum eruditi ex. Omnesque vituperata reformidans at vel, porro solet principes ut qui.</p>
+							<p>Id mei illum corpora singulis, dolores torquatos interpretaris cum ei. Nam no erat scripta consulatu, pro ignota consectetuer ad. Amet illum maiorum sea ex, duo assum eruditi ex. Omnesque vituperata reformidans at vel, porro solet principes ut qui.</p>
+							</div>
+					</div>
+					
+					<!---right column in reg page-->
+					<div class="rightcol">
+						<div class="regform">
+							<!---fill in tde action please-->
+							<!---remember to input functions too -->
+							<form name="registration" method ="post" action="userReg.php" id="registration" class="registration" onsubmit="return validateForm()">
+								<table>
+								<tr>
+									<th></th> <!---for making 4 columns-->
+									<th></th>
+									<th></th>
+									<th></th>
+								</tr>
+								<tr>
+									<td colspan=4>
+										<label for="username" class="required">Username (6-10 Characters, lowercase and numbers only)</label>
+										<input type="text" id="username" name="username" oninput="userValid()" required>
+									</td>
+								</tr>
+								<tr>
+									<td colspan=4 id="usernameErrorField"></td>
+								</tr>
+								<tr>
+									<td colspan=3>
+										<label for="email" class="required">E-mail (BCIT domain and gmail only.)</label>
+										<input type="text" id="email" name="email" value="" required>
+									</td>
+									<td>
+										<input type="button" id="emailcheck" name="emailcheck" value="Check" onclick="emailValid()">
+									</td>
+								</tr>
+								<tr>
+									<td colspan=4 id="emailErrorField"></td>
+								</tr>
+
+								<tr>
+									<td colspan=4>
+										<label for="password" class="required">Password (10 characters or less)</label>
+										<input type="password" id="password" name="password" required>
+									<td/>
+								</tr>
+								<tr>
+									<td colspan=3>
+										<label for="cpassword">Confirm Password</label>
+										<input type="password" id="cpassword" name="cpassword" required>
+									</td>
+									<td>
+										<input type="button" id="passcheck" name="passcheck" value="Check" onclick="passwordValid()">
+									</td>
+								</tr>
+								<tr>
+									<td colspan=4 id="cpassErrorField"></td>
+								</tr>
+								</table>
+								<div class="disclaimtext">
+									<h2> Disclaimer Header </h2>
+									<p> Disclaimer text etc....Id mei illum corpora singulis, dolores torquatos interpretaris cum ei. Nam no erat scripta consulatu, pro ignota consectetuer ad. Amet illum maiorum sea ex, duo assum eruditi ex. Omnesque vituperata reformidans at vel, porro solet principes ut qui. 
+									</p>
+									<br>
+									<h2> TOS and shit </h2>
+									<p> Disclaimer text etc....Id mei illum corpora singulis, dolores torquatos interpretaris cum ei. Nam no erat scripta consulatu, pro ignota consectetuer ad. Amet illum maiorum sea ex, duo assum eruditi ex. Omnesque vituperata reformidans at vel, porro solet principes ut qui. 
+									</p>
+								</div>	
+								<br>
+								<label for="consent" class="required">Do you agree to the TOS?</label>
+								<div>
+									<div class="flex1"><input type="radio" id ="consentYes" name="consent" value="Yes" required><br><label for="consentYes">Yes</label></div>
+									
+									<div class="flex1"><input type="radio" id ="consentNo" name="consent" value="No" required><br><label for="consentNo">No</label></div>
+
+									<div class="flex2"><p id="agreeErrorField"></p></div>
+								</div>
+								<input type="submit" name="register-btn" value="Register now">
+							</form>
+						</div>
+					</div>
+				</div>
+				</div>
+				
+
+			</div> <!--End of actualContent-->
+			</div>  <!--End of mainContent-->
+		</main>
+	
+		<footer> <!--footer shenanigans here-->
+			<div class="footer_wrapper">
+				<div class="footer_table">
+					<table class="table_outer">
+						<tr> 
+							<th> NE
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+							<th> NW
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+							<th> SE
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+							<th> SW
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+							<th> Others
+								<table class="table_col">
+									<tr>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+									<tr><td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td>
+										<td><a href ="index.html">blah</a></td></tr>
+								</table>
+							</th>
+						</tr>
+					</table>
+					<p class="footer_copy"> COPYRIGHT AND CONTACT US. || 2017</p>
+					<h2 class="footer_media"> FB twitter </h2>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
