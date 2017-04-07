@@ -295,3 +295,15 @@ $haveSignedIn = $user->is_loggedin();
 		</footer>
 	</body>
 </html>
+
+<script>
+	var php_var = "<?php echo $haveSignedIn; ?>";
+	if(php_var){
+		document.getElementById("In").className = "signIn";
+		document.getElementById("Out").className = "";
+	} else {
+		alert("not signed in");
+		document.getElementById("In").className = "";
+		document.getElementById("Out").className = "signOut";
+	}
+</script>
