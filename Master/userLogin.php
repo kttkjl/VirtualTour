@@ -20,7 +20,7 @@ if(isset($_POST['login']))
 	if($user->doLogin($FormUsername, $FormEmail, $FormPassword))
 	{
 		//IDK REDIRECT IT SOMEHWER ELSE?! - how 2 redirect to loggedin index plshalp
-		$user->redirect('index.html');
+		$user->redirect('index.php');
 	} 
 	else 
 	{
