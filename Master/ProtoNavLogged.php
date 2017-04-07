@@ -25,16 +25,17 @@
 	</div> <!-- end of bannerPic div-->
 	<div class="userControl userControlColor"> <!-- Div for the second nav bar (the one with user controls -->
 	<?php
-		$navdisplayuser = "Haruna"; //For now anyway
-		// $navdisplayuser = $_SESSION['username'];
-		// if(isset($_SESSION['username']))
-		if(!true) //replace this line with line 30 once setup
+		require_once('PDO_conn.php');
+	
+		$navdisplayuser = $_SESSION['username'];
+		if(isset($_SESSION['username']))
+		//if(true) //replace this line with line 30 once setup
 		{
 			echo 
 			'<h2>Logged in as : '.$navdisplayuser.'</h2>'
 			.'<ul>
 			<li><a href="account.php">User controls</a></li>
-			<li><a href="Logout.php">Logout</a></li>
+			<li><a href="startRun.php">Logout</a></li>
 			';
 		} else {
 			echo '
