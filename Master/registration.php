@@ -46,7 +46,8 @@ $haveSignedIn = $user->is_loggedin();
 			<h2>Logged in as : Group A</h2>
 			<ul>
 				<li> <a href="account.html">User controls</a></li>
-				<li> <a href="login.html">Sign in</a></li>
+				<li id="In" class=""><a href="login.html">Sign in</a></li>
+				<li id="Out" class="signOut"><a href="startRun.php">Sign out</a></li>
 				<li> <a href="registration.html">Register</a></li>
 			</ul>
 			</div> <!--End of userControl -->
