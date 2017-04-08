@@ -10,12 +10,16 @@
 
 /* Sets the blue bg image, general font color and style. */
 body {
-	background-color: #1E1E62;
-	background-image: url(../images/background3.jpg);
+	background: #0B152E; /* For browsers that don't support gradients */
+    background: -webkit-radial-gradient(#3A4B61, #061528, #061528);
+    background: -o-radial-gradient(#3A4B61, #061528, #061528);
+    background: -moz-radial-gradient(#3A4B61, #061528, #061528);
+    background: radial-gradientv(#3A4B61, #061528, #061528);
+		/*background-image: url(../images/background3.jpg);*/
 	color: #DCDDDE;
 	font-family: Candara, Calibri, sans-serif;
 }
-
+/* CSS for screens 890px and up */
 /* CSS for navigation bar content. */
 nav {
 	height: 4.3em;
@@ -23,21 +27,11 @@ nav {
 	position: fixed;
 	width: 100%;
 	z-index: 20;
+
 }
 
-/* CSS for navigation bar color. */
 .navColor {
 	background-color: #922B21;
-}
-
-.signOut {
-	visibility: hidden;
-	width: 0;
-}
-
-.signIn {
-	visibility: hidden;
-	width: 0;
 }
 
 nav h1 {
@@ -47,12 +41,12 @@ nav h1 {
 	padding: 0.8em 0.5em 0 0.9em;
 }
 
-nav ul {
+nav #main-nav-list {
 	list-style-type: none;
 	font-size: 1.1em;
 }
 
-nav li {
+nav .main-list-link {
 	float: right;
 	padding: 1em 1.5em 0.43em 1.5em;
 	margin: 1em 0.5em 0 0.5em;
@@ -63,15 +57,15 @@ h1 a {
 
 h1 a:link {
 	text-decoration: none;
-	color: DCDDDE;
+	color: #DCDDDE;
 }
 
 h1 a:visited {
-	color: DCDDDE;
+	color: #DCDDDE;
 }
 
-h1 a:hover {
-	color:#E97A25;	
+nav h1 a:hover {
+	color:#DCDDDE;	
 }
 
 li a {
@@ -120,7 +114,8 @@ nav li:hover, .dropdown:hover .dropbtn {
 	min-width: 800px;
 	left: -340px;
 	top: 101%;
-	min-height: 335px;
+	min-height: 320px;
+	height: 330px;
 	z-index: 9;
 }
 
@@ -133,17 +128,61 @@ nav li:hover, .dropdown:hover .dropbtn {
 	}
 
 .dropdown-content a:hover {
-	color: #E97A25;
-	background-color: rgba(61, 75, 112, 0.7);
+	text-decoration: underline;
 }
 
 .dropdown:hover .dropdown-content {
 	display: block;
 	}
 
-/* Customizes the banner image. */
-#bannerBG {
+/* Dropdown bar table*/
+#navcontainer {
+	height: 335px;
+	width: 800px;
+}
+
+#navtable {
+	width: 800px;
+	padding: 5% 0% 0% 9%;
+}
+
+#navtable tr.navtablerow {
+	width: 200px;
+}
+
+#navtable td.navtableheading {
+	width: 200px;
+	font-size: 1.1em;
+	text-decoration: underline;
+
+}
+
+#navtable td.navtabledata {
+	width: 200px;
+	font-size: 1.0em;
+	padding-bottom: 4px;
+}
+
+#navtable td.navtabledata a {
+	width: initial;
+	display: inline;
+}
+
+#navtable td.navtablebottom {
+	font-size: 0.9em;
+	padding-top: 7%;
 	width: 100%;
+}
+
+#navtable td.navtablebottom a {
+	width: initial;
+	display: inline;
+	text-decoration: underline;
+}
+
+	/* Customizes the banner image. */
+#bannerBG {
+	width: 100%; 
 	height: 100%;
 	overflow: hidden;
 }
@@ -158,6 +197,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 .userControl {
 	background-color: #B03A2E;
 	height: 2em;
+	overflow: hidden;
 }
 
 /* CSS for navigation bar color. */
@@ -169,7 +209,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 	font-weight: normal;
 	font-size: 0.85em;
 	float: left;
-	padding: 0.7em 0 0.2em 2em;
+	padding: 0.55em 0 0.3em 2em;
 }
 
 .userControl ul {
@@ -179,7 +219,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 .userControl li {
 	float: right;
 	font-size: 0.85em;
-	padding: 0.7em 1.5em 0.2em 0em;
+	padding: 0.55em 1.5em 0.3em 0em;
 }
 
 /*CSS for mainContent - width, height, padding, etc. */
@@ -187,7 +227,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 #mainContent {
 	background-color: #DCDDDE;
 	color: black;
-	width: 80%;
+	width: 90%;
 	margin: 5em auto 5em auto;
 	height: auto;
 	padding: 3em 3em 3em 3em;
@@ -242,3 +282,57 @@ table.table_col a, a:visited{
 	text-align:center;
 	text-decoration: none;
 }
+
+/*below are media queries for smaller screens.*/
+@media screen and (max-width: 890px) {
+	#.table_outer {
+		visibility: hidden;
+	}
+	
+	#home {
+		visibility: hidden;
+	}
+	
+	.dropdown-content {
+		visibility: hidden;
+	}
+	
+	nav #main-nav-list {
+		font-size: 0.9em;
+	}
+	
+	nav .main-list-link {
+		padding: 0.3em 0.1em 0.2em 0.2em;
+		
+	}
+
+	#bannerPic {
+	width: 100%;
+	height: 225px;
+}
+
+	nav {
+		height: 3.3em;
+		overflow-y: auto;
+	}
+	
+	nav h1 {
+	font-weight: normal;
+	font-size: 1.5em;
+	float: left;
+	padding: 0.5em 0.1em 0 0.4em;
+	}
+	
+	.userControl {
+		height: 1.5em;
+	}
+	
+	.userControl h2 {
+	font-size: 0.78em;
+	padding: 0.3em 0 0.3em 0.6em;
+	}
+	
+	.userControl li {
+	font-size: 0.78em;
+	padding: 0.3em 1.5em 0.3em 0em;
+	}
