@@ -1,0 +1,3 @@
+- removed background image and replaced with gradient
+- added media query to shrink down the navigation bar
+-maybe add a side nav bar? 
