@@ -7,17 +7,26 @@
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
+html {
+	background-color:black;
+}
 
 /* Sets the blue bg image, general font color and style. */
 body {
+	font-family: Candara, Calibri, sans-serif;
+	background-color:black;
+}
+
+main {
 	background: #0B152E; /* For browsers that don't support gradients */
     background: -webkit-radial-gradient(#3A4B61, #061528, #061528);
     background: -o-radial-gradient(#3A4B61, #061528, #061528);
     background: -moz-radial-gradient(#3A4B61, #061528, #061528);
     background: radial-gradientv(#3A4B61, #061528, #061528);
-		/*background-image: url(../images/background3.jpg);*/
 	color: #DCDDDE;
-	font-family: Candara, Calibri, sans-serif;
+	max-width: 1350px;
+	margin: auto;
+	
 }
 /* CSS for screens 890px and up */
 /* CSS for navigation bar content. */
@@ -32,6 +41,16 @@ nav {
 
 .navColor {
 	background-color: #922B21;
+}
+
+.signOut {
+	visibility: hidden;
+	width: 0;
+}
+
+.signIn {
+	visibility: hidden;
+	width: 0;
 }
 
 nav h1 {
@@ -228,7 +247,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 	background-color: #DCDDDE;
 	color: black;
 	width: 90%;
-	margin: 5em auto 5em auto;
+	margin: 5em auto 2em auto;
 	height: auto;
 	padding: 3em 3em 3em 3em;
 	
@@ -236,6 +255,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 /*this is inside mainContent*/
 .actualContent {
 	height: auto;
+	margin-bottom: 5em;
 }
 
 /*CSS for the footer.*/
