@@ -62,8 +62,10 @@ class USER
 				{
 					//sets the $_SESSION array at 'user_session' as id grabbed from DB table users
 					$this->myId = $userRow['id'];
-					$_SESSION['username'] = $userRow['username'];
+					//$_SESSION['user_session'] = $userRow['id'];
 					$_SESSION['user_session'] = "in";
+					$_SESSION['username'] = $userRow['username'];
+					$_SESSION['userid'] = $userRow['id'];
 					$this->loggedIn = true;
 					return true;
 					//Assigns the session number as the user_id (when user registered onto DB)
@@ -118,6 +120,11 @@ class USER
 		unset($_SESSION['user_session']);
 		session_write_close();
 		return true;
+	}
+	
+	public function postComment()
+	{
+		
 	}
 } //end of user class
 ?>
