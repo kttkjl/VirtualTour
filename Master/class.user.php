@@ -62,7 +62,7 @@ class USER
 				{
 					//sets the $_SESSION array at 'user_session' as id grabbed from DB table users
 					$this->myId = $userRow['id'];
-					//$_SESSION['user_session'] = $userRow['id'];
+					$_SESSION['username'] = $userRow['username'];
 					$_SESSION['user_session'] = "in";
 					$this->loggedIn = true;
 					return true;
