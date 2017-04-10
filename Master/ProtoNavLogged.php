@@ -5,7 +5,6 @@
 					<h1><a href="index.php">Virtual Tour</a></h1>
 					<div id="navbarBox">
 					<ul id="main-nav-list">
-						<div id="acc"><li class="main-list-link"><a href="account.php">My Account</a></li></div>
 						<div id="conus"><li class="main-list-link"><a href="contactus.php">Contact Us</a></li></div>
 						<div id="gloss"><li class="main-list-link"><a href="glossary.php">Glossary</a></li></div>
 						<div id="abuild"><li class="dropdown main-list-link"><a href="allbuild.php" class="dropbtn">Buildings</a>

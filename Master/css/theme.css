@@ -191,6 +191,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 	font-size: 0.9em;
 	padding-top: 7%;
 	width: 100%;
+	color: white;
 }
 
 #navtable td.navtablebottom a {
