@@ -7,7 +7,7 @@
 			<link rel="stylesheet" href="css/theme.css" media="screen">
 			<link rel="stylesheet" href="css/theme.css" media="print">
 			<script src="css/slide.js"></script>
-			<title>Layout B</title>
+			<title>Virtual Tour - Home</title>
 		</head>
 			<body>
 					<div id="theEntireNav">
@@ -15,7 +15,6 @@
 					<h1><a href="index.php">Virtual Tour</a></h1>
 					<div id="navbarBox">
 					<ul id="main-nav-list">
-						<div id="acc"><li class="main-list-link"><a href="login.php">Login</a></li></div>
 						<div id="conus"><li class="main-list-link"><a href="contactus.php">Contact Us</a></li></div>
 						<div id="gloss"><li class="main-list-link"><a href="glossary.php">Glossary</a></li></div>
 						<div id="abuild"><li class="dropdown main-list-link"><a href="allbuild.php" class="dropbtn">Buildings</a>
@@ -71,22 +70,46 @@
 					</div>
 				</nav>
 				</div>
-		<main>
+		<div class="userControl"> <!-- Div for the second nav bar (the one with user controls -->
+	<?php
+        require_once('PDO_conn.php');
+
+
+        if(isset($_SESSION['username']))
+        {
+            echo 
+            '<h2>Logged in as : '.$_SESSION['username'].'</h2>'
+            .'<ul>
+            <li><a href="account.php">User controls</a></li>
+            <li><a href="startRun.php">Logout</a></li>
+            ';
+        } else {
+            echo '
+            <h2>Currently Not logged in </h2>
+            <ul>
+            <li><a href="login.php">Sign in</a></li>
+            <li><a href="registration.php">Register</a></li>
+            ';
+        }
+    ?>
+		</ul>
+	</div> <!--End of userControl -->
+	<main>
 			<div class="slideshow-container">
 				<div class="mySlides fade">
-					<img src="images/welcome.jpg" style="width:100%">
+					<img src="images/welcome.jpg" title="Welcome to Virtual Tour!" style="width:100%">
 				</div>
 
 			<div class="mySlides fade">
-				<a href="allbuild.php"><img src="images/share.jpg" style="width:100%"></a>
+				<a href="allbuild.php"><img src="images/share.jpg" title = "Please share your photos by e-mailing us." style="width:100%"></a>
 			</div>
 
 			<div class="mySlides fade">
-				<a href="contactus.php"><img src="images/shortcut.jpg" style="width:100%"></a>
+				<a href="contactus.php"><img src="images/shortcut.jpg" title = "Contact us and tell us about any shortcuts you know." style="width:100%"></a>
 			</div>
 			
 			<div class="mySlides fade">
-				<img src="images/points.jpg" style="width:100%">
+				<img src="images/points.jpg" title="Your contributions will earn you points." style="width:100%">
 			</div>
 			</div>
 			<div style="text-align:center">
