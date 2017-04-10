@@ -69,12 +69,12 @@
 	<?php
 		require_once('PDO_conn.php');
 	
-		$navdisplayuser = $_SESSION['username'];
+
 		if(isset($_SESSION['username']))
 		//if(true) //replace this line with line 30 once setup
 		{
 			echo 
-			'<h2>Logged in as : '.$navdisplayuser.'</h2>'
+			'<h2>Logged in as : '.$_SESSION['username'].'</h2>'
 			.'<ul>
 			<li><a href="account.php">User controls</a></li>
 			<li><a href="startRun.php">Logout</a></li>
