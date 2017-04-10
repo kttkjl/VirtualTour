@@ -53,7 +53,7 @@ $haveSignedIn = $user->is_loggedin();
 			</div> <!--End of userControl -->
 		<div id="mainContent">  <!-- Insert your part of the website here. -->
 			<h2 class="page_title"> Glossary </h2>
-				<p class="glossary_desc"> This is the glossary. we talk about terms here. (more to come)</p>
+				<p class="glossary_desc"> Having trouble figuring out exactly what some of the jargon that BCIT students and faculty use? Looking at this page might help you. However, please note that this list is subject to change without notice. We are also taking suggestions for this section as well. Just go to Contact Us.</p>
 				<div class="glossary_box">
 					<table class="glossary_table">
 						<tr>
