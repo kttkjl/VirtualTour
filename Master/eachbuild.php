@@ -83,7 +83,7 @@ $haveSignedIn = $user->is_loggedin();
 				</nav>
 		<main>
 			<div id ="bannerPic"> <!--Div for the banner image.-->
-			<img src="images/panorama1.jpg" alt="British Columbia" width="1752" height="300" id="bannerBG">
+			<img src="images/panorama2.jpg" alt="British Columbia" width="1752" height="300" id="bannerBG">
 			</div> <!-- end of bannerPic div-->
 			<div class="userControl"> <!-- Div for the second nav bar (the one with user controls -->
 			<h2>Logged in as : Group A</h2>
@@ -139,6 +139,7 @@ $haveSignedIn = $user->is_loggedin();
 		</div>
 	</div>
 		</div> <!--End of actualContent-->
+		<!--
 				<div class="form_AllWrapper">
 			<div class="form_SubmitComments">
 				<p>A<br>A<br>A<br>A<br>A<br>A<br>A</p>
@@ -150,7 +151,11 @@ $haveSignedIn = $user->is_loggedin();
 					</div>
 				</form>
 			</div>
-		</div>
+		</div> 
+		
+		commented out cause forum script writes the same thing back
+		-->
+		<?php include('forum.php');?>
 		</div>  <!--End of mainContent-->
 		</main>
 		<footer>
