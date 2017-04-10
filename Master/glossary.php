@@ -1,12 +1,13 @@
 <?php include("ProtoHeader.php"); ?>
-	<link rel="stylesheet" href="css/glossary.css">
+	<link rel="stylesheet" href="css/glossary.css" media="screen">
+	<link rel="stylesheet" href="css/print.css" media="print">
 	<script src="startRun.js"></script>
 	<title>Glossary</title>
 <?php include("ProtoNavLogged.php"); ?>
 	
 	<div id="mainContent">  <!-- Insert your part of the website here. -->
 		<h2 class="page_title"> Glossary </h2>
-			<p class="glossary_desc"> This is the glossary. we talk about terms here. (more to come)</p>
+			<p class="glossary_desc"> If you're having trouble understanding the jargon that staff and students alike use in BCIT, this page is for you. If you have any suggestions for what other words could be here, you can submit it through Contact Us.</p>
 			<div class="glossary_box">
 				<table class="glossary_table">
 						<tr>

@@ -14,6 +14,7 @@ $haveSignedIn = $user->is_loggedin();
 	<html lang="en">
 		<head>
 			<meta charset="utf-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="stylesheet" href="css/theme.css" media="screen">
 			<link rel="stylesheet" href="css/contact.css" media="screen">
 			<link rel="stylesheet" href="css/print.css" media="print">

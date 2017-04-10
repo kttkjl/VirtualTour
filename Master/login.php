@@ -1,5 +1,5 @@
 <?php include("ProtoHeader.php"); ?>
-	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/login.css" media="screen">
 	<script type="text/javascript" src="css/login.js"></script>
 	<title>Login</title>
 <?php include("ProtoNavLogged.php"); ?>
