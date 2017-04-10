@@ -1,257 +1,56 @@
-<?php
-require_once('PDO_conn.php');
-
-/*if($user->is_loggedin()){
-	$haveSignedIn = true;
-} else {
-	$haveSignedIn = false;
-}*/
-$haveSignedIn = $user->is_loggedin();
-?>
-
-
-<!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<meta charset="utf-8"/>
-			<link rel="stylesheet" href="css/theme.css">
-			<link rel="stylesheet" href="css/glossary.css">
-			<script src="startRun.js"></script>
-			<title>Layout B</title>
-		</head>
-			<body>
-					<nav>
-					<h1><a href="index.html">Virtual Tour</a></h1>
-					<ul>
-						<div id="acc"><li><a href="account.html">My Account</a></li></div>
-						<div id="conus"><li><a href="contactus.html">Contact Us</a></li></div>
-						<div id="gloss"><li><a href="glossary.html">Glossary</a></li></div>
-						<div id="abuild"><li class="dropdown"><a href="allbuild.html" class="dropbtn">Buildings</a>
-						<div class="dropdown-content"> <!--Div for the part that actually drops down. -->
-							<a href="eachbuild.html">Link 1 </a>
-							<a href="eachbuild.html">Link 2 </a>
-							<a href="eachbuild.html">Link 3 </a>
-							<a href="eachbuild.html">Link 4 </a>
-							<a href="eachbuild.html">Link 5 </a>
-						</div> <!-- End of Div "dropdown-content"-->
-						</li></div>
-						<div id="hom"><li><a href="index.html">Home</a></li></div>
-					</ul>
-				</nav>
-		<main>
-			<div id ="bannerPic"> <!--Div for the banner image.-->
-			<img src="images/panorama1.jpg" alt="British Columbia" width="1752" height="300" id="bannerBG">
-			</div> <!-- end of bannerPic div-->
-			<div class="userControl"> <!-- Div for the second nav bar (the one with user controls -->
-			<h2>Logged in as : Group A</h2>
-			<ul>
-				<li> <a href="account.html">User controls</a></li>
-				<li id="In" class=""><a href="login.html">Sign in</a></li>
-				<li id="Out" class="signOut"><a href="startRun.php">Sign out</a></li>
-				<li> <a href="registration.html">Register</a></li>
-			</ul>
-			</div> <!--End of userControl -->
-		<div id="mainContent">  <!-- Insert your part of the website here. -->
-			<h2 class="page_title"> Glossary </h2>
-				<p class="glossary_desc"> This is the glossary. we talk about terms here. (more to come)</p>
-				<div class="glossary_box">
-					<table class="glossary_table">
-						<tr>
-							<td class="glossary_title">Term name </td>
-							<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
-						</tr>
-						<tr>
-							<td class="glossary_title">Term name </td>
-							<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
-						</tr>							
-						<tr>
-							<td class="glossary_title">Term name</td>
-							<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
-						</tr>
-						<tr>
-							<td class="glossary_title">Term name</td>
-							<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
-						</tr>				
-						<tr>
-							<td class="glossary_title">Term name</td>
-							<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
-						</tr>				
-						<tr>
-							<td class="glossary_title">Term name</td>
-							<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
-						</tr>				
-						<tr>
-							<td class="glossary_title">Term name</td>
-							<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
-						</tr>				
-						<tr>
-							<td class="glossary_title">Term name</td>
-							<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
-						</tr>				
-						<tr>
-							<td class="glossary_title">Term name</td>
-							<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
-						</tr>				
-						<tr>
-							<td class="glossary_title">Term name</td>
-							<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
-								</tr>		
-				</table>
-			</div>
-		</div>  <!--End of mainContent-->
-		</main>
-		<footer>
-		<div class="footer_wrapper">
-			<div class="footer_table">
-				<table class="table_outer">
-					<tr> 
-						<th> NE
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-						<th> NW
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-						<th> SE
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-						<th> SW
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-						<th> Others
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-					</tr>
-				</table>
-				<p class="footer_copy"> COPYRIGHT AND CONTACT US. || 2017</p>
-				<h2 class="footer_media"> FB twitter </h2>
-			</div>
-		</div>
-	</footer>
-	</html>
+<?php include("ProtoHeader.php"); ?>
+	<link rel="stylesheet" href="css/glossary.css">
+	<script src="startRun.js"></script>
+	<title>Glossary</title>
+<?php include("ProtoNavLogged.php"); ?>
 	
-<script>
-	var php_var = "<?php echo $haveSignedIn; ?>";
-	if(php_var){
-		document.getElementById("In").className = "signIn";
-		document.getElementById("Out").className = "";
-	} else {
-		alert("not signed in");
-		document.getElementById("In").className = "";
-		document.getElementById("Out").className = "signOut";
-	}
-</script>
+	<div id="mainContent">  <!-- Insert your part of the website here. -->
+		<h2 class="page_title"> Glossary </h2>
+			<p class="glossary_desc"> This is the glossary. we talk about terms here. (more to come)</p>
+			<div class="glossary_box">
+				<table class="glossary_table">
+					<tr>
+						<td class="glossary_title">Term name </td>
+						<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
+					</tr>
+					<tr>
+						<td class="glossary_title">Term name </td>
+						<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
+					</tr>							
+					<tr>
+						<td class="glossary_title">Term name</td>
+						<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
+					</tr>
+					<tr>
+						<td class="glossary_title">Term name</td>
+						<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
+					</tr>				
+					<tr>
+						<td class="glossary_title">Term name</td>
+						<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
+					</tr>				
+					<tr>
+						<td class="glossary_title">Term name</td>
+						<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
+					</tr>				
+					<tr>
+						<td class="glossary_title">Term name</td>
+						<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
+					</tr>				
+					<tr>
+						<td class="glossary_title">Term name</td>
+						<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
+					</tr>				
+					<tr>
+						<td class="glossary_title">Term name</td>
+						<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
+					</tr>				
+					<tr>
+						<td class="glossary_title">Term name</td>
+						<td class="list_desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ex vel enim tristique dignissim.</td>
+							</tr>		
+			</table>
+		</div>
+	</div>  <!--End of mainContent-->
+
+<?php include ("ProtoFooter.php"); ?>
