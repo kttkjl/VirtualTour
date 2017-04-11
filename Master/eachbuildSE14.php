@@ -49,7 +49,7 @@ include("ProtoNavLogged.php");
 					</div>
 					<div class="galleryImages bottomRight">
 						<div class="divBorders galleryImages">
-							
+							<img class="galleryImages" src="buildingpics/LIB/IMG_20170405_163856.jpg - Copy.jpg" alt="gallery image description"/>
 						</div>
 					</div>
 				</div>
