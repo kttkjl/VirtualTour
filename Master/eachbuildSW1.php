@@ -15,7 +15,7 @@ $result = $myQuery;
 ?>
 
 <!--Page-specific <title>-->
-<title>EachBuild</title>
+<title>Virtual Tour - SW1</title>
 <!--Page-specific <js and css>-->
 
 <link rel="stylesheet" href="css/eachbuild.css" media="screen">
@@ -31,25 +31,25 @@ include("ProtoNavLogged.php");
 			<div class="buildingImages">
 		<div class="mapImage">
 			<div class="divBorders">
-				<img src="images/building.png" alt="map image"/>
+				<img src="buildingpics/SW1/IMG_20170405_163102.jpg" alt="map image"/>
 			</div>
 		</div>
 		<div class="galleryImages galleryBox">
 			<div class="galleryImages top">
 				<div class="divBorders galleryImages">
-					<img class="galleryImages" src="buildingpics/SW1/biggerthumb1.jpg" alt="gallery image description"/>
+					<img class="galleryImages" src="buildingpics/SW1/thumb2.jpg" alt="gallery image description"/>
 				</div>
 			</div>
 			<div class="galleryImages bottom">
 				<div class="divBorderOuter galleryImages">
 					<div class="galleryImages bottomLeft">
 						<div class="divBorders galleryImages">
-							<img class="galleryImages" src="images/building.png" alt="gallery image description"/>
+							<img class="galleryImages" src="buildingpics/SW1/thumb3.jpg" alt="gallery image description"/>
 						</div>
 					</div>
 					<div class="galleryImages bottomRight">
 						<div class="divBorders galleryImages">
-							<img class="galleryImages" src="images/building.png" alt="gallery image description"/>
+							<img class="galleryImages" src="buildingpics/SW1/thumb4.jpg" alt="gallery image description"/>
 						</div>
 					</div>
 				</div>

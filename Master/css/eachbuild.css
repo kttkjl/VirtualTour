@@ -16,6 +16,7 @@ html, body{
 /* sets width of the map image. */
 div.mapImage{
 		width:100%;
+
 	}
 }	
 /* sets overflow, and size of building images  */
@@ -30,6 +31,7 @@ div.buildingImages, div.top, div.bottom{
 	width:50%;
 	height:100%;
 	float:left;
+	overflow: hidden;
 }
 
 /* floats gallery to left and sets width */
@@ -43,10 +45,6 @@ div.top>div.divBorders{
 	width:97%;
 	top:2%;
 	overflow: hidden;
-}
-
-div.divBorders{
-	padding-bottom: 1em;
 }
 
 /* configures the border outer class. */
@@ -67,6 +65,7 @@ div.top{
 div.bottomLeft, div.bottomRight{
 	float:left;
 	width:50%;
+	height: 302.5px;
 }
 
 /* sets size of the description area. */
@@ -99,8 +98,19 @@ div.bottomLeft, div.bottomRight{
 .divBorders{
 	width:98%;
 	margin:auto;
+	margin-bottom: 0;
 	height:98%;
 	position:relative;
 	top:1%;
-	background-color: #EFF0F1	;
+	background-color: #EFF0F1;
+	overflow: hidden;
+}
+
+.galleryImages{
+	overflow: hidden;
+}
+
+div.top.galleryImages img{
+	width: 100%;
+	height: 302.5px;
 }
