@@ -62,8 +62,17 @@ if(isset($_POST['register-btn']))
 				<br>
 				<div class="servicedesc">
 					<h2>Brief Service Description</h2><br>
-					<p>Id mei illum corpora singulis, dolores torquatos interpretaris cum ei. Nam no erat scripta consulatu, pro ignota consectetuer ad. Amet illum maiorum sea ex, duo assum eruditi ex. Omnesque vituperata reformidans at vel, porro solet principes ut qui.</p>
-					<p>Id mei illum corpora singulis, dolores torquatos interpretaris cum ei. Nam no erat scripta consulatu, pro ignota consectetuer ad. Amet illum maiorum sea ex, duo assum eruditi ex. Omnesque vituperata reformidans at vel, porro solet principes ut qui.</p>
+					<p>Virtual Tour (VT) is a platform that registered academic facilities from all over the world can access.</p>
+					
+					<p>It provides a solution for students or employees that wants a preview of facilities on the campus, 
+					before they even set foot upon it.</p>
+					<p>VT utilizes GPS technology and Google API to determine the exact location on campus,
+					it provides a tour builder that will allow individual academic institutions to customize the tour of their campus 
+					for specific programs. </p>
+					<p>Users of this app can be sent customized routes specific for their needs, by their institution. The mobile version
+					of this app keeps track of a progress of each building visited by the user. </p>
+					<p>Users can also post comments on specific buildings, and start interacting with other people on tips and tricks of
+					how to travel quickly through campus, or where all the "important" places on campus are.</p>
 					</div>
 			</div>
 			
@@ -130,13 +139,22 @@ if(isset($_POST['register-btn']))
 						</tr>
 						</table>
 						<div class="disclaimtext">
-							<h2> Disclaimer Header </h2>
-							<p> Disclaimer text etc....Id mei illum corpora singulis, dolores torquatos interpretaris cum ei. Nam no erat scripta consulatu, pro ignota consectetuer ad. Amet illum maiorum sea ex, duo assum eruditi ex. Omnesque vituperata reformidans at vel, porro solet principes ut qui. 
+							<h2> Disclaimer</h2>
+							<p> By visiting the website Virtual Tour, viewing, accessing or otherwise using any of the services or information created, collected, compiled or submitted to Virtual Tour, you agree to be bound by the following Terms and Conditions of Service. If you do not want to be bound by our Terms your only option is not to visit, view or otherwise use the services of Virtual Tour. You understand, agree and acknowledge that these Terms constitute a legally binding agreement between you and Virtual Tour and that your use of Virtual Tour shall indicate your conclusive acceptance of this agreement.
 							</p>
 							<br>
-							<h2> TOS and shit </h2>
-							<p> Disclaimer text etc....Id mei illum corpora singulis, dolores torquatos interpretaris cum ei. Nam no erat scripta consulatu, pro ignota consectetuer ad. Amet illum maiorum sea ex, duo assum eruditi ex. Omnesque vituperata reformidans at vel, porro solet principes ut qui. 
+							<h2>Terms of Service</h2>
+							<p> 
+							Last updated: April 11, 2017</p>
+							<br>
+							Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the VirtualTour.com website (the "Service") operated by Virtual Tour ("us", "we", or "our").
+							<br>
+							<p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</p>
+							<br>
+							<p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. This Terms of Service is licensed by TermsFeed to Virtual Tour.
 							</p>
+							<br>
+							<p> For our full TOS, please visit <a href="http://ourdisclaimer.com/?i=Virtual%20Tour">here.</a></p>
 						</div>	
 						<br>
 						<label for="consent" class="required">Do you agree to the TOS?</label>
