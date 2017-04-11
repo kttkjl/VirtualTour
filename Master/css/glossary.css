@@ -1,10 +1,9 @@
-
 /* Set the main font as well as get rid of any margins on the side. --> */
 main {
 	font-family: Candara, Verdana, sans-serif;
-    margin-right: 0px;
-    margin-left: 0px;
-=	}
+    /*margin-right: 0px;
+    margin-left: 0px;*/
+}
 
 /* A class specifying the title of each page,  in this case for the glossary. Indented. */
 .page_title {
