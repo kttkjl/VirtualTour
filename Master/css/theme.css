@@ -19,13 +19,16 @@ body {
 
 main {
 	background: #0B152E; /* For browsers that don't support gradients */
-    background: -webkit-radial-gradient(#3A4B61, #061528, #061528);
-    background: -o-radial-gradient(#3A4B61, #061528, #061528);
-    background: -moz-radial-gradient(#3A4B61, #061528, #061528);
-    background: radial-gradientv(#3A4B61, #061528, #061528);
+    background: -webkit-radial-gradient(#A1A9B7, #11253E, #061528);
+    background: -o-radial-gradient(#A1A9B7, #11253E, #061528);
+    background: -moz-radial-gradient(#A1A9B7, #11253E, #061528);
+    background: radial-gradientv(#A1A9B7, #11253E, #061528);
 	color: #DCDDDE;
 	max-width: 1350px;
 	margin: auto;
+	text-justify: inter-word;
+	height: 100%;
+	margin-bottom: 0;
 	
 }
 /* CSS for screens 890px and up */

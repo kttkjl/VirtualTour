@@ -1,9 +1,35 @@
+<?php
+require_once('PDO_conn.php');
+
+if($user->is_loggedin()){
+	$user->redirect('glossary.php');
+}
+
+if(isset($_POST['login']))
+{
+	//Setting variables
+	$FormUsername = $_POST['UserOrEmail'];
+	$FormEmail = $_POST['UserOrEmail'];
+	$FormPassword = $_POST['password'];
+
+	//if the doLogin function returns true.
+	if($user->doLogin($FormUsername, $FormEmail, $FormPassword))
+	{
+		//IDK REDIRECT IT SOMEHWER ELSE?! - how 2 redirect to loggedin index plshalp
+		$user->redirect('home.php');
+	} 
+	else 
+	{
+		$error = "Login info wrong";
+	}
+}
+?>
 <?php include("ProtoHeader.php"); ?>
 	<link rel="stylesheet" href="css/login.css" media="screen">
 	<script type="text/javascript" src="css/login.js"></script>
 	<title>Login</title>
 <?php include("ProtoNavLogged.php"); ?>
-		
+
 		<div id="mainContent">  <!-- Insert your part of the website here. -->
 			<div class="Body_Area">
 				<div class="content">				
@@ -12,8 +38,18 @@
 						<img src="images/profile.png" alt="You">
 					</div>
 					<br>
+						<?php
+				        if(isset($error))
+				        {
+				              ?>
+				              <div>
+				                  <?php echo $error; ?>
+				              </div>
+				              <?php
+				        }
+				        ?>
 					<div>
-						<form id="loginform" method="post" onsubmit="return loginvalidation()" action="userLogin.php">
+						<form id="loginform" method="post" onsubmit="return loginvalidation()" action="login.php">
 							<div>
 								<label class="required" for="UserOrEmail">Username/E-mail</label>
 								<input type="text" name="UserOrEmail" id="UserOrEmail" oninput="userOrEmailValid()">
