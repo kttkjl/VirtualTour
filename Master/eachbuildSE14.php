@@ -59,7 +59,7 @@ include("ProtoNavLogged.php");
 	<div class="descriptionArea">
 		<div class="divBorders">
 			<h1>SE14</h1>
-			<p>
+			<pre>
 				
 				Library
 
@@ -70,7 +70,7 @@ include("ProtoNavLogged.php");
 				Below the Library is the EhPod which is a 247 study space to students; the EhPod has an explicit entrance
 				that any student can open as long as they have their student ID card.
 
-			</p>
+			</pre>
 		</div>
 	</div>
 		</div> <!--End of actualContent-->
