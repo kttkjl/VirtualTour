@@ -266,7 +266,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 footer{
 	background-color:#283555;
 	bottom:0;
-	padding: 2%;
+	padding: 1%;
 }
 
 .footer_wrapper{
@@ -300,10 +300,23 @@ table.table_col td{
 	font-size: .75em;
 }
 
-table.table_col a, a:visited{
-	color: white;
-	width: 100%;
-	text-align:center;
+.footer_copy a{
+	color: #DCDDDE;
+	text-decoration: none;
+}
+
+.footer_copy a:hover{
+	color: #E97A25;
+	text-decoration: none;
+}
+
+.footer_media a{
+	color: #DCDDDE;
+	text-decoration: none;
+}
+
+.footer_media a:hover{
+	color: #E97A25;
 	text-decoration: none;
 }
 
