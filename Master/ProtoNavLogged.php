@@ -18,34 +18,34 @@
 					<td class="navtableheading"><a href="allbuild.php">SouthWest</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href =".php">NE 1</a></td>
-					<td class="navtabledata"><a href =".php">NW1</a></td>
-					<td class="navtabledata"><a href =".php">SE1</a></td>
-					<td class="navtabledata"><a href =".php">SW1</a></td>
+					<td class="navtabledata"><a href ="eachbuildNE1.php">NE 1</a></td>
+					<td class="navtabledata"><a href ="eachbuildNW1.php">NW1</a></td>
+					<td class="navtabledata"><a href ="eachbuildSE1.php">SE1</a></td>
+					<td class="navtabledata"><a href ="eachbuildSW1.php">SW1</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href =".php">NE2</a></td>
-					<td class="navtabledata"><a href =".php">NW3</a></td>
-					<td class="navtabledata"><a href =".php">SE2</a></td>
-					<td class="navtabledata"><a href =".php">SW2</a></td>
+					<td class="navtabledata"><a href ="eachbuildNE2.php">NE2</a></td>
+					<td class="navtabledata"><a href ="eachbuildNW3.php">NW3</a></td>
+					<td class="navtabledata"><a href ="eachbuildSE2.php">SE2</a></td>
+					<td class="navtabledata"><a href ="eachbuildSW2.php">SW2</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href =".php">NE3</a></td>
-					<td class="navtabledata"><a href =".php">NW5</a></td>
-					<td class="navtabledata"><a href =".php">SE4</a></td>
-					<td class="navtabledata"><a href =".php">SW3</a></td>
+					<td class="navtabledata"><a href ="eachbuildNE3.php">NE3</a></td>
+					<td class="navtabledata"><a href ="eachbuildNW5.php">NW5</a></td>
+					<td class="navtabledata"><a href ="eachbuildSE4.php">SE4</a></td>
+					<td class="navtabledata"><a href ="eachbuildSW3.php">SW3</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href =".php">NE4</a></td>
-					<td class="navtabledata"><a href =".php">NW6</a></td>
-					<td class="navtabledata"><a href =".php">SE6</a></td>
-					<td class="navtabledata"><a href =".php">SW5</a></td>
+					<td class="navtabledata"><a href ="eachbuildNE4.php">NE4</a></td>
+					<td class="navtabledata"><a href ="eachbuildNW6.php">NW6</a></td>
+					<td class="navtabledata"><a href ="eachbuildSE12.php">SE12</a></td>
+					<td class="navtabledata"><a href ="eachbuildSW5.php">SW5</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href =".php">NE5</a></td>
-					<td class="navtabledata"><a href =".php"></a></td>
-					<td class="navtabledata"><a href =".php">SE12</a></td>
-					<td class="navtabledata"><a href =".php">SW9</a></td>
+					<td class="navtabledata"><a href ="eachbuildNE5.php">NE5</a></td>
+					<td class="navtabledata"><a href ="#"></a></td>
+					<td class="navtabledata"><a href ="eachbuildSE14.php">SE14</a></td>
+					<td class="navtabledata"><a href ="eachbuildSW9.php">SW9</a></td>
 				</tr>
 				<tr class="navtablerow">
 					<td colspan="4" class="navtablebottom">...Or for more, go to the <a href="allbuild.php">buildings page.</a></td>
