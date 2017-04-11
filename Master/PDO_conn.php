@@ -26,6 +26,14 @@ try {
     UNIQUE (`user_email`)
 ) ENGINE = MYISAM ;";
     $DB_conn->exec($sql);
+	
+	$sql2 = "CREATE TABLE IF NOT EXISTS `comments` (
+	`SKU` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+	`id` INT( 11 ) ,
+	`username` VARCHAR( 255 ) NOT NULL ,
+	`usercomment` VARCHAR( 255 ) NOT NULL
+	) ENGINE = MYISAM ;";
+	$DB_conn->exec($sql2);
     }
     catch(PDOException $e)
     {

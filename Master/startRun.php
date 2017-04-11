@@ -6,4 +6,4 @@ if($user->is_loggedin()){
 	$user->doLogout();
 	header('Location: glossary.php');
 }
-?>
+?>	 
