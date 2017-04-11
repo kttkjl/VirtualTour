@@ -143,7 +143,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 
 /* Links in the dropdown */
 .dropdown-content a{
-	color: white;
+	color: #DCDDDE;
 	padding: 0.4em 0.4em;
 	text-decoration: none;
 	display: block;
@@ -194,7 +194,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 	font-size: 0.9em;
 	padding-top: 7%;
 	width: 100%;
-	color: white;
+	color: #DCDDDE;
 }
 
 #navtable td.navtablebottom a {
@@ -226,6 +226,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 /* CSS for navigation bar color. */
 .userControlColor {
 	background-color: #283555;
+	color: #DCDDDE;
 }
 	
 .userControl h2 {
@@ -233,6 +234,7 @@ nav li:hover, .dropdown:hover .dropbtn {
 	font-size: 0.85em;
 	float: left;
 	padding: 0.55em 0 0.3em 2em;
+	color: #DCDDDE;
 }
 
 .userControl ul {
@@ -243,6 +245,15 @@ nav li:hover, .dropdown:hover .dropbtn {
 	float: right;
 	font-size: 0.85em;
 	padding: 0.55em 1.5em 0.3em 0em;
+}
+.userControl a{
+	color: #DCDDDE;
+	text-decoration: none;
+}
+
+.userControl a:hover{
+	color: #162343;
+	text-decoration: none;
 }
 
 /*CSS for mainContent - width, height, padding, etc. */
@@ -270,7 +281,7 @@ footer{
 }
 
 .footer_wrapper{
-	color: white;
+	color: #DCDDDE;
 }
 
 .footer_table{
@@ -280,7 +291,7 @@ footer{
 
 table.table_outer{
 	width: 100%;
-	color: white;
+	color: #DCDDDE;
 }
 
 table.table_outer th{
@@ -288,14 +299,14 @@ table.table_outer th{
 }
 
 table.table_col{
-	color: white;
+	color: #DCDDDE;
 	width: 100%;
 	border-width: 0 1px 0 1px;
 	border-style: solid;
 }
 
 table.table_col td{
-	color: white;
+	color: #DCDDDE;
 	text-align:center;
 	font-size: .75em;
 }

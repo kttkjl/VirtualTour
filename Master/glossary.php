@@ -2,7 +2,7 @@
 	<link rel="stylesheet" href="css/glossary.css" media="screen">
 	<link rel="stylesheet" href="css/print.css" media="print">
 	<script src="startRun.js"></script>
-	<title>Glossary</title>
+	<title>Visual Tour - Glossary</title>
 <?php include("ProtoNavLogged.php"); ?>
 	
 	<div id="mainContent">  <!-- Insert your part of the website here. -->
