@@ -35,7 +35,7 @@ if(isset($_POST['register-btn']))
 			} else {
 				if ($user->register($FormUsername, $FormEmail, $FormPassword)) 
 				{
-					$user->redirect('login.html');
+					$user->redirect('login.php');
 				}
 			}
 		}

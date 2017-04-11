@@ -21,8 +21,7 @@
 
 /* sets size of user image relatively. */
 #userimage img{
-	width: 50%;
-	height: auto;
+	width: 300px;
 }
 
 /* sets margins for disclaimer. */
