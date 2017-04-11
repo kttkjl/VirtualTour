@@ -44,40 +44,5 @@ if(isset($_POST['register-btn']))
 			echo $e->getMessage();
 		}
 	}
-
 }
-
-
-
-
-// 	//Setting variables
-// 	$FormUsername = $_POST['username'];
-// 	$FormEmail = $_POST['email'];
-// 	//Removed loginID because redundant
-// 	$FormPassword = $_POST['password'];
-// 	$FormCPassword = $_POST['cpassword'];
-// 	//Grab info from table
-// 	$search = $conn->prepare("SELECT username FROM users WHERE username = :username");
-// 	$search->bindParam(':username', $FormUsername);
-// 	$search->execute();
-
-// 	if($search->rowCount() > 0){
-// 		echo "Username exists in Database, please choose another.";
-// 	} else {
-
-// 		//sql var if everything is fine.
-// 		$sql = "INSERT INTO users (username, loginID, email, reg_date, password)
-// 		VALUES ($FormUsername, $FormLoginid, $FormEmail, NOW(), $FormPassword)";
-// 		//prepare statement
-// 		$statement = $conn->prepare($sql);
-// 		$statement->bindParam(':username', $FormUsername);
-// 		$statement->bindParam(':loginID', $FormLoginid);
-// 		$statement->bindParam(':email', $FormEmail);
-// 		$statement->bindParam(':password', $FormPassword);
-// 		//INSERT IT
-// 		$statement->execute();
-
-// 		echo "Registration Successful.";
-// 	}
-// $conn->null;	
 ?>
