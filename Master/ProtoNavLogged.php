@@ -69,7 +69,7 @@
 		require_once('PDO_conn.php');
 	
 
-		if(isset($_SESSION['username']))
+		if(isset($_SESSION['user_session']))
 		//if(true) //replace this line with line 30 once setup
 		{
 			echo 
