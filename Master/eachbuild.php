@@ -20,6 +20,7 @@ $result = $myQuery;
 
 <link rel="stylesheet" href="css/eachbuild.css" media="screen">
 <link rel="stylesheet" href="css/comment.css" media="screen">
+<script type="text/javascript" language="javascript" src="css/comment.js"></script>
 
 <?php
 include("ProtoNavLogged.php");
