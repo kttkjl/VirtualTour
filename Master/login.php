@@ -30,11 +30,11 @@
 						</form>
 					</div>
 					<div>
-						<a href= "/forgot.html">Forgot Password?</a>
+						<a href= "forgot.php">Forgot Password?</a>
 					</div>
 			
 					<div>
-						<a href= "/registration.html">Register Now</a>
+						<a href= "registration.php">Register Now</a>
 					</div>
 					<br>
 					<div class = "disclaimer">
