@@ -118,6 +118,8 @@ class USER
 		//$_SESSION['user_session'] = "";
 		$loggedIn = false;
 		unset($_SESSION['user_session']);
+		unset($_SESSION['username']);
+		unset($_SESSION['userid']);
 		session_write_close();
 		return true;
 	}
