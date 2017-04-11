@@ -1,4 +1,17 @@
-<?php include("ProtoHeader.php"); ?>
+<?php 
+require_once('PDO_conn.php');
+include("ProtoHeader.php"); 
+
+$haveSignedIn = $user->is_loggedin();
+
+$myConnection = $DB_conn;
+$myQuery = $myConnection->prepare(
+				"SELECT * 
+				FROM comments"
+				);
+$myQuery->execute();
+/*$result = $myQuery->setFetchMode(PDO::FETCH_ASSOC);*/
+$result = $myQuery;?>
 	<link rel="stylesheet" href="css/glossary.css" media="screen">
 	<link rel="stylesheet" href="css/print.css" media="print">
 	<script src="startRun.js"></script>
