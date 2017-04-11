@@ -1,0 +1,65 @@
+main {
+	padding-top: 3em;
+}
+
+main img {
+	margin: auto;
+	display: block;
+}
+
+#mainContent {
+	padding: 2em 2em 2em 2em;
+	margin-bottom: 3em;
+}
+
+#mainContent h2 {
+	font-size: 1.4em;
+	font-weight: bold;
+	padding-bottom: 0.1em;
+}
+
+.firstLetter {
+	color: #162343;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+#divRight {
+	width: 33%;
+	border: 20px solid #DCDDDE;
+	padding-top: 0;
+	padding-bottom: 0.5em;
+	float: right;
+	height: 10em;
+}
+
+#divCenter {
+	display: inline-block;
+	width: 33%;
+	border: 20px solid #DCDDDE;
+	padding-top: 0;
+	padding-bottom: 0.5em;
+	height: 10em;
+}
+
+#divLeft {
+	width: 33%;
+	border: 20px solid #DCDDDE;
+	padding-top: 0;
+	padding-bottom: 0.5em;
+	float: left;
+	height: 10em;
+	
+}
+
+h3 {
+	padding-top: 1em;
+	padding-left: 1em;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.linkUl {
+	color: #723200;
+	
+}

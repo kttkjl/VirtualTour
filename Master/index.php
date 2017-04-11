@@ -4,7 +4,7 @@
 			<meta charset="utf-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="stylesheet" href="css/theme.css" media="screen">
-			<link rel="stylesheet" href="css/hope.css" media="screen">
+			<link rel="stylesheet" href="css/index.css" media="screen">
 			<link rel="stylesheet" href="css/print.css" media="print">
 			<title>Virtual Tour - Home</title>
 			<script language="JavaScript1.1">
@@ -124,7 +124,7 @@
 //configure the paths of the images, plus corresponding target links
 slideshowimages("images/image0.jpg","images/image1.jpg","images/image2.jpg","images/image3.jpg")
 //configure the speed of the slideshow, in miliseconds
-var slideshowspeed=6000
+var slideshowspeed=4000
 
 var whichlink=0
 var whichimage=0
@@ -143,7 +143,18 @@ slideit()
 
 //-->
 </script>
-
+		<div id="mainContent">
+		<div id="divLeft"><h2>Explore.</h2>
+		<p><span class="firstLetter">&nbsp;&nbsp;&rarr; &nbsp; U</span>se our website to explore the nooks and crannies of your favourite yet confusing Burnaby campus. Getting lost can be fun - <br>if you have the right guide.</p>
+		</div>
+		<div id="divCenter"><h2>Part of the Community.</h2>
+		<p><span class="firstLetter">&nbsp;&nbsp;&rarr; &nbsp; T</span>alk to students who also use the website about anything you like - Even just warning others of that squeaky chair in that one lecture hall you hate.</p>
+		</div>
+		<div id="divRight"><h2>Contribute. Get Points.</h2>
+		<p><span class="firstLetter">&nbsp;&nbsp;&rarr; &nbsp; L</span>et us know of any cool discoveries you made or that we missed, and gather up your points. Sign up for our newsletter to stay informed.</p>
+		</div>
+		<h3>To get started, go to our <a href="allbuild.php" class="linkUl"> buildings</a> page.</h3>
+		</div>
 		</main>
 		<footer>
 		<div class="footer_wrapper">

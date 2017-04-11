@@ -12,40 +12,40 @@
 			<div id="navcontainer">
 			<table id="navtable" title="The drop-down navigation">
 				<tr class="navtablerow">
-					<td class="navtableheading"><a href="northeast.php">Northeast</a></td>
-					<td class="navtableheading"><a href="northwest.php">NorthWest</a></td>
-					<td class="navtableheading"><a href="southeast.php">SouthEast</a></td>
-					<td class="navtableheading"><a href="southwest.php">SouthWest</a></td>
+					<td class="navtableheading"><a href="allbuild.php">Northeast</a></td>
+					<td class="navtableheading"><a href="allbuild.php">NorthWest</a></td>
+					<td class="navtableheading"><a href="allbuild.php">SouthEast</a></td>
+					<td class="navtableheading"><a href="allbuild.php">SouthWest</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href =".php">EE 1</a></td>
-					<td class="navtabledata"><a href =".php">NE 2</a></td>
-					<td class="navtabledata"><a href =".php">NE 3</a></td>
-					<td class="navtabledata"><a href =".php">NE 4</a></td>
+					<td class="navtabledata"><a href =".php">NE 1</a></td>
+					<td class="navtabledata"><a href =".php">NW1</a></td>
+					<td class="navtabledata"><a href =".php">SE1</a></td>
+					<td class="navtabledata"><a href =".php">SW1</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href =".php">EE 1</a></td>
-					<td class="navtabledata"><a href =".php">NE 2</a></td>
-					<td class="navtabledata"><a href =".php">NE 3</a></td>
-					<td class="navtabledata"><a href =".php">NE 4</a></td>
+					<td class="navtabledata"><a href =".php">NE2</a></td>
+					<td class="navtabledata"><a href =".php">NW3</a></td>
+					<td class="navtabledata"><a href =".php">SE2</a></td>
+					<td class="navtabledata"><a href =".php">SW2</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href =".php">EE 1</a></td>
-					<td class="navtabledata"><a href =".php">NE 2</a></td>
-					<td class="navtabledata"><a href =".php">NE 3</a></td>
-					<td class="navtabledata"><a href =".php">NE 4</a></td>
+					<td class="navtabledata"><a href =".php">NE3</a></td>
+					<td class="navtabledata"><a href =".php">NW5</a></td>
+					<td class="navtabledata"><a href =".php">SE4</a></td>
+					<td class="navtabledata"><a href =".php">SW3</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href =".php">EE 1</a></td>
-					<td class="navtabledata"><a href =".php">NE 2</a></td>
-					<td class="navtabledata"><a href =".php">NE 3</a></td>
-					<td class="navtabledata"><a href =".php">NE 4</a></td>
+					<td class="navtabledata"><a href =".php">NE4</a></td>
+					<td class="navtabledata"><a href =".php">NW6</a></td>
+					<td class="navtabledata"><a href =".php">SE6</a></td>
+					<td class="navtabledata"><a href =".php">SW5</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href =".php">EE 1</a></td>
-					<td class="navtabledata"><a href =".php">NE 2</a></td>
-					<td class="navtabledata"><a href =".php">NE 3</a></td>
-					<td class="navtabledata"><a href =".php">NE 4</a></td>
+					<td class="navtabledata"><a href =".php">NE5</a></td>
+					<td class="navtabledata"><a href =".php"></a></td>
+					<td class="navtabledata"><a href =".php">SE12</a></td>
+					<td class="navtabledata"><a href =".php">SW9</a></td>
 				</tr>
 				<tr class="navtablerow">
 					<td colspan="4" class="navtablebottom">...Or for more, go to the <a href="allbuild.php">buildings page.</a></td>
@@ -55,7 +55,7 @@
 						</div> <!-- End of Div "dropdown-content"-->
 						</li>
 						</div>
-						<div id="home"><li class="main-list-link"><a href="home.php">Home</a></li></div>
+						<div id="home"><li class="main-list-link"><a href="index.php">Home</a></li></div>
 					</ul>
 					</div>
 				</nav>
