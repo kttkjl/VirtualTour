@@ -9,7 +9,7 @@ main {
 .page_title {
 	padding-top: 30px;
 	font-weight: normal;
-	padding-left: 4%;
+	padding-left: 2em;
 	font-size: 2.3em;
 }
 
@@ -27,8 +27,7 @@ main {
 /* When a description is made, it will replace the text here */
 .glossary_desc{
 	font-size: .95em;
-	padding-left: 4%;
-	padding-top: 1%;
+	padding: 2em 5em 2em 5em;
 }
 
 /* class for the table.*/
@@ -49,6 +48,7 @@ main tr:nth-of-type(even) {
 /* The name of every definition in the table. */
 .glossary_title {
 	padding-top: 10px;
+	padding-left: 10px;
 	font-weight: bold;
 	float: left;
 	font-size: 1em;
