@@ -90,7 +90,7 @@ include("ProtoNavLogged.php");
 					}
 				?>
 			</div>
-			<div class="form_Wrapper">
+			<div id="formWrap" class="form_Wrapper">
 				<form id="form_CommentsForm" action="formSubmit.php" onsubmit="return form_validate()" method="post">
 					<div class="form_TextSection">
 						<textarea id="form_TextArea" name="form_TextComment" rows="4" placeholder="Enter Comments"></textarea><input id="form_SubmitButton" type="submit" name="form_SubmitForm">
