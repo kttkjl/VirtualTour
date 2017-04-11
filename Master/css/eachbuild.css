@@ -42,6 +42,11 @@ div.galleryBox{
 div.top>div.divBorders{
 	width:97%;
 	top:2%;
+	overflow: hidden;
+}
+
+div.divBorders{
+	padding-bottom: 1em;
 }
 
 /* configures the border outer class. */

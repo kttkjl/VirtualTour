@@ -77,12 +77,12 @@ include("ProtoNavLogged.php");
 				<?php
 					foreach($result as $rows) {
 				?>
-				<table width="800">
+				<table width="100%">
 				<tr>
 				<td width="33%"><?php echo $rows['username'];?> says:</td>
-				<td width="50%"><?php echo $rows['usercomment'];?></td>
+				<td width="33%"><?php echo $rows['usercomment'];?></td>
 				<!--<td>&nbsp;&nbsp;&nbsp;</td>-->
-				<td width="33%"><?php echo $rows['post_date'];?></td>
+				<td width="33%" align="right"><?php echo $rows['post_date'];?></td>
 				</tr>
 				</table>
 				<br>
