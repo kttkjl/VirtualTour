@@ -107,10 +107,14 @@ if(php_var){
 	//document.getElementById("In").className = "signIn";
 	//document.getElementById("Out").className = "";
 	document.getElementById("form_SubmitButton").className = ""
+	document.getElementById("form_CommentsForm").className = "";
+	document.getElementById("formWrap").className = "form_Wrapper";
 } else {
 	//document.getElementById("In").className = "";
 	//document.getElementById("Out").className = "signOut";
 	document.getElementById("form_SubmitButton").className = "signOut"
+	document.getElementById("form_CommentsForm").className = "signOut";
+	document.getElementById("formWrap").className = "signOut";
 }
 </script>
 <?php include ("ProtoFooter.php"); ?>
