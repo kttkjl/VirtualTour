@@ -24,7 +24,7 @@ main {
     background: -moz-radial-gradient(#A1A9B7, #11253E, #061528);
     background: radial-gradientv(#A1A9B7, #11253E, #061528);
 	color: #DCDDDE;
-	max-width: 1350px;
+	max-width: 1000px;
 	margin: auto;
 	text-justify: inter-word;
 	height: 100%;
