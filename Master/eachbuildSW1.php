@@ -37,7 +37,7 @@ include("ProtoNavLogged.php");
 		<div class="galleryImages galleryBox">
 			<div class="galleryImages top">
 				<div class="divBorders galleryImages">
-					<img class="galleryImages" src="images/building.png" alt="gallery image description"/>
+					<img class="galleryImages" src="buildingpics/SW1/biggerthumb1.jpg" alt="gallery image description"/>
 				</div>
 			</div>
 			<div class="galleryImages bottom">
@@ -58,15 +58,14 @@ include("ProtoNavLogged.php");
 	</div>
 	<div class="descriptionArea">
 		<div class="divBorders">
-			<h1>BUILDING NAME</h1>
+			<h1>SW 1</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eorum enim est haec querela, qui sibi cari sunt seseque diligunt. Vestri haec verecundius, illi fortasse constantius. Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed ad haec, nisi molestum est, habeo quae velim. Duo Reges: constructio interrete. Quae similitudo in genere etiam humano apparet.
+The main building of BCIT, Burnaby.
 
-				Ea possunt paria non esse. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Universa enim illorum ratione cum tota vestra confligendum puto. Negat esse eam, inquit, propter se expetendam. Non enim iam stirpis bonum quaeret, sed animalis. At iam decimum annum in spelunca iacet. Quod mihi quidem visus est, cum sciret, velle tamen confitentem audire Torquatum. Idemne potest esse dies saepius, qui semel fuit? Audeo dicere, inquit.
-
-				Est igitur officium eius generis, quod nec in bonis ponatur nec in contrariis. Si verbum sequimur, primum longius verbum praepositum quam bonum. Quam illa ardentis amores excitaret sui! Cur tandem? Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Vide, quaeso, rectumne sit. De quibus cupio scire quid sentias. Callipho ad virtutem nihil adiunxit nisi voluptatem, Diodorus vacuitatem doloris. Nos paucis ad haec additis finem faciamus aliquando;
-
-				Quicquid porro animo cernimus, id omne oritur a sensibus; Sed ad haec, nisi molestum est, habeo quae velim. Non autem hoc: igitur ne illud quidem. Atqui haec patefactio quasi rerum opertarum, cum quid quidque sit aperitur, definitio est. Haec para/doca illi, nos admirabilia dicamus. In qua quid est boni praeter summam voluptatem, et eam sempiternam?
+The Student Services desk resides in this building, and it is the center of campus.
+On the main floor of the building, are lecture halls and a medium atrium.
+The second floor of the building has a wide range of study spaces and Gateway deli.
+The highest floor consists of classrooms and workshops.
 			</p>
 		</div>
 	</div>
