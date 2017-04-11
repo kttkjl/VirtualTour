@@ -20,7 +20,7 @@ include("ProtoNavLogged.php");
 		<div id="mainContent">  <!-- Insert your part of the website here. -->
 			<div class="Body_Area">
 			<h2> Contact Us </h2>
-			<p> This is the contact us page. You can reach us here. (more to come)</p>
+			<p>You can contact us about nearly anything - errors, suggestions, questions. On top of those things, we are looking for any information you know that we may not have covered: We want your contribution! If you know any cool shortcuts to get around the school faster, or tips on NOT getting lost --- Submit it to us here and we'll put it up. </p>
 			<div class="secondBody">
 				<div id="leftColumn">
 				<form action="http://webdevbasics.net/scripts/demo.php" id="contact_us" onsubmit="return contact_Validate()">
