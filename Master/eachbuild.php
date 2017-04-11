@@ -1,62 +1,30 @@
 <?php
 require_once('PDO_conn.php');
+include("ProtoHeader.php");
 
 $haveSignedIn = $user->is_loggedin();
 
 $myConnection = $DB_conn;
 $myQuery = $myConnection->prepare(
 				"SELECT * 
-				FROM comments 
-				ORDER BY SKU DESC"
+				FROM comments"
 				);
 $myQuery->execute();
 /*$result = $myQuery->setFetchMode(PDO::FETCH_ASSOC);*/
 $result = $myQuery;
 ?>
 
+<!--Page-specific <title>-->
+<title>EachBuild</title>
+<!--Page-specific <js and css>-->
 
-<!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<meta charset="utf-8"/>
-			<link rel="stylesheet" href="css/theme.css">
-			<link rel="stylesheet" href="css/eachbuild.css">
-			<link rel="stylesheet" href="css/comment.css">
-			<script type="text/javascript" language="javascript" src="css/comment.js"></script>
-			<title>Layout B</title>
-		</head>
-			<body>
-				<nav>
-					<h1><a href="index.html">Virtual Tour</a></h1>
-					<ul>
-						<div id="acc"><li><a href="account.html">My Account</a></li></div>
-						<div id="conus"><li><a href="contactus.html">Contact Us</a></li></div>
-						<div id="gloss"><li><a href="glossary.html">Glossary</a></li></div>
-						<div id="abuild"><li class="dropdown"><a href="allbuild.html" class="dropbtn">Buildings</a>
-						<div class="dropdown-content"> <!--Div for the part that actually drops down. -->
-							<a href="eachbuild.html">Link 1 </a>
-							<a href="eachbuild.html">Link 2 </a>
-							<a href="eachbuild.html">Link 3 </a>
-							<a href="eachbuild.html">Link 4 </a>
-							<a href="eachbuild.html">Link 5 </a>
-						</div> <!-- End of Div "dropdown-content"-->
-						</li></div>
-						<div id="hom"><li><a href="index.html">Home</a></li></div>
-					</ul>
-				</nav>
-		<main>
-			<div id ="bannerPic"> <!--Div for the banner image.-->
-			<img src="images/panorama1.jpg" alt="British Columbia" width="1752" height="300" id="bannerBG">
-			</div> <!-- end of bannerPic div-->
-			<div class="userControl"> <!-- Div for the second nav bar (the one with user controls -->
-			<h2>Logged in as : Group A</h2>
-			<ul>
-				<li> <a href="account.html">User controls</a></li>
-				<li id="In" class=""><a href="login.html">Sign in</a></li>
-				<li id="Out" class="signOut"><a href="startRun.php">Sign out</a></li>
-				<li> <a href="registration.html">Register</a></li>
-			</ul>
-			</div> <!--End of userControl -->
+<link rel="stylesheet" href="css/eachbuild.css" media="screen">
+<link rel="stylesheet" href="css/comment.css" media="screen">
+
+<?php
+include("ProtoNavLogged.php");
+?>
+
 		<div id="mainContent">  <!-- Insert your part of the website here. -->
 		<div class="actualContent"> <!--Helps contain individual members' page -->
 			<div class="buildingImages">
@@ -108,11 +76,14 @@ $result = $myQuery;
 				<?php
 					foreach($result as $rows) {
 				?>
+				<table width="800">
 				<tr>
-				<td bgcolor="#FFFFFF"><?php echo $rows['username'];?></td>
-				<td bgcolor="#FFFFFF">says: </td>
-				<td bgcolor="#FFFFFF"><?php echo $rows['usercomment'];?></td>
+				<td width="33%"><?php echo $rows['username'];?> says:</td>
+				<td width="50%"><?php echo $rows['usercomment'];?></td>
+				<!--<td>&nbsp;&nbsp;&nbsp;</td>-->
+				<td width="33%"><?php echo $rows['post_date'];?></td>
 				</tr>
+				</table>
 				<br>
 				<?php
 					}
@@ -127,161 +98,18 @@ $result = $myQuery;
 			</div>
 		</div>
 		</div>  <!--End of mainContent-->
-		</main>
-		<footer>
-		<div class="footer_wrapper">
-			<div class="footer_table">
-				<table class="table_outer">
-					<tr> 
-						<th> NE
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-						<th> NW
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-						<th> SE
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-						<th> SW
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-						<th> Others
-							<table class="table_col">
-								<tr>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-								<tr><td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td>
-									<td><a href ="index.html">blah</a></td></tr>
-							</table>
-						</th>
-					</tr>
-				</table>
-				<p class="footer_copy"> COPYRIGHT AND CONTACT US. || 2017</p>
-				<h2 class="footer_media"> FB twitter </h2>
-			</div>
-		</div>
-	</footer>
-	</html>
+
 	
 <script>
 var php_var = "<?php echo $haveSignedIn; ?>";
 if(php_var){
-	document.getElementById("In").className = "signIn";
-	document.getElementById("Out").className = "";
+	//document.getElementById("In").className = "signIn";
+	//document.getElementById("Out").className = "";
 	document.getElementById("form_SubmitButton").className = ""
 } else {
-	alert("not signed in");
-	document.getElementById("In").className = "";
-	document.getElementById("Out").className = "signOut";
+	//document.getElementById("In").className = "";
+	//document.getElementById("Out").className = "signOut";
 	document.getElementById("form_SubmitButton").className = "signOut"
 }
 </script>
+<?php include ("ProtoFooter.php"); ?>
