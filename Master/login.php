@@ -16,7 +16,7 @@ if(isset($_POST['login']))
 	if($user->doLogin($FormUsername, $FormEmail, $FormPassword))
 	{
 		//IDK REDIRECT IT SOMEHWER ELSE?! - how 2 redirect to loggedin index plshalp
-		$user->redirect('home.php');
+		$user->redirect('index.php');
 	} 
 	else 
 	{
@@ -26,7 +26,7 @@ if(isset($_POST['login']))
 ?>
 <?php include("ProtoHeader.php"); ?>
 	<link rel="stylesheet" href="css/login.css" media="screen">
-	<script type="text/javascript" src="css/login.js"></script>
+	<script src="css/login.js"></script>
 	<title>Login</title>
 <?php include("ProtoNavLogged.php"); ?>
 

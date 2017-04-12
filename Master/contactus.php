@@ -9,7 +9,7 @@ include("ProtoHeader.php");
 <link rel="stylesheet" href="css/theme.css" media="screen">
 <link rel="stylesheet" href="css/contact.css" media="screen">
 <link rel="stylesheet" href="css/print.css" media="print">
-<script type="text/javascript" src="css/contact.js"></script>
+<script src="css/contact.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="css/mapWidget.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEI3ykIDITnjeg0qCAAzYBQzWALRffmGM&callback=initMap"></script>

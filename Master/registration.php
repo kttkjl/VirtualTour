@@ -32,9 +32,12 @@ if(isset($_POST['register-btn']))
 			} else if ($row['user_email'] == $FormEmail) {
 				$error[] = "email already taken. ";
 			} else {
+				
 				if ($user->register($FormUsername, $FormEmail, $FormPassword)) 
 				{
+					
 					$user->redirect('login.php');
+					
 				}
 			}
 		}

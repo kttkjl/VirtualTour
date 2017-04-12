@@ -20,12 +20,12 @@ class USER
 	{
 		try
 		{
-			$new_password = password_hash($upass, PASSWORD_DEFAULT);
+			#$new_password = password_hash($upass, PASSWORD_DEFAULT);
 			//INSERT into table columns
 			$stmt = $this->conn->prepare("INSERT INTO users(username,user_email,user_pass) VALUES(:uname, :umail, :upass)");
 			$stmt->bindparam(":uname", $uname);
 			$stmt->bindparam(":umail", $umail);
-			$stmt->bindparam(":upass", $new_password); //NOTE HASHED PASSWORD IS PUT INTO TABLE
+			$stmt->bindparam(":upass", $upass); //NOTE HASHED PASSWORD IS PUT INTO TABLE
 			$stmt->execute();
 			return $stmt;	
 		}
@@ -58,7 +58,7 @@ class USER
 			if($stmt->rowCount() == 1)
 			{
 				//If by good DB design, 1 row is returned, check if $upass(user inputted pass) matches returned password
-				if(password_verify($upass, $userRow['user_pass']))
+				if($upass == $userRow['user_pass'])
 				{
 					//sets the $_SESSION array at 'user_session' as id grabbed from DB table users
 					$this->myId = $userRow['id'];
