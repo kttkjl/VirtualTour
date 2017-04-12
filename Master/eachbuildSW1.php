@@ -7,7 +7,7 @@ $haveSignedIn = $user->is_loggedin();
 $myConnection = $DB_conn;
 $myQuery = $myConnection->prepare(
 				"SELECT * 
-				FROM comments"
+				FROM comments WHERE building = 'SW1'"
 				);
 $myQuery->execute();
 /*$result = $myQuery->setFetchMode(PDO::FETCH_ASSOC);*/
@@ -92,7 +92,7 @@ The highest floor consists of classrooms and workshops.
 			<div id="formWrap" class="form_Wrapper">
 				<form id="form_CommentsForm" action="formSubmit.php" onsubmit="return form_validate()" method="post">
 					<div class="form_TextSection">
-						<textarea id="form_TextArea" name="form_TextComment" rows="4" placeholder="Enter Comments"></textarea><input id="form_SubmitButton" type="submit" name="form_SubmitForm">
+						<textarea id="form_TextArea" name="form_TextComment" rows="4" placeholder="Enter Comments"></textarea><input type="hidden" name="buildingID" value="SW1"><input id="form_SubmitButton" type="submit" name="form_SubmitForm">
 					</div>
 				</form>
 			</div>

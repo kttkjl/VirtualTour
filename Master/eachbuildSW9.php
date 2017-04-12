@@ -7,7 +7,7 @@ $haveSignedIn = $user->is_loggedin();
 $myConnection = $DB_conn;
 $myQuery = $myConnection->prepare(
 				"SELECT * 
-				FROM comments"
+				FROM comments WHERE building = 'SW9'"
 				);
 $myQuery->execute();
 /*$result = $myQuery->setFetchMode(PDO::FETCH_ASSOC);*/
@@ -15,12 +15,12 @@ $result = $myQuery;
 ?>
 
 <!--Page-specific <title>-->
-<title>EachBuild</title>
+<title>Virtual Tour - SW9</title>
 <!--Page-specific <js and css>-->
 
 <link rel="stylesheet" href="css/eachbuild.css" media="screen">
 <link rel="stylesheet" href="css/comment.css" media="screen">
-<script type="text/javascript" language="javascript" src="css/comment.js"></script>
+<script src="css/comment.js"></script>
 
 <?php
 include("ProtoNavLogged.php");
@@ -77,12 +77,12 @@ include("ProtoNavLogged.php");
 				<?php
 					foreach($result as $rows) {
 				?>
-				<table width="100%">
+				<table class="expandingTable">
 				<tr>
-				<td width="33%"><?php echo $rows['username'];?> says:</td>
-				<td width="33%"><?php echo $rows['usercomment'];?></td>
+				<td class="expandingComment"><?php echo $rows['username'];?> says:</td>
+				<td class="expandingComment"><?php echo $rows['usercomment'];?></td>
 				<!--<td>&nbsp;&nbsp;&nbsp;</td>-->
-				<td width="33%" align="right"><?php echo $rows['post_date'];?></td>
+				<td class="expandingComment alignRight"><?php echo $rows['post_date'];?></td>
 				</tr>
 				</table>
 				<br>
@@ -93,7 +93,7 @@ include("ProtoNavLogged.php");
 			<div id="formWrap" class="form_Wrapper">
 				<form id="form_CommentsForm" action="formSubmit.php" onsubmit="return form_validate()" method="post">
 					<div class="form_TextSection">
-						<textarea id="form_TextArea" name="form_TextComment" rows="4" placeholder="Enter Comments"></textarea><input id="form_SubmitButton" type="submit" name="form_SubmitForm">
+						<textarea id="form_TextArea" name="form_TextComment" rows="4" placeholder="Enter Comments"></textarea><input type="hidden" name="buildingID" value="SW9"><input id="form_SubmitButton" type="submit" name="form_SubmitForm">
 					</div>
 				</form>
 			</div>
