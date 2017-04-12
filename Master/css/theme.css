@@ -19,10 +19,10 @@ body {
 
 main {
 	background: #0B152E; /* For browsers that don't support gradients */
-    background: -webkit-radial-gradient(#A1A9B7, #11253E, #061528);
+/*    background: -webkit-radial-gradient(#A1A9B7, #11253E, #061528);
     background: -o-radial-gradient(#A1A9B7, #11253E, #061528);
     background: -moz-radial-gradient(#A1A9B7, #11253E, #061528);
-    background: radial-gradientv(#A1A9B7, #11253E, #061528);
+    background: radial-gradientv(#A1A9B7, #11253E, #061528);*/
 	color: #DCDDDE;
 	max-width: 1000px;
 	margin: auto;
