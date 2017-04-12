@@ -7,11 +7,12 @@ $haveSignedIn = $user->is_loggedin();
 $myConnection = $DB_conn;
 $myQuery = $myConnection->prepare(
 				"SELECT * 
-				FROM comments"
+				FROM comments WHERE building = 'SE14'"
 				);
 $myQuery->execute();
 /*$result = $myQuery->setFetchMode(PDO::FETCH_ASSOC);*/
 $result = $myQuery;
+$_SESSION['lastpage'] = 'eachbuildSE14.php';
 ?>
 
 <!--Page-specific <title>-->
@@ -49,7 +50,7 @@ include("ProtoNavLogged.php");
 					</div>
 					<div class="galleryImages bottomRight">
 						<div class="divBorders galleryImages">
-							<img class="galleryImages" src="buildingpics/LIB/IMG_20170405_163856.jpg - Copy.jpg" alt="gallery image description"/>
+							<img class="galleryImages" src="buildingpics/LIB/lib.jpg" alt="gallery image description"/>
 						</div>
 					</div>
 				</div>
@@ -59,9 +60,9 @@ include("ProtoNavLogged.php");
 	<div class="descriptionArea">
 		<div class="divBorders">
 			<h1>SE14</h1>
-			<pre>
+			<p>
 				
-				Library
+				Library<br><br>
 
 				The library is a wonderful resource for the students and even include sleeping pods for rent. Students
 				may find that this is a convenient place to print documents or study. The Library like most has a 
@@ -70,7 +71,7 @@ include("ProtoNavLogged.php");
 				Below the Library is the EhPod which is a 247 study space to students; the EhPod has an explicit entrance
 				that any student can open as long as they have their student ID card.
 
-			</pre>
+			</p>
 		</div>
 	</div>
 		</div> <!--End of actualContent-->
@@ -96,7 +97,8 @@ include("ProtoNavLogged.php");
 			<div id="formWrap" class="form_Wrapper">
 				<form id="form_CommentsForm" action="formSubmit.php" onsubmit="return form_validate()" method="post">
 					<div class="form_TextSection">
-						<textarea id="form_TextArea" name="form_TextComment" rows="4" placeholder="Enter Comments"></textarea><input id="form_SubmitButton" type="submit" name="form_SubmitForm">
+						<textarea id="form_TextArea" name="form_TextComment" rows="4" placeholder="Enter Comments"></textarea>
+						<input type="hidden" name="buildingID" value="SE14"><input id="form_SubmitButton" type="submit" name="form_SubmitForm">
 					</div>
 				</form>
 			</div>
