@@ -2,12 +2,12 @@
 			<body>
 					<div id="theEntireNav">
 					<nav>
-					<h1><a href="index.php">Virtual Tour</a></h1>
+					<p id="siteLogo"><a href="index.php">Virtual Tour</a></p>
 					<div id="navbarBox">
 					<ul id="main-nav-list">
-						<div id="conus"><li class="main-list-link"><a href="contactus.php">Contact Us</a></li></div>
-						<div id="gloss"><li class="main-list-link"><a href="glossary.php">Glossary</a></li></div>
-						<div id="abuild"><li class="dropdown main-list-link"><a href="allbuild.php" class="dropbtn">Buildings</a>
+						<li class="main-list-link"><div id="conus"><a href="contactus.php">Contact Us</a></div></li>
+						<li class="main-list-link"><div id="gloss"><a href="glossary.php">Glossary</a></div></li>
+						<li class="dropdown main-list-link"><div id="abuild"><a href="allbuild.php" class="dropbtn">Buildings</a>
 						<div class="dropdown-content"> <!--Div for the part that actually drops down. -->
 			<div id="navcontainer">
 			<table id="navtable" title="The drop-down navigation">
@@ -53,8 +53,8 @@
 			</table>
 			</div>
 						</div> <!-- End of Div "dropdown-content"-->
-						</li>
-						</div>
+						</div></li>
+						
 						<div id="home"><li class="main-list-link"><a href="index.php">Home</a></li></div>
 					</ul>
 					</div>

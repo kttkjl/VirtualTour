@@ -114,3 +114,17 @@ div.top.galleryImages img{
 	width: 100%;
 	height: 302.5px;
 }
+
+/*CSS styles for expanding comment table*/
+
+.expandingTable{
+	width: 100%;
+}
+
+.expandingComment{
+	width: 33%;
+}
+
+.alignRight{
+	text-align: right;
+}

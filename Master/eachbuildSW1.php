@@ -20,7 +20,7 @@ $result = $myQuery;
 
 <link rel="stylesheet" href="css/eachbuild.css" media="screen">
 <link rel="stylesheet" href="css/comment.css" media="screen">
-<script type="text/javascript" language="javascript" src="css/comment.js"></script>
+<script src="css/comment.js"></script>
 
 <?php
 include("ProtoNavLogged.php");
@@ -76,12 +76,12 @@ The highest floor consists of classrooms and workshops.
 				<?php
 					foreach($result as $rows) {
 				?>
-				<table width="100%">
+				<table class="expandingTable">
 				<tr>
-				<td width="33%"><?php echo $rows['username'];?> says:</td>
-				<td width="33%"><?php echo $rows['usercomment'];?></td>
+				<td class="expandingComment"><?php echo $rows['username'];?> says:</td>
+				<td class="expandingComment"><?php echo $rows['usercomment'];?></td>
 				<!--<td>&nbsp;&nbsp;&nbsp;</td>-->
-				<td width="33%" align="right"><?php echo $rows['post_date'];?></td>
+				<td class="expandingComment alignRight"><?php echo $rows['post_date'];?></td>
 				</tr>
 				</table>
 				<br>

@@ -63,6 +63,13 @@ nav h1 {
 	padding: 0.8em 0.5em 0 0.9em;
 }
 
+#siteLogo{
+	font-weight: normal;
+	font-size: 24pt;
+	float: left;
+	padding: 0.8em 0.5em 0 0.9em;	
+}
+
 nav #main-nav-list {
 	list-style-type: none;
 	font-size: 1.1em;
@@ -73,20 +80,20 @@ nav .main-list-link {
 	padding: 1em 1.5em 0.43em 1.5em;
 	margin: 1em 0.5em 0 0.5em;
 }
-h1 a {
+#siteLogo a {
 	text-decoration: none;
 }
 
-h1 a:link {
+#siteLogo a:link {
 	text-decoration: none;
 	color: #DCDDDE;
 }
 
-h1 a:visited {
+#siteLogo a:visited {
 	color: #DCDDDE;
 }
 
-nav h1 a:hover {
+nav #siteLogo a:hover {
 	color:#DCDDDE;	
 }
 
