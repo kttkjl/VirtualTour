@@ -6,7 +6,10 @@ main img {
 	margin: auto;
 	display: block;
 }
-
+main div#bannerPic {
+	height:1.3em;
+	width:0;
+}
 #mainContent {
 	padding: 2em 2em 2em 2em;
 	margin-bottom: 3em;

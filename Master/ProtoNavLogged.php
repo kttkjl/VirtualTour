@@ -55,7 +55,7 @@
 						</div> <!-- End of Div "dropdown-content"-->
 						</div></li>
 						
-						<div id="home"><li class="main-list-link"><a href="index.php">Home</a></li></div>
+						<li class="main-list-link"><div id="home"><a href="index.php">Home</a></div></li>
 					</ul>
 					</div>
 				</nav>
