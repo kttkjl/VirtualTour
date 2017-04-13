@@ -31,25 +31,25 @@ include("ProtoNavLogged.php");
 			<div class="buildingImages">
 		<div class="mapImage">
 			<div class="divBorders">
-				<img src="images/building.png" alt="map image"/>
+				<img src="buildingpics/SE2/IMG_20170405_163359.jpg" alt="map image"/>
 			</div>
 		</div>
 		<div class="galleryImages galleryBox">
 			<div class="galleryImages top">
 				<div class="divBorders galleryImages">
-					<img class="galleryImages" src="images/building.png" alt="gallery image description"/>
+					<img class="galleryImages" src="buildingpics/SE2/IMG_20170405_163336.jpg" alt="gallery image description"/>
 				</div>
 			</div>
 			<div class="galleryImages bottom">
 				<div class="divBorderOuter galleryImages">
 					<div class="galleryImages bottomLeft">
 						<div class="divBorders galleryImages">
-							<img class="galleryImages" src="images/building.png" alt="gallery image description"/>
+							<img class="galleryImages" src="buildingpics/SE2/IMG_20170405_163422 - Copy.jpg" alt="gallery image description"/>
 						</div>
 					</div>
 					<div class="galleryImages bottomRight">
 						<div class="divBorders galleryImages">
-							<img class="galleryImages" src="images/building.png" alt="gallery image description"/>
+							<img class="galleryImages" src="buildingpics/SE2/IMG_20170405_163359 - Copy.jpg" alt="gallery image description"/>
 						</div>
 					</div>
 				</div>
@@ -58,15 +58,17 @@ include("ProtoNavLogged.php");
 	</div>
 	<div class="descriptionArea">
 		<div class="divBorders">
-			<h1>BUILDING NAME</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eorum enim est haec querela, qui sibi cari sunt seseque diligunt. Vestri haec verecundius, illi fortasse constantius. Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed ad haec, nisi molestum est, habeo quae velim. Duo Reges: constructio interrete. Quae similitudo in genere etiam humano apparet.
+			<h1>SE2</h1>
+			<p>The Student Association Building<br>
 
-				Ea possunt paria non esse. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Universa enim illorum ratione cum tota vestra confligendum puto. Negat esse eam, inquit, propter se expetendam. Non enim iam stirpis bonum quaeret, sed animalis. At iam decimum annum in spelunca iacet. Quod mihi quidem visus est, cum sciret, velle tamen confitentem audire Torquatum. Idemne potest esse dies saepius, qui semel fuit? Audeo dicere, inquit.
+For students who need to find a place to study, eat, get supplies, or get in touch with the 
+Student Association, this is the place to be! The building is best known amongst the students.
+In the atrium/dining hall, students will find a wide selection of food Consisting of Triple O'
+Town Square Cafe, Bento Sushi, and The Stand. Occassionally the SA will allow for vendors to 
+sell specialty foods here too. The front of the building has BCIT's main pub - kitchen - patio:
+the Habitat.<br>
 
-				Est igitur officium eius generis, quod nec in bonis ponatur nec in contrariis. Si verbum sequimur, primum longius verbum praepositum quam bonum. Quam illa ardentis amores excitaret sui! Cur tandem? Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Vide, quaeso, rectumne sit. De quibus cupio scire quid sentias. Callipho ad virtutem nihil adiunxit nisi voluptatem, Diodorus vacuitatem doloris. Nos paucis ad haec additis finem faciamus aliquando;
-
-				Quicquid porro animo cernimus, id omne oritur a sensibus; Sed ad haec, nisi molestum est, habeo quae velim. Non autem hoc: igitur ne illud quidem. Atqui haec patefactio quasi rerum opertarum, cum quid quidque sit aperitur, definitio est. Haec para/doca illi, nos admirabilia dicamus. In qua quid est boni praeter summam voluptatem, et eam sempiternam?
+Around the building students may find offices and on the floor below, the BCIT Bookstore.<br>&nbsp;
 			</p>
 		</div>
 	</div>
