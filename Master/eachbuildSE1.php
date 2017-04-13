@@ -7,15 +7,16 @@ $haveSignedIn = $user->is_loggedin();
 $myConnection = $DB_conn;
 $myQuery = $myConnection->prepare(
 				"SELECT * 
-				FROM comments WHERE building = 'SE12'"
+				FROM comments WHERE building = 'SE1'"
 				);
 $myQuery->execute();
 /*$result = $myQuery->setFetchMode(PDO::FETCH_ASSOC);*/
 $result = $myQuery;
+$_SESSION['lastpage'] = 'eachbuildSE14.php';
 ?>
 
 <!--Page-specific <title>-->
-<title>Virtual Tour - SE12</title>
+<title>Virtual Tour - SE14</title>
 <!--Page-specific <js and css>-->
 
 <link rel="stylesheet" href="css/eachbuild.css" media="screen">
@@ -31,25 +32,25 @@ include("ProtoNavLogged.php");
 			<div class="buildingImages">
 		<div class="mapImage">
 			<div class="divBorders">
-				<img src="buildingpics/SE12/IMG_20170405_162600.jpg" alt="map image"/>
+				<img src="buildingpics/NWandNE/IMG_20170410_153412.jpg" alt="map image"/>
 			</div>
 		</div>
 		<div class="galleryImages galleryBox">
 			<div class="galleryImages top">
 				<div class="divBorders galleryImages">
-					<img class="galleryImages" src="buildingpics/SE12/IMG_20170405_162609 - Copy.jpg" alt="gallery image description"/>
+					<img class="galleryImages" src="buildingpics/NWandNE/IMG_20170410_153412 - Copy.jpg" alt="gallery image description"/>
 				</div>
 			</div>
 			<div class="galleryImages bottom">
 				<div class="divBorderOuter galleryImages">
 					<div class="galleryImages bottomLeft">
 						<div class="divBorders galleryImages">
-							<img class="galleryImages" src="buildingpics/SE12/IMG_20170405_162526 - Copy.jpg" alt="gallery image description"/>
+							<img class="galleryImages" src="buildingpics/NWandNE/IMG_20170410_153452 - Copy.jpg" alt="gallery image description"/>
 						</div>
 					</div>
 					<div class="galleryImages bottomRight">
 						<div class="divBorders galleryImages">
-							<img class="galleryImages" src="buildingpics/SE12/IMG_20170405_162500 - Copy.jpg" alt="gallery image description"/>
+							<img class="galleryImages" src="buildingpics/NWandNE/IMG_20170410_153452.jpg" alt="gallery image description"/>
 						</div>
 					</div>
 				</div>
@@ -58,12 +59,14 @@ include("ProtoNavLogged.php");
 	</div>
 	<div class="descriptionArea">
 		<div class="divBorders">
-			<h1>SE12</h1>
-			<p>
-				Learning & Teaching Center, ITS and Computing <br/><br/>
+			<h1>SE1</h1>
+			<p>Library<br>
 
-				This building is mostly computer labs, but also houses the nursing building, Tim hortons, The Stand,
-				Smokes, and the All Day Breakfast. This building is directly connected to SW3 and SE 14(the library).<br/>&nbsp;
+				Electrical Training Centre<br/><br/>
+
+				This building comprises of tech savvy displays and a small lunch hall. This building is composed of multiple classrooms,
+				a few lecure halls, and a small canteen. The distant area <br/>&nbsp;
+
 			</p>
 		</div>
 	</div>
@@ -90,7 +93,8 @@ include("ProtoNavLogged.php");
 			<div id="formWrap" class="form_Wrapper">
 				<form id="form_CommentsForm" action="formSubmit.php" onsubmit="return form_validate()" method="post">
 					<div class="form_TextSection">
-						<textarea id="form_TextArea" name="form_TextComment" rows="4" placeholder="Enter Comments"></textarea><input type="hidden" name="buildingID" value="SE12"><input id="form_SubmitButton" type="submit" name="form_SubmitForm">
+						<textarea id="form_TextArea" name="form_TextComment" rows="4" placeholder="Enter Comments"></textarea>
+						<input type="hidden" name="buildingID" value="SE1"><input id="form_SubmitButton" type="submit" name="form_SubmitForm">
 					</div>
 				</form>
 			</div>
