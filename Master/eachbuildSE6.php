@@ -12,6 +12,7 @@ $myQuery = $myConnection->prepare(
 $myQuery->execute();
 /*$result = $myQuery->setFetchMode(PDO::FETCH_ASSOC);*/
 $result = $myQuery;
+$_SESSION['lastpage'] = 'eachbuildSE6.php';
 ?>
 
 <!--Page-specific <title>-->
@@ -31,25 +32,25 @@ include("ProtoNavLogged.php");
 			<div class="buildingImages">
 		<div class="mapImage">
 			<div class="divBorders">
-				<img src="images/building.png" alt="map image"/>
+				<img src="buildingpics/SE6/1.jpg" alt="map image"/>
 			</div>
 		</div>
 		<div class="galleryImages galleryBox">
 			<div class="galleryImages top">
 				<div class="divBorders galleryImages">
-					<img class="galleryImages" src="images/building.png" alt="gallery image description"/>
+					<img class="galleryImages" src="buildingpics/SE6/2.jpg" alt="gallery image description"/>
 				</div>
 			</div>
 			<div class="galleryImages bottom">
 				<div class="divBorderOuter galleryImages">
 					<div class="galleryImages bottomLeft">
 						<div class="divBorders galleryImages">
-							<img class="galleryImages" src="images/building.png" alt="gallery image description"/>
+							<img class="galleryImages" src="buildingpics/SE6/3.jpg" alt="gallery image description"/>
 						</div>
 					</div>
 					<div class="galleryImages bottomRight">
 						<div class="divBorders galleryImages">
-							<img class="galleryImages" src="images/building.png" alt="gallery image description"/>
+							<img class="galleryImages" src="buildingpics/SE6/4.jpg" alt="gallery image description"/>
 						</div>
 					</div>
 				</div>
@@ -58,15 +59,10 @@ include("ProtoNavLogged.php");
 	</div>
 	<div class="descriptionArea">
 		<div class="divBorders">
-			<h1>BUILDING NAME</h1>
+			<h1>SE6 - IBM Building/The School of Business</h1>			
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eorum enim est haec querela, qui sibi cari sunt seseque diligunt. Vestri haec verecundius, illi fortasse constantius. Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed ad haec, nisi molestum est, habeo quae velim. Duo Reges: constructio interrete. Quae similitudo in genere etiam humano apparet.
-
-				Ea possunt paria non esse. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Universa enim illorum ratione cum tota vestra confligendum puto. Negat esse eam, inquit, propter se expetendam. Non enim iam stirpis bonum quaeret, sed animalis. At iam decimum annum in spelunca iacet. Quod mihi quidem visus est, cum sciret, velle tamen confitentem audire Torquatum. Idemne potest esse dies saepius, qui semel fuit? Audeo dicere, inquit.
-
-				Est igitur officium eius generis, quod nec in bonis ponatur nec in contrariis. Si verbum sequimur, primum longius verbum praepositum quam bonum. Quam illa ardentis amores excitaret sui! Cur tandem? Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Vide, quaeso, rectumne sit. De quibus cupio scire quid sentias. Callipho ad virtutem nihil adiunxit nisi voluptatem, Diodorus vacuitatem doloris. Nos paucis ad haec additis finem faciamus aliquando;
-
-				Quicquid porro animo cernimus, id omne oritur a sensibus; Sed ad haec, nisi molestum est, habeo quae velim. Non autem hoc: igitur ne illud quidem. Atqui haec patefactio quasi rerum opertarum, cum quid quidque sit aperitur, definitio est. Haec para/doca illi, nos admirabilia dicamus. In qua quid est boni praeter summam voluptatem, et eam sempiternam?
+				IBM Building/The School of Business' main building. Here you will find multiple classrooms and a few lecture halls.
+				This building is most known for having the Rix Club - a lounge that serves Starbucks Coffee and other gormet foods.
 			</p>
 		</div>
 	</div>

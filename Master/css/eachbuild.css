@@ -72,6 +72,8 @@ div.bottomLeft, div.bottomRight{
 .descriptionArea{
 	max-height:100%;
 	min-height:50%;
+	padding-bottom:1em;
+	background-color: #EFF0F1;
 }
 
 /* sets size and overflow of the description area. */
@@ -94,6 +96,15 @@ div.bottomLeft, div.bottomRight{
 	padding-left:2em;
 }
 
+#mainContent > div.actualContent > div.descriptionArea > div > h1{
+	font-size: 1.15em;
+	font-weight: bold;
+}
+#mainContent > div.actualContent > div.descriptionArea > div > h2{
+	font-size: 1.05em;
+	font-weight: bold;
+}
+
 /* configures the divBorders class to have relative position and color. */
 .divBorders{
 	width:98%;
@@ -102,7 +113,7 @@ div.bottomLeft, div.bottomRight{
 	height:98%;
 	position:relative;
 	top:1%;
-	background-color: #EFF0F1;
+
 	overflow: hidden;
 }
 

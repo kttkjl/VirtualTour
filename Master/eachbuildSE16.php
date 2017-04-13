@@ -12,6 +12,7 @@ $myQuery = $myConnection->prepare(
 $myQuery->execute();
 /*$result = $myQuery->setFetchMode(PDO::FETCH_ASSOC);*/
 $result = $myQuery;
+$_SESSION['lastpage'] = 'eachbuildSE16.php';
 ?>
 
 <!--Page-specific <title>-->
@@ -57,10 +58,14 @@ include("ProtoNavLogged.php");
 			</div>
 			<div class="descriptionArea">
 				<div class="divBorders">
-					<h1>DA GYM THO</h1>
+					<h1>SE16 - BCIT's Gym and Recreational Center</h1>
 					<p>
-						Get your Recrational needs between studying at the BCIT Gym! It is important to keep up with physical health
-and mental health. Good blood circulation is important to stay awake in class and feel energized.
+						Get your Recrational needs between studying at the BCIT Gym! It is important to keep up with physical health and mental health. Good blood circulation is important to stay awake in class and feel energized.
+					</p>
+					<p>
+						The interior of the building features a large gymnasium with a size of 4 basketball courts, the Student Athletic Center, Medical services, Counselling and Weight room. 
+
+						The outside portion contains 2 basketball courts, a tennis court, and a 100-m running track.
 					</p>
 				</div>
 			</div>
