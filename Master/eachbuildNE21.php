@@ -15,7 +15,7 @@ $result = $myQuery;
 ?>
 
 <!--Page-specific <title>-->
-<title>Virtual Tour - NE1</title>
+<title>Virtual Tour - NE21</title>
 <!--Page-specific <js and css>-->
 
 <link rel="stylesheet" href="css/eachbuild.css" media="screen">

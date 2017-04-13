@@ -16,7 +16,7 @@ $_SESSION['lastpage'] = 'eachbuildSE14.php';
 ?>
 
 <!--Page-specific <title>-->
-<title>Virtual Tour - SE14</title>
+<title>Virtual Tour - SE1</title>
 <!--Page-specific <js and css>-->
 
 <link rel="stylesheet" href="css/eachbuild.css" media="screen">
