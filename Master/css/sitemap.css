@@ -1,1 +1,25 @@
-s
+main #mapTitle {
+	font-size: 1.7em;
+	text-decoration: underline;
+	color: #11253E;
+	padding-bottom: 0.4em;
+}
+
+.mapHeading a{
+	font-size: 1.3em;
+	color: #11253E;
+}
+
+.mapHeading {
+	padding-bottom: 0.4em;
+}
+
+.mapCategory a{
+	font-size: 1em;
+	padding-left: 1.2em;
+	color: #11253E;
+}
+
+.mapCategory{
+	padding-bottom: 0.4em;
+}
