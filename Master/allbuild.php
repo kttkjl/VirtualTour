@@ -18,7 +18,7 @@ include("ProtoNavLogged.php");
 		<div class="marginMaker">
 			<h1>NorthWest (NW)</h1><br/>
 			<img src="images/building.png" alt="building picture"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>This is a small section of the campus containing a machine shop (NW6) and some trade related buildings such as the painting/glazing building (NW3). This section also contain a few offices in NW1. The new proposed student union is planned to be placed around here if the referedum goes through.</p>
 		</div>
 		<div class="buildingsTable">
 			<table>
@@ -38,7 +38,7 @@ include("ProtoNavLogged.php");
 		<div class="marginMaker">
 			<h1>NorthEast (NE)</h1><br/>
 			<img src="images/building.png" alt="building picture"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>This is the main trades education building.</p>
 		</div>
 		<div class="buildingsTable">
 			<table>
@@ -78,7 +78,7 @@ include("ProtoNavLogged.php");
 		<div class="marginMaker">
 			<h1>SouthWest (SW)</h1><br/>
 			<img src="images/building.png" alt="building picture"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>This section contains the main entrance building right off </p>
 		</div>
 		<div class="buildingsTable">
 			<table>
