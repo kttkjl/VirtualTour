@@ -31,25 +31,25 @@ include("ProtoNavLogged.php");
 			<div class="buildingImages">
 		<div class="mapImage">
 			<div class="divBorders">
-				<img src="images/building.png" alt="map image"/>
+				<img src="buildingpics/NWandNE/IMG_20170410_152504.jpg" alt="map image"/>
 			</div>
 		</div>
 		<div class="galleryImages galleryBox">
 			<div class="galleryImages top">
 				<div class="divBorders galleryImages">
-					<img class="galleryImages" src="images/building.png" alt="gallery image description"/>
+					<img class="galleryImages" src="buildingpics/NWandNE/IMG_20170410_152354 - Copy.jpg" alt="gallery image description"/>
 				</div>
 			</div>
 			<div class="galleryImages bottom">
 				<div class="divBorderOuter galleryImages">
 					<div class="galleryImages bottomLeft">
 						<div class="divBorders galleryImages">
-							<img class="galleryImages" src="images/building.png" alt="gallery image description"/>
+							<img class="galleryImages" src="buildingpics/NWandNE/IMG_20170410_152658 - Copy.jpg" alt="gallery image description"/>
 						</div>
 					</div>
 					<div class="galleryImages bottomRight">
 						<div class="divBorders galleryImages">
-							<img class="galleryImages" src="images/building.png" alt="gallery image description"/>
+							<img class="galleryImages" src="buildingpics/NWandNE/IMG_20170410_152504 - Copy.jpg" alt="gallery image description"/>
 						</div>
 					</div>
 				</div>
@@ -58,15 +58,16 @@ include("ProtoNavLogged.php");
 	</div>
 	<div class="descriptionArea">
 		<div class="divBorders">
-			<h1>BUILDING NAME</h1>
+			<h1>NE1</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eorum enim est haec querela, qui sibi cari sunt seseque diligunt. Vestri haec verecundius, illi fortasse constantius. Quae diligentissime contra Aristonem dicuntur a Chryippo. Sed ad haec, nisi molestum est, habeo quae velim. Duo Reges: constructio interrete. Quae similitudo in genere etiam humano apparet.
-
-				Ea possunt paria non esse. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Universa enim illorum ratione cum tota vestra confligendum puto. Negat esse eam, inquit, propter se expetendam. Non enim iam stirpis bonum quaeret, sed animalis. At iam decimum annum in spelunca iacet. Quod mihi quidem visus est, cum sciret, velle tamen confitentem audire Torquatum. Idemne potest esse dies saepius, qui semel fuit? Audeo dicere, inquit.
-
-				Est igitur officium eius generis, quod nec in bonis ponatur nec in contrariis. Si verbum sequimur, primum longius verbum praepositum quam bonum. Quam illa ardentis amores excitaret sui! Cur tandem? Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Vide, quaeso, rectumne sit. De quibus cupio scire quid sentias. Callipho ad virtutem nihil adiunxit nisi voluptatem, Diodorus vacuitatem doloris. Nos paucis ad haec additis finem faciamus aliquando;
-
-				Quicquid porro animo cernimus, id omne oritur a sensibus; Sed ad haec, nisi molestum est, habeo quae velim. Non autem hoc: igitur ne illud quidem. Atqui haec patefactio quasi rerum opertarum, cum quid quidque sit aperitur, definitio est. Haec para/doca illi, nos admirabilia dicamus. In qua quid est boni praeter summam voluptatem, et eam sempiternam?
+			
+				The primary complex for the Building Trades Department<br/><br/>
+				
+				There are offices and classrooms in this building, located on the far north side of campus
+				On the main floor of this building is a dining hall, and the second floor has some discrete
+				study spaces. The dining hall in NE1 has a small self serve Tim Hortons stand, The Stand, and
+				the Austin Grill. If you're in the area and need a place to eat and study, or just craving some
+				Texan style fast food with chipotle sauce, this is the place to drop by.<br/>&nbsp;
 			</p>
 		</div>
 	</div>
