@@ -60,16 +60,14 @@ include("ProtoNavLogged.php");
 	<div class="descriptionArea">
 		<div class="divBorders">
 			<h1>SE14</h1>
-			<p>
-				
-				Library<br><br>
+			<p>Library<br>
 
 				The library is a wonderful resource for the students and even include sleeping pods for rent. Students
 				may find that this is a convenient place to print documents or study. The Library like most has a 
-				Learning Commons which offers peer tutoring specialized to your program or faculty of choice.
+				Learning Commons which offers peer tutoring specialized to your program or faculty of choice.<br>
 
 				Below the Library is the EhPod which is a 247 study space to students; the EhPod has an explicit entrance
-				that any student can open as long as they have their student ID card.
+				that any student can open as long as they have their student ID card.<br>&nbsp;
 
 			</p>
 		</div>

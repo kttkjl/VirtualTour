@@ -58,14 +58,14 @@ include("ProtoNavLogged.php");
 	</div>
 	<div class="descriptionArea">
 		<div class="divBorders">
-			<h1>SW 1</h1>
+			<h1>SW1</h1>
 			<p>
-The main building of BCIT, Burnaby.
+The main building of BCIT, Burnaby.<br>
 
 The Student Services desk resides in this building, and it is the center of campus.
 On the main floor of the building, are lecture halls and a medium atrium.
 The second floor of the building has a wide range of study spaces and Gateway deli.
-The highest floor consists of classrooms and workshops.
+The highest floor consists of classrooms and workshops.<br>&nbsp;
 			</p>
 		</div>
 	</div>

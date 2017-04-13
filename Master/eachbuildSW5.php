@@ -59,8 +59,8 @@ include("ProtoNavLogged.php");
 	</div>
 	<div class="descriptionArea">
 		<div class="divBorders">
-			<h1>Two predominant lecture theatres.</h1>
-			<p>
+			<h1>SW5</h1>
+			<p>Two predominant lecture theatres.<br>
 			This building is small, but contains a spacious and generally quiet study area. There are not many
 outlets in this building, but there are plenty of seats; however, there are no washrooms in this building
 so go to SW3 directly across from it.<br>&nbsp;
