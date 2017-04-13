@@ -68,7 +68,7 @@ $_SESSION['lastpage'] = 'eachbuildSW9.php';
 			<h2>Mechanical Technologies</h2>
 				<p>
 					Mostly heavy equipment used by MTech, 2nd floor is exclusively Biotechnology. Male washrooms are located in the locker rooms on the first floor.
-				</p>
+				</p><br/>&nbsp;
 		</div>
 	</div>
 		</div> <!--End of actualContent-->
