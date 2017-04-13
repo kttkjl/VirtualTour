@@ -10,7 +10,7 @@
 						<li class="dropdown main-list-link"><div id="abuild"><a href="allbuild.php" class="dropbtn">Buildings</a>
 						<div class="dropdown-content"> <!--Div for the part that actually drops down. -->
 			<div id="navcontainer">
-			<table id="navtable" title="The drop-down navigation">
+			<table id="navtable" title="">
 				<tr class="navtablerow">
 					<td class="navtableheading"><a href="allbuild.php">Northeast</a></td>
 					<td class="navtableheading"><a href="allbuild.php">NorthWest</a></td>
@@ -19,33 +19,33 @@
 				</tr>
 				<tr class="navtablerow">
 					<td class="navtabledata"><a href ="eachbuildNE1.php">NE 1</a></td>
-					<td class="navtabledata"><a href ="buildConst.php">NW1</a></td>
-					<td class="navtabledata"><a href ="eachbuildSE1.php">SE1</a></td>
-					<td class="navtabledata"><a href ="eachbuildSW1.php">SW1</a></td>
+					<td class="navtabledata"><a href ="eachbuildNW1.php">NW 1</a></td>
+					<td class="navtabledata"><a href ="eachbuildSE1.php">SE 1</a></td>
+					<td class="navtabledata"><a href ="eachbuildSW1.php">SW 1</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href ="eachbuildNE2.php">NE2</a></td>
-					<td class="navtabledata"><a href ="buildConst.php">NW3</a></td>
-					<td class="navtabledata"><a href ="eachbuildSE2.php">SE2</a></td>
-					<td class="navtabledata"><a href ="buildConst.php">SW2</a></td>
+					<td class="navtabledata"><a href ="eachbuildNE2.php">NE 2</a></td>
+					<td class="navtabledata"><a href ="eachbuildNW3.php">NW 3</a></td>
+					<td class="navtabledata"><a href ="eachbuildSE2.php">SE 2</a></td>
+					<td class="navtabledata"><a href ="eachbuildSW2.php">SW 2</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href ="buildConst.php">NE3</a></td>
-					<td class="navtabledata"><a href ="buildConst.php">NW5</a></td>
-					<td class="navtabledata"><a href ="buildConst.php">SE4</a></td>
-					<td class="navtabledata"><a href ="eachbuildSW3.php">SW3</a></td>
+					<td class="navtabledata"><a href ="eachbuildNE3.php">NE 3</a></td>
+					<td class="navtabledata"><a href ="eachbuildNW5.php">NW 5</a></td>
+					<td class="navtabledata"><a href ="eachbuildNE6.php">SE 6</a></td>
+					<td class="navtabledata"><a href ="eachbuildSW3.php">SW 3</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href ="buildConst.php">NE4</a></td>
-					<td class="navtabledata"><a href ="buildConst.php">NW6</a></td>
+					<td class="navtabledata"><a href ="eachbuildNE4.php">NE 4</a></td>
+					<td class="navtabledata"><a href ="eachbuildNW6.php">NW 6</a></td>
 					<td class="navtabledata"><a href ="eachbuildSE12.php">SE12</a></td>
-					<td class="navtabledata"><a href ="eachbuildSW5.php">SW5</a></td>
+					<td class="navtabledata"><a href ="eachbuildSW5.php">SW 5</a></td>
 				</tr>
 				<tr class="navtablerow">
-					<td class="navtabledata"><a href ="buildConst.php">NE5</a></td>
+					<td class="navtabledata"><a href ="eachbuildNE5.php">NE 5</a></td>
 					<td class="navtabledata"><a href ="#"></a></td>
 					<td class="navtabledata"><a href ="eachbuildSE14.php">SE14</a></td>
-					<td class="navtabledata"><a href ="eachbuildSW9.php">SW9</a></td>
+					<td class="navtabledata"><a href ="eachbuildSW9.php">SW 9</a></td>
 				</tr>
 				<tr class="navtablerow">
 					<td colspan="4" class="navtablebottom">...Or for more, go to the <a href="allbuild.php">buildings page.</a></td>
