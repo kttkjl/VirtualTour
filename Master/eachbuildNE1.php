@@ -12,6 +12,7 @@ $myQuery = $myConnection->prepare(
 $myQuery->execute();
 /*$result = $myQuery->setFetchMode(PDO::FETCH_ASSOC);*/
 $result = $myQuery;
+$_SESSION['lastpage'] = 'eachbuildNE1.php';
 ?>
 
 <!--Page-specific <title>-->
