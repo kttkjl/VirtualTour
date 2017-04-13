@@ -38,7 +38,8 @@ include("ProtoNavLogged.php");
 		<div class="marginMaker">
 			<h1>NorthEast (NE)</h1><br/>
 			<img src="images/building.png" alt="building picture"/>
-			<p>This is the main trades education building.</p>
+			<p>This is the main trades education building. The Northeast building contains many different sections - it's mostly well known for being the "official" entrance to BCIT - NE1. Architecture classes are taken in the Northeast buildings, and there are many displays demonstrating their work. There are many workshop rooms and lab rooms for electronics and fabrication, as well as machinery. There are several northeast building, going from NE1 to NE28 (but only 19 buildings in total). Where they all are is a mystery to most students and staff. Some of the buildings are reserved specifically for storage an tools, or offices for the faculty. There's little choices in term of food - the most notable place is in NE1, where there is a small cafeteria and a restaurant, as well as The Stop convenience store.
+</p>
 		</div>
 		<div class="buildingsTable">
 			<table>
