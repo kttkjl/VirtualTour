@@ -18,7 +18,7 @@ include("ProtoNavLogged.php");
 		<div class="marginMaker">
 			<h1>NorthWest (NW)</h1><br/>
 			<img src="images/building.png" alt="building picture"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>This is a small section of the campus containing a machine shop (NW6) and some trade related buildings such as the painting/glazing building (NW3). This section also contain a few offices in NW1. The new proposed student union is planned to be placed around here if the referedum goes through.</p>
 		</div>
 		<div class="buildingsTable">
 			<table>
@@ -38,7 +38,8 @@ include("ProtoNavLogged.php");
 		<div class="marginMaker">
 			<h1>NorthEast (NE)</h1><br/>
 			<img src="images/building.png" alt="building picture"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>This is the main trades education building. The Northeast building contains many different sections - it's mostly well known for being the "official" entrance to BCIT - NE1. Architecture classes are taken in the Northeast buildings, and there are many displays demonstrating their work. There are many workshop rooms and lab rooms for electronics and fabrication, as well as machinery. There are several northeast building, going from NE1 to NE28 (but only 19 buildings in total). Where they all are is a mystery to most students and staff. Some of the buildings are reserved specifically for storage an tools, or offices for the faculty. There's little choices in term of food - the most notable place is in NE1, where there is a small cafeteria and a restaurant, as well as The Stop convenience store.
+</p>
 		</div>
 		<div class="buildingsTable">
 			<table>
@@ -78,7 +79,7 @@ include("ProtoNavLogged.php");
 		<div class="marginMaker">
 			<h1>SouthWest (SW)</h1><br/>
 			<img src="images/building.png" alt="building picture"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>This section contains the main entrance building right off </p>
 		</div>
 		<div class="buildingsTable">
 			<table>
@@ -100,7 +101,8 @@ include("ProtoNavLogged.php");
 		<div class="marginMaker">
 			<h1>SouthEast (SE)</h1><br/>
 			<img src="images/building.png" alt="building picture"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
 		</div>
 		<div class="buildingsTable">
 			<table>
